@@ -1,0 +1,485 @@
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;        
+}
+
+.contacts {
+    padding-left: 152px;
+    padding-right: 152px;
+    margin-bottom: 240px;
+}
+
+.card--container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.card--container--left{
+  position: relative;
+}
+
+.contacts__card--form {
+  display: none;
+  width: 98%;
+  height: 98%;
+  border-radius: 50px;   
+  position: absolute;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%); 
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  z-index: 1;
+}
+
+.was-validated .form-control:invalid {
+  background-image: none;
+  color: #FF0000;
+  border: 1px solid #FF0000;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid {
+  background-image: none;
+  border: none;
+}
+
+.was-validated .form-check-input:invalid, .form-check-input.is-invalid {
+  background: #FFA1A1;
+  border: 1px solid #FF0000;
+}
+
+.card__visible {
+  display: flex;
+}
+
+.close-form {
+  position: absolute;
+  right: 25px;
+  top: 25px;  
+  font-size: 28px;
+  color:#FFF;
+}
+
+.close-form-icon {
+  width: 30px;
+  height: 30px;
+  filter: none;
+  -webkit-filter: none;
+  transition: filter 0.15s ease; 
+}
+
+.close-form-icon:hover {
+  filter: drop-shadow(1px 1px 3px rgba(255, 255, 255, 0.7));
+  -webkit-filter: drop-shadow(1px 1px 3px rgb(255, 255, 255));
+  transition: filter 0.15s ease; 
+}
+
+.reg__group {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.registry__input--field {
+border-radius: 25px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.72);
+background: #EBFFFA;
+color: #7775B6;
+font-family: 'Arsenal';
+
+}
+
+
+.reg-label {
+  color: #D5D5D5;
+font-family: 'Arsenal';
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 125%;
+}
+
+.form-check {
+  width: 75%;
+}
+
+.form-check-label {
+  color: #D5D5D5;
+    font-family: 'Arsenal';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.form-grid {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.input__section {
+  text-align: left;
+}
+
+.input__section--text {
+  
+}
+
+.registry__input--text {
+    height: 200px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    background: #EBFFFA;
+}
+
+
+.card1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  height: fit-content;
+}
+
+.card2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+
+  align-items: flex-start !important; 
+}
+
+.card3 {
+  padding-top: 25px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.card4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;  
+  align-self: end;
+}
+
+.button--submit {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  color: #FFF;
+  font-family: Arsenal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  background: #7775B6;
+  cursor: pointer;  
+  box-shadow: none;  
+  transition: box-shadow 0.3s ease; 
+}
+
+.button--submit:hover  {
+  box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.685);  
+  transition: box-shadow 0.3s ease; 
+}
+
+
+.button--submit::after {
+    content: '';
+  position: absolute;
+  z-index: -2;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27)); 
+}
+
+.contacts__card {        
+    display: flex;
+    flex-direction: column;
+    align-content: center;    
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    width: 48.9375rem;
+    height: 100%;
+    margin-bottom: 50px;    
+    border-radius: 50px;        
+    background: url(../img/icons/2stars-contacts-left.png), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);   
+    background-size: 20% cover;    
+    background-position-x: 90%;
+    background-position-y: 18%;
+    background-repeat: no-repeat; 
+    box-shadow: 0px 0px 0px 0px rgba(0, 25, 19, 0.10), 13px 13px 41px 0px rgba(0, 25, 19, 0.10), 54px 52px 75px 0px rgba(0, 25, 19, 0.09), 121px 118px 101px 0px rgba(0, 25, 19, 0.05), 215px 209px 120px 0px rgba(0, 25, 19, 0.01), 336px 327px 131px 0px rgba(0, 25, 19, 0.00);
+    z-index: 1;
+}
+.contacts__card--business {
+  background: url(../img/icons/2stars-contacts-left.png), linear-gradient(180deg, #7775B6 0%, #494694 69.79%);  
+  background-size: 20% cover;    
+  background-position-x: 85%;
+  background-position-y: 77%; 
+  background-repeat: no-repeat; 
+}
+
+
+
+.contacts__card .promo__button {
+  width: 50%;
+  height: 70px;
+  font-size: 28px;
+}
+
+
+
+.contacts__card--text {
+  padding-left: 62px;
+  padding-right: 15px;
+  text-align: left;
+  color: #FFF;
+  font-family: Blogger Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contatcts__buton {    
+  position: relative;
+  box-sizing: border-box;
+  width: 50%;
+  height: 70px;  
+  padding-bottom: 15px;
+  padding-top: 15px;  
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+  border: none;
+  color: #FFF;
+  font-family: Arsenal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  background: #7775B6;
+  cursor: pointer;
+  box-shadow: none;  
+  transition: box-shadow 0.3s ease; 
+}
+
+.contatcts__buton::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27)); 
+}
+
+.contatcts__buton:hover, .contatcts__buton--round:hover {
+  box-shadow: 0px 0px 6px 2px rgba(255, 255, 255, 0.685);  
+  transition: box-shadow 0.3s ease; 
+}
+
+.contatcts__buton--round {
+  width: 70px;
+  height: 70px;
+  margin-left: 28px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 5px;
+  box-shadow: none;  
+  transition: box-shadow 0.3s ease; 
+}
+
+
+.contatcts__buton--icon {    
+  margin: auto;
+  padding: 10px;  
+}
+
+.phone__wrap {  
+  width: 100%;
+  padding-left: 62px;
+  margin-bottom: 60px;
+  text-align: left;
+  color: #FFF;
+  font-family: Blogger Sans;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.phone__wrap a {
+  text-decoration: none;
+  font-weight: 200;
+}
+
+@media (max-width: 1400px) {
+
+  .contacts  {
+    padding-left: 50px;
+    padding-right: 50px;    
+  }
+
+  .contacts__card {
+    position: relative;
+    width: 35rem;
+  }
+
+  .contacts__form {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .phone__wrap span {
+    margin-bottom: 38px;
+    font-weight: 400;
+  }
+
+  .cards__container {
+    /* flex-direction: column; */
+  }
+
+  .contacts__card--text {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 200;
+  }
+
+}
+
+.contacts__card > h1 {
+    color: #FFC300;
+    font-family: Arsenal;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+}
+
+.contacts__card a {
+  color: white;
+}
+
+  .map-image {
+    width: auto;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;    
+    
+  }  
+
+  .baloon__content {
+    font-family: Arsenal;   
+  }
+
+  .map_baloon {
+    border-radius: 5px;
+  }
+
+  .contacts__card-map {
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;    
+    width: 48.9375rem;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 0;
+    overflow: hidden;
+    border-radius: 2.5vw;
+    background: var(--unnamed, linear-gradient(180deg, #7775B6 0%, #494694 69.79%));
+  }
+  
+ 
+
+  .contacts__card--back {
+    text-align: center;
+      border-radius: 50px;
+      overflow: hidden;
+    
+  }
+  
+  .contacts__card--back::after {  
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    /* border-radius: 2.5vw; */
+    border-radius: 50px;
+    border: 3px solid transparent; 
+    border-image-source: linear-gradient(#00BD8D 32.29%, #00392D 100%) border-box;
+    background: linear-gradient(180deg, #00BD8D 32.29%, #00392D 100%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;  
+    box-shadow: 0px 0px 0px 0px rgba(8, 43, 34, 0.10), -1px -4px 9px 0px rgba(8, 43, 34, 0.10), -4px -16px 17px 0px rgba(8, 43, 34, 0.09), -9px -37px 23px 0px rgba(8, 43, 34, 0.05), -16px -66px 27px 0px rgba(8, 43, 34, 0.01), -26px -102px 30px 0px rgba(8, 43, 34, 0.00), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);    
+  }
+  
+  .contacts-flover--left {
+    position: absolute;
+    top: -18%;
+    left: -14%;
+    z-index: 10;
+  }
+
+  .contacts-flover--right {
+    position: absolute;
+    bottom: -18%;
+    right: -14%;
+    z-index: 10;
+  }
+
+  .buttons__row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .select--city {
+    background-image: url(../img/icons/select-arrow.png);  
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+  }
+
+  .select--city::after {
+    /* content: url(../img/icons/select-arrow.png);            */
+    background: pink;
+
+  }

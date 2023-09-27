@@ -183,7 +183,7 @@
               В честь этой важной для нас даты мы устраиваем розыгрыш призов, среди которых: сертификат на путешествие мечты, Macbook Air, Sony PlayStation 5, iPhone 14 Pro, электросамокат Bork, фен Dyson и многое другое!      
               </p>   
               <div class="button-section">
-                <a href="#0" class="promo__button">УЗНАТЬ БОЛЬШЕ</a> 
+                <a href="#0" class="promo__button--wrap">УЗНАТЬ БОЛЬШЕ</a> 
               </div>            
             </div>                           
           </div>     
@@ -197,16 +197,18 @@
             <img class="notebook" src="img/content/note.png" alt="">
             <div class="promo__card--text">
               <img class="promo__card--img" src="img/content/promo-text.svg" alt="" srcset="">
+              <img class="promo__card--img_mobile" src="img/content/promo-text_mobile.png" alt="" srcset="">
             </div>                
           </a>              
         </div>         
         </div>
         <div class="promo__card--text promo__card--text_mobile">
+          <h3 class="promo__title-card--text_mobile">Бренду Niktea исполняется 15 лет!</h3>
           <p class="gift__descr">
             В честь этой важной для нас даты мы устраиваем розыгрыш призов, среди которых: сертификат на путешествие мечты, Macbook Air, Sony PlayStation 5, iPhone 14 Pro, электросамокат Bork, фен Dyson и многое другое!      
           </p>   
           <div class="button-section">
-            <a href="#0" class="promo__button">УЗНАТЬ БОЛЬШЕ</a> 
+            <a href="#0" class="promo__button--wrap">УЗНАТЬ БОЛЬШЕ</a> 
           </div>            
         </div>
     </section>
@@ -230,10 +232,10 @@
                 <p>Вам понадобится:</p>
                 <br>
                 <ul type="disc" class="ingridients">
-                <li>зеленый чай (1/2 стакана);</li>
-                <li>ванильное мороженое (2 ст. л.);</li>
-                <li>сливки (2 ч. л.);</li>
-                <li>сахарный сироп (3 ст. л.).</li>
+                  <li class="ingridients__item">зеленый чай (1/2 стакана);</li>
+                  <li class="ingridients__item">ванильное мороженое (2 ст. л.);</li>
+                  <li class="ingridients__item">сливки (2 ч. л.);</li>
+                  <li class="ingridients__item">сахарный сироп (3 ст. л.).</li>
                 </ul>
                 Способ приготовления.<br>
                 <br>
@@ -262,16 +264,15 @@
                     <p>Вам понадобится:</p>
                     <br>
                     <ul type="disc" class="ingridients">
-                      <li>зеленый чай (1/2 стакана);</li>
-                      <li>ванильное мороженое (2 ст. л.);</li>
-                      <li>сливки (2 ч. л.);</li>
-                      <li>сахарный сироп (3 ст. л.).</li>
+                      <li class="ingridients__item">зеленый чай (1 стакан);</li>
+                      <li class="ingridients__item">яблочный сок (1/2 стакана);</li>
+                      <li class="ingridients__item">сок лимона и лимон (по 1/2 от плода);</li>
+                      <li class="ingridients__item">лед;</li>
                     </ul>
                     Способ приготовления.<br>
                     <br>
                     <p>
-                    Заварите зеленый чай и охладите его. Положите в бокал мороженое, добавьте сливки и сироп. Залейте смесь чаем. Не
-                    перемешивайте. Готово!
+                      Заварите и охладите зеленый чай. Влейте в него яблочный сок и сок лимона. Добавьте лед и несколько долек лимона. Напиток готов!
                     </p>
                     </div>
     
@@ -293,11 +294,13 @@
         
                         <p>Вам понадобится:</p>
                         <br>
-                        <ul type="disc" class="ingridients">
-                        <li>зеленый чай (1/2 стакана);</li>
-                        <li>ванильное мороженое (2 ст. л.);</li>
-                        <li>сливки (2 ч. л.);</li>
-                        <li>сахарный сироп (3 ст. л.).</li>
+                        <ul type="disc" class="ingridients ingridients_two-column">
+                          <li class="ingridients__item">зеленый чай (2 стакана);</li>
+                          <li class="ingridients__item">сок грейпфрута (1 стакан);</li>
+                          <li class="ingridients__item">малина (1/4 стакана);</li>
+                          <li class="ingridients__item">сахарная пудра (1 ст. л.).</li>
+                          <li class="ingridients__item">Лимон (2шт);</li>
+                          <li class="ingridients__item">Лед</li>
                         </ul>
                         Способ приготовления.<br>
                         <br>
@@ -315,7 +318,7 @@
 
         </div>
 
-        <button class="recepies__button" onclick="window.location.href = 'recipes.html';">БОЛЬШЕ РЕЦЕПТОВ</button>
+        <a class="recepies__button" href="recipes.html">БОЛЬШЕ РЕЦЕПТОВ</a>
 
     </div>
     </section>
@@ -330,7 +333,7 @@
     <div class="footer__container">
 
 
-      <div class="footer__column">        
+      <div class="footer__column footer__column_desctop">        
         <ul class="footer__list">
           <li class="footer__item">
             <a href="#" class="footer__link">О БРЕНДЕ</a>
@@ -340,7 +343,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__column">        
+      <div class="footer__column footer__column_desctop">        
         <ul class="footer__list">
           <li class="footer__item">
             <a href="#" class="footer__link">КАТАЛОГ</a>
@@ -351,40 +354,39 @@
         </ul>
       </div>
 
-      <div class="footer__column">
+      <div class="footer__column footer__wr-logo">
         <a class="footer__logo">
           <img class="footer__logo--img" src="img/icons/footer-logo.svg" alt="Logo">
         </a>        
       </div>
 
-      <div class="footer__column">        
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">8 (499) 136-9-631</a>
-            <br>
+      <div class="footer__column footer__column-wr-contacts">        
+        <ul class="footer__list footer__list-phone">
+          <li class="footer__item footer__item-phone">
+            <a href="tel:+74991369631" class="footer__link footer__link-phone">8 (499) 136-9-631</a>
             <span>Чай для бизнеса</span>
           </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">8 (495) 789-67-27</a>
-            <br>
+          <li class="footer__item footer__item-phone">
+            <a href="tel:+74957896727" class="footer__link footer__link-phone">8 (495) 789-67-27</a>
             <span>Чай для дома</span>
           </li>
         </ul>
       </div>
 
-      <div class="footer__column">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a href="#" class="footer__link">
-              Москва,<br>
-              Хорошевское шоссе,<br>
-              д. 32А<br>              
+      <div class="footer__column footer__column-address">
+        <ul class="footer__list footer__list-address">
+          <li class="footer__item footer__item-address">
+            <a href="#" class="footer__link footer__link-address">
+              <span>Москва,</span>
+              <span>Хорошевское шоссе,</span>
+              <span>д. 32А</span>      
             </a>
           </li>
         </ul>
       </div>
     </div>
   </div>
+  <div class="copyright">Все права защищены 2023</div>
 </footer>
 
 

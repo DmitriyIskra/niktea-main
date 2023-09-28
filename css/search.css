@@ -40,6 +40,7 @@
  #toggle + label:after {
   content: url("../img/icons/search-white.svg");  
   height: 2.6vw;
+  width: 4.6vw;
 }
 
 
@@ -98,4 +99,30 @@ border: none;
 
 .search-item {
   height: 2.6vw;
+}
+
+@media (max-width: 768px) {
+  #toggle:checked ~ .box {
+    width: 63vw;
+    margin-right: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    max-height: fit-content;
+    height: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .input__group {
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .input__field {
+    padding-right: 14.3vw;
+  }
 }

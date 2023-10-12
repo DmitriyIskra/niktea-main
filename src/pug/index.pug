@@ -1,0 +1,144 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Главная
+    body(data-variant='main-page')
+
+        include ./modules/header-index
+
+        .w-100.fl-row
+            img.main__slider--fl-row(src='../img/icons/fl-row.svg' alt='')
+        main.main
+            .container-main
+                section.animated__hero
+                    h2.animated__hero-title_mobile О бренде
+                    img.flowers-white(src='../img/icons/flovers-backround.png' alt='')
+                    .animation__container
+                        // <img class="animation__container--img" src="img/icons/tea-and-boxes.png" alt="">
+                        img.animation__container--img(src='../img/icons/tea-and-boxes.webp' alt='')
+                        // <img class="tmp__flo2" src="img/animation/flowers5.png" alt="" srcset="">
+                        .yellow.ball.target.centered.animation__backstage
+                        //
+                            <div class="wrapper infinite centered slider">
+                            <div class="red ball target revolver  infinite">
+                            <img class="spinner" src="img/icons/ani-fl-1.png" alt="">
+                            </div>
+                            </div>
+                            <div class="wrapper2 infinite centered slider2">
+                            <div class="blue ball target revolver2 infinite">
+                            <img class="spinner2" src="img/icons/ani-fl-2.png" alt="">
+                            </div>
+                            </div>
+                    .about__text
+                        // <div class="brand__text--block"></div>
+                        h2 О бренде
+                        .about__descr
+                            p
+                                | Niktea - идеальный чай на каждый день. Яркая коллекция Niktea представлена широкой палитрой вкусов в удобном формате: листовой, пакетированный на чашку и на чайник, чай в пирамидках.
+                            p
+                                | Чаи Niktea — это отборные чаи и оригинальные авторские купажи из чистого натурального чайного листа, трав и фруктов.
+                            p
+                                | Почувствуй чай - проNikнись разнообразием!
+                            a.promo__button--wrap(href='about.html') УЗНАТЬ БОЛЬШЕ
+                section.promo__container
+                    .row.promo
+                        .col-lg-6.col-sm-12.promo__card
+                            .promo__card--innner--left
+                                .head-wrap
+                                    h2
+                                        span Бренду Niktea
+                                        span исполняется 15 лет!
+                                .promo__card--text.promo__card--text_desctop
+                                    p.gift__descr
+                                        | В честь этой важной для нас даты мы устраиваем розыгрыш призов, среди которых: сертификат на путешествие мечты, Macbook Air, Sony PlayStation 5, iPhone 14 Pro, электросамокат Bork, фен Dyson и многое другое!
+                                    .button-section
+                                        a.promo__button--wrap(href='#0') УЗНАТЬ БОЛЬШЕ
+                        .col-lg-6.col-sm-12.promo__card.promo__card-wr-banner
+                            a.promo__card--innner
+                                img.flower-p1(src='../img/content/flowers-priv@1,5x.png' alt='')
+                                img.flower-p2(src='../img/content/flowers-priv@1,5x.png' alt='')
+                                img.phones(src='../img/content/phones.png' alt='')
+                                img.notebook(src='../img/content/note.png' alt='')
+                                .promo__card--text
+                                    img.promo__card--img(src='../img/content/promo-text.svg' alt='')
+                                    img.promo__card--img_mobile(src='../img/content/promo-text_mobile.png' alt='')
+                    .promo__card--text.promo__card--text_mobile
+                        h3.promo__title-card--text_mobile Бренду Niktea исполняется 15 лет!
+                        p.gift__descr
+                            | В честь этой важной для нас даты мы устраиваем розыгрыш призов, среди которых: сертификат на путешествие мечты, Macbook Air, Sony PlayStation 5, iPhone 14 Pro, электросамокат Bork, фен Dyson и многое другое!
+                        .button-section
+                            a.promo__button--wrap(href='#0') УЗНАТЬ БОЛЬШЕ
+                section.recipes
+                    .recepies
+                        h2 Рецепты с чаем от Niktea
+                        .cards
+                            .card-container
+                                .recept__card--back
+                                .recept__card
+                                    img.recept__card--img(src='../img/content/cup-1.svg' alt='cup-tea')
+                                    .recept__description.recept__1
+                                        img.description-arrow.a1(src='../img/icons/down-icon.svg' alt='arrow')
+                                        h3 Сладкие грёзы
+                                        .recept__description--text.t1
+                                            p Вам понадобится:
+                                            br
+                                            ul.ingridients(type='disc')
+                                                li.ingridients__item зеленый чай (1/2 стакана);
+                                                li.ingridients__item ванильное мороженое (2 ст. л.);
+                                                li.ingridients__item сливки (2 ч. л.);
+                                                li.ingridients__item сахарный сироп (3 ст. л.).
+                                            |                 Способ приготовления.
+                                            br
+                                            br
+                                            p
+                                                | Заварите зеленый чай и охладите его. Положите в бокал мороженое, добавьте сливки и сироп. Залейте смесь чаем. Не
+                                                | перемешивайте. Готово!
+                            .card-container
+                                .recept__card--back
+                                .recept__card
+                                    img.recept__card--img(src='../img/content/sveat-dreams.svg' alt='cup-tea')
+                                    .recept__description.recept__2
+                                        img.description-arrow.a2(src='../img/icons/down-icon.svg' alt='arrow')
+                                        h3 Свежее утро
+                                        .recept__description--text.t2
+                                            p Вам понадобится:
+                                            br
+                                            ul.ingridients(type='disc')
+                                                li.ingridients__item зеленый чай (1 стакан);
+                                                li.ingridients__item яблочный сок (1/2 стакана);
+                                                li.ingridients__item сок лимона и лимон (по 1/2 от плода);
+                                                li.ingridients__item лед;
+                                            |                     Способ приготовления.
+                                            br
+                                            br
+                                            p
+                                                | Заварите и охладите зеленый чай. Влейте в него яблочный сок и сок лимона. Добавьте лед и несколько долек лимона. Напиток готов!
+                            .card-container
+                                .recept__card--back
+                                .recept__card
+                                    img.recept__card--img(src='../img/content/coctail.svg' alt='cup-tea')
+                                    .recept__description.recept__3
+                                        img.description-arrow.a3(src='../img/icons/down-icon.svg' alt='arrow')
+                                        h3 Малиновый
+                                        .recept__description--text.t3
+                                            p Вам понадобится:
+                                            br
+                                            ul.ingridients.ingridients_two-column(type='disc')
+                                                li.ingridients__item зеленый чай (2 стакана);
+                                                li.ingridients__item сок грейпфрута (1 стакан);
+                                                li.ingridients__item малина (1/4 стакана);
+                                                li.ingridients__item сахарная пудра (1 ст. л.).
+                                                li.ingridients__item Лимон (2шт);
+                                                li.ingridients__item Лед
+                                            |                         Способ приготовления.
+                                            br
+                                            br
+                                            p
+                                                | Заварите зеленый чай и охладите его. Положите в бокал мороженое, добавьте сливки и сироп. Залейте смесь чаем. Не
+                                                | перемешивайте. Готово!
+                        a.recepies__button(href='recipes.html') БОЛЬШЕ РЕЦЕПТОВ
+        
+        include ./modules/footer
+

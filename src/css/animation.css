@@ -1,0 +1,296 @@
+:root {
+  --animate-time: 2s;
+}
+
+.animated__hero {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
+  margin-bottom: 250px;
+  align-items: center;
+  padding: 0;
+}
+
+.animation__container {
+  overflow: visible;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 500px;
+  margin-right: 85px;
+}
+
+.flowers-white {
+  content: "";
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  /* bottom: 0; */
+  right: 0;
+  width: 55%;
+}
+
+.animation__container--img {
+  position: relative;
+  height: 26vw;
+}
+
+.animation__flovers--backround {
+  position: absolute;
+  bottom: 10%;
+  width: 80%;
+  z-index: -1;
+}
+
+.animation__backstage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ball {
+  border-radius: 50%;
+}
+
+.blue .ball {
+  transform: translateX(-300px) translateY(150px);
+}
+
+.red .ball {
+  transform: translateX(-250px) translateY(100px);
+}
+
+.yellow {
+  background-color: #cc0;
+}
+
+/* 
+.centered {
+  position: absolute;
+  margin-top: calc(50px / 2);
+  margin-left: calc(50px / 2);
+} */
+
+.centered {
+  position: absolute;
+  margin-top: calc(50px / 2);
+  margin-left: calc(50px / 2);
+}
+
+.animation__container:hover .revolver {
+  animation: rotate 36s linear;
+}
+
+.animation__container:hover .spinner {
+  height: 9vw;
+  animation: selfRotate 14s infinite;
+}
+
+.animation__container:hover .spinner2 {
+  height: 11vw;
+  animation: selfRotate 14s infinite;
+}
+
+.wrapper {
+  transform: rotate(0deg) translate(5vw) rotate(0deg);
+  transition: all 2.8s ease-out;
+}
+
+.wrapper2 {
+  left: 55%;
+  top: 0;
+  animation: backwards 5s;
+}
+
+.animation__container:hover .revolver2 {
+  /* animation: rotate2 calc(14s * 3/2) linear; */
+  animation: rotate2 calc(14s * 3 / 2) linear;
+}
+
+.animated__hero-title_mobile {
+  display: none;
+}
+
+/* .slider {
+    animation: backForth calc(12s / 2) ease-in-out alternate;
+} */
+
+/* .slider2 {
+     animation: backForth2 calc(2s * 3/4) ease-in-out alternate;
+} */
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+/* @keyframes rotate {
+  0% {
+      transform: rotate(0deg) translate(-260px) rotate(0deg);    
+  }
+  100% {    
+      transform: rotate(360deg) translate(-260px) rotate(-360deg);
+  }
+}
+
+@keyframes backForth {
+  0% {
+    transform: translateX(-140px) translateY(100%);
+  }
+  
+  100% {
+    transform: translateX(140px) translateY(-100%);
+  }
+} 
+
+@keyframes selfRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform:  rotate(360deg);
+    }
+} */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate(-15vw) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-15vw) rotate(-360deg);
+  }
+}
+
+@keyframes backForth {
+  0% {
+    transform: translateX(-9vw) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(9vw) translateY(-100%);
+  }
+}
+
+@keyframes selfRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0deg) translate(9vw) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(9vw) rotate(-360deg);
+  }
+}
+
+@keyframes backForth2 {
+  0% {
+    transform: translateX(-9vw) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(9vw) translateY(-100%);
+  }
+}
+
+@keyframes selfRotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .animated__hero {
+    position: relative;
+
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    overflow: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .animated__hero-title_mobile {
+    display: block;
+
+    font-size: 7.47vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .flowers-white {
+    top: 13vw;
+
+    width: 99%;
+  }
+}
+
+@media (max-width: 768px) {
+  .animation__container {
+    height: 85vw;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .animation__container--img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+}
+
+/* @keyframes backForth2 {
+  0% {
+    transform: translateX(-300%) translateY(150%);
+  }
+  100% {
+    transform: translateX(100%) translateY(-150%);
+  }
+} */
+/* 
+@keyframes rotate2  {
+    0% {  
+        transform: rotate(0deg) translate(-50%) rotate(0deg);
+    }
+    100% {  
+        transform: rotate(360deg) translate(-50%) rotate(-360deg);
+      
+    }
+  } */

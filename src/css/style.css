@@ -1129,9 +1129,9 @@ height: 45px; */
 }
 
 @media (max-width: 540px) {
-  .header-wrapper {
+  /* .header-wrapper {
     height: auto;
-  }
+  } */
 
   .header__icon-menu_mobile {
     display: block;
@@ -1366,7 +1366,7 @@ ul.breadcrumbs__item li + li:before {
 @media(max-width: 768px) {
   .search-item {
     display: flex;
-    width: 40%;
+    width: auto;
     height: 38px;
     padding-left: 0;
     padding-right: 0;

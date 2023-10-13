@@ -15,6 +15,11 @@ html(lang='ru')
         title Контакты
     body(data-variant='contacts')
         header
+            .header__icon-menu_mobile
+                svg(xmlns='http://www.w3.org/2000/svg' width='30' height='20' viewBox='0 0 30 20' fill='none')
+                    path(d='M29 17H1C0.447715 17 0 17.4477 0 18V19C0 19.5523 0.447716 20 1 20H29C29.5523 20 30 19.5523 30 19V18C30 17.4477 29.5523 17 29 17Z' fill='#ffffff')
+                    path(d='M29 8.31982H1.13135C0.579063 8.31982 0.131348 8.76754 0.131348 9.31982V11.0624C0.131348 11.6147 0.579063 12.0624 1.13135 12.0624H29C29.5523 12.0624 30 11.6147 30 11.0624V9.31982C30 8.76754 29.5523 8.31982 29 8.31982Z' fill='#ffffff')
+                    path(d='M29.0001 0H1.1311C0.578819 0 0.131104 0.447716 0.131104 1V2.74255C0.131104 3.29484 0.578819 3.74255 1.1311 3.74255H29.0001C29.5524 3.74255 30.0001 3.29484 30.0001 2.74255V1C30.0001 0.447715 29.5524 0 29.0001 0Z' fill='#ffffff')
             .header-wrapper
                 ul.header__list(data-variant='catalog')
                     li.header__item
@@ -47,9 +52,9 @@ html(lang='ru')
                 .catalog__container
                     .cards__container
                         .contacts__wr-cards-address
-                            .contacts-flover--left
+                            .contacts-flover--left.contacts-flover--left_desctop
                                         img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
-                            .card--container
+                            .card--container.card--container_desctop
                                 .contacts__card.card--container--left
                                     
                                     .contacts__card--back
@@ -71,6 +76,7 @@ html(lang='ru')
                                                 | 8 (499) 136-9-631
                                     .buttons__row
                                         a.contatcts__buton(href='https://alephtrade.ru/') ПЕРЕЙТИ НА САЙТ
+
                                         button.contatcts__buton.contatcts__buton--round
                                             .contacts__wr-icon-button-callback
                                                 <svg class="contacts__icon-button-callback" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
@@ -119,7 +125,7 @@ html(lang='ru')
                                                         label.form-check-label(for='invalidCheck')
                                                             p
                                                                 | Я согласен на обработку персональных данных и с публичной офертой
-                            .card--container
+                            .card--container.card--container_desctop
                                 .contacts__card.contacts__card--business
                                     .contacts-flover--right
 
@@ -142,6 +148,126 @@ html(lang='ru')
                                                 | 8 (499) 789-67-27
                                     .buttons__row
                                         a.contatcts__buton(href='https://oasis-msk.ru/') ПЕРЕЙТИ НА САЙТ
+
+                            ul.contacts__cards-address-list_mobile
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item_left(data-type="left")
+                                    .contacts-flover--left.contacts-flover--left_mobile
+                                        img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
+                                    
+                                    header.contacts__wr-card-address-header 
+                                            .contacts__wr-card-address-title.contacts__wr-card-address-title_active
+                                                h2 Чай для бизнеса
+                                            .contacts__wr-card-address-title
+                                                h2 Чай для дома
+
+                                    .contacts__wr-card-address-text 
+                                        p 
+                                            span Адрес:
+                                            span ООО «Алеф Трейд МСК»123007,
+                                            span Россия, город Москва, Хорошевское
+                                            span шоссе, д. 32 А, офис 301
+
+                                        p
+                                            span Время работы: 09:00 - 18:00,
+                                            span по рабочим дням.
+
+                                        p 
+                                            span Телефон:
+                                            span 8 (499) 136-9-631
+                                    
+                                    .contacts__wr-card-buttons
+                                        .contacts__wr-link-address-redirect
+                                            a.contacts__link(href='https://alephtrade.ru/') ПЕРЕЙТИ НА САЙТ
+
+                                        .contacts__button-callback
+                                            .contacts__wr-icon-button-callback
+                                                <svg class="contacts__icon-button-callback" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
+                                                    <path d="M24.1543 27.9233L35.3081 35.731L46.462 27.9233" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M13 45.7692V23.4615C13 20.9975 14.9975 19 17.4615 19H53.1538C55.618 19 57.6154 20.9975 57.6154 23.4615V45.7692C57.6154 48.2333 55.618 50.2308 53.1538 50.2308H17.4615C14.9975 50.2308 13 48.2333 13 45.7692Z" stroke="white" stroke-width="3"/>
+                                                </svg>
+
+                                        
+                                    
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item_right(data-type="right")
+                                    .contacts__wr-card-address-header 
+                                        .contacts__wr-card-address-title
+                                            h2 Чай для бизнеса
+                                        .contacts__wr-card-address-title
+                                            h2 Чай для дома
+                                    
+                                    .contacts__wr-card-address-text 
+                                        p 
+                                            span Адрес:
+                                            span ООО «Алеф Трейд МСК»123007,
+                                            span Россия, город Москва, Хорошевское
+                                            span шоссе, д. 32 А, офис 301
+
+                                        p
+                                            span Время работы: 09:00 - 18:00,
+                                            span по рабочим дням.
+
+                                        p 
+                                            span Телефон:
+                                            span 8 (495) 789-67-27
+
+                                    .contacts__wr-card-buttons
+                                        .contacts__wr-link-address-redirect.contacts__wr-link-address-redirect_right-card
+                                            a.contacts__link.contacts__link_right-card(href='https://oasis-msk.ru/') ПЕРЕЙТИ НА САЙТ
+
+                                    .contacts-flover--right.contacts-flover--right_mobile
+
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-form.contacts__wr-card-address-item_active
+                                    .contacts__wr-card-address-header 
+                                        .contacts__wr-card-address-title
+                                            h2 Чай для бизнеса
+                                        .contacts__wr-card-address-title
+                                            h2 Чай для дома
+
+
+                                    .contacts__wr-card-address-form 
+                                        .contacts__wr-card-address-form-close
+                                            <svg class="contacts__wr-card-address-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
+                                                <g clip-path="url(#clip0_2295_1339)">
+                                                    <path d="M1.35352 1.35303L20.487 20.4865" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                    <path d="M20.2947 1.35303L1.35352 20.2942" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_2295_1339">
+                                                        <rect width="23" height="23" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                        form.contacts__card-address-form(name="contacts-callback")
+                                            ul.contacts__wr-address-input-list
+                                                li.contacts__wr-address-input-item
+                                                    label.contacts__address-form-label(type="text" for="#contacts__address-form-name")
+                                                        | Ваше имя
+                                                    input#contacts__address-form-name.contacts__address-form-input(name="name" value="Имя")
+                                                li.contacts__wr-address-input-item
+                                                    label.contacts__address-form-label(type="text" for="#contacts__address-form-phone")
+                                                        | Ваш телефон
+                                                    input#contacts__address-form-phone.contacts__address-form-input(name="phone" value="+7 (___) ___-__-__")
+                                                li.contacts__wr-address-input-item
+                                                    label.contacts__address-form-label(type="text" for="#contacts__address-form-mail")
+                                                        | Ваша электронная почта
+                                                    input#contacts__address-form-mail.contacts__address-form-input(name="mail" value="e-mail")
+                                                li.contacts__wr-address-input-item
+                                                    label.contacts__address-form-label(type="text" for="#contacts__address-form-city")
+                                                        | Ваш город
+                                                    input#contacts__address-form-city.contacts__address-form-input(name="city" value="Укажите город")
+                                            .contacts__wr-address-form-policy
+                                                input#contacts__address-form-checkbox.contacts__address-form-checkbox(name="policy" type="checkbox")
+                                                label.contacts__address-form-checkbox-label(type="text" for="contacts__address-form-checkbox")
+                                                    | Я согласен на обработку персональных данных и с публичной офертой
+                                            .contacts__wr-address-form-text
+                                                textarea.contacts__address-form-text(name="text" rows="10") Текст
+                                            .contacts__wr-address-button-submit
+                                                button.contacts__address-button-submit(type="button")
+                                                    span.contacts__address-button-submit_deco ОТПРАВИТЬ
+                                                    
+
+
                         .card--container.card--container-map
                             .contacts__card-map.contacts__card--map
                                 .contacts__card--back

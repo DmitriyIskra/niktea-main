@@ -27,6 +27,10 @@
   z-index: 10;
 }
 
+.contacts-flover--left_mobile {
+  display: none;
+}
+
 
 .contacts-flover--left-img {
   height: 100%;
@@ -169,9 +173,6 @@
 
 .input__section {
   text-align: left;
-}
-
-.input__section--text {
 }
 
 .registry__input--text {
@@ -533,36 +534,479 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   background: pink;
 }
 
+.contacts__wr-card-address-item {
+  display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .breadcrumbs__container {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .contacts {
     padding-left: 5.33vw;
     padding-right: 5.33vw;
   }
+}
 
+@media (max-width: 768px) {
+  .contacts__wr-cards-address {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card--container_desctop {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__cards-address-list_mobile {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-item {
+    position: relative;
+
+    display: none;
+    padding-bottom: 12.53vw;
+  }
+
+  .contacts__wr-card-address-item_left {
+    background: no-repeat url(../img/contacts-fon-cards-address.png);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .contacts__wr-card-address-item_right {
+    background: no-repeat url(../img/contacts-fon-cards-addres2.png);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .contacts__wr-card-address-item-form {
+    background: no-repeat url(../img/contacts-fon-cards-address-form.png);
+    background-size: 100% 100%;
+    background-position: center;
+  }
+
+  .contacts__wr-card-address-item_active {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-flover--left_desctop {
+    display: none;
+  }
+
+  .contacts-flover--left_mobile {
+    top: -7%;
+    left: -5.1%;
+
+    display: block;
+    width: 16.53vw;
+    height: 16.27vw;
+
+    transform: rotate(24deg);
+
+    z-index: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-header {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-title {
+    display: flex;
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts__wr-card-address-title h2 {
+    margin-top: 4.53vw;
+    margin-bottom: 2.67vw;
+
+    font-family: Arsenal;
+    font-size: 5.07vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #FFC300;
+  }
+
+  .contacts__wr-card-address-title_active h2::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+
+    height: 1px;
+
+    background-color: #FFC300;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-text {
+    display: flex;
+    padding-left: 7.73vw;
+    margin-bottom: 5vw;
+    margin-top: 2.1vw;
+    gap: 3.8vw;
+
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-text p {
+    display: flex;
+    margin-bottom: 0;
+
+    font-family: Blogger Sans;
+    font-size: 4.80vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #FFF;
+
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-buttons {
+    display: flex;
+    gap: 5.07vw;
+
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-link-address-redirect {
+    display: flex;
+    height: 11.73vw;
+    width: 57.87vw;
+
+    border-radius: 13.33vw;
+    background: linear-gradient(180deg, #00bd8d 32.29%, #00392d 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts__wr-link-address-redirect_right-card {
+    width: 74.67vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__link {
+    display: flex;
+
+    height: 10.67vw;
+    width: 56.80vw;
+
+    font-family: Arsenal;
+    font-size: 4.27vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #FFF;
+    border-radius: 13.33vw;
+    background: #7A78B1;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts__link_right-card {
+    width: 73.60vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-flover--right_mobile {
+    bottom: -6%;
+    right: -6.2%;
+
+    width: 22vw;
+    height: 22vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__button-callback {
+    display: flex;
+    height: 11.73vw;
+    width: 11.73vw;
+
+    border-radius: 50%;
+    background: linear-gradient(180deg, #00bd8d 32.29%, #00392d 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.27));
+
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-icon-button-callback {
+    display: flex;
+
+    height: 10.67vw;
+    width: 10.67vw;
+
+    border-radius: 13.33vw;
+    background: #7A78B1;
+
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .contacts__card-map {
+    border-radius: 8vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-form {
+    display: flex;
+    margin-top: 6.33vw;
+
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-form-close {
+    display: flex;
+    width: 74.67vw;
+
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-card-address-close-icon {
+    height: 6.13vw;
+    width: 6.13vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__card-address-form {
+    width: 74.67vw;
+    margin-top: 1.33vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-address-input-list {
+    display: flex;
+    padding-left: 0;
+    gap: 1.33vw;
+
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-address-input-item {
+    display: flex;
+
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__address-form-label {
+    font-family: WMF Rotis;
+    font-size: 4.27vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #D5D5D5;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__address-form-input {
+    width: 100%;
+    height: 10.67vw;
+    padding-left: 4.27vw;
+
+    font-family: WMF Rotis;
+    font-size: 3.20vw;
+    font-style: normal;
+    font-weight: 400;
+
+    border: 0;
+    border-radius: 6.67vw;
+    background: #EBFFFA;
+    color: #7775B6;
+  }
+
+  .contacts__address-form-input:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__wr-address-form-policy {
+    display: flex;
+    margin-top: 2.67vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__address-form-checkbox {
+      display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__address-form-checkbox-label {
+    display: flex;
+    gap: 2.13vw;
+
+    font-family: WMF Rotis;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #D5D5D5;
+  }
+
+  .contacts__address-form-checkbox-label::before {
+    content: "";
+
+    display: block;
+    height: 4.27vw;
+    width: 4.27vw;
+    min-width: 4.27vw;
+    margin-top: 0.7vw;
+
+    border-radius: 1vw;
+    background-color: #EBFFFA;
+  }
+
+  .contacts__address-form-checkbox:checked + .contacts__address-form-checkbox-label::before {
+    background: black;
+  }
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
   .contacts__card {
     position: relative;
     width: 35rem;
   }
+}
 
+@media (max-width: 768px) {
   .card--container-map {
     width: 100%;
   }
+}
 
+@media (max-width: 768px) {
   .contacts__form {
     position: absolute;
     top: 0;
     left: 0;
   }
+}
 
+@media (max-width: 768px) {
   .phone__wrap span {
     margin-bottom: 38px;
     font-weight: 400;
   }
+}
 
+@media (max-width: 768px) {
   .cards__container {
     flex-direction: column;
   }
+}
 
+@media (max-width: 768px) {
   .contacts__card--text {
     display: flex;
     flex-direction: column;
@@ -570,3 +1014,4 @@ ymaps.ymaps-2-1-79-copyright__wrap {
     font-weight: 200;
   }
 }
+

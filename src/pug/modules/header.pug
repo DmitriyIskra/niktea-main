@@ -1,0 +1,44 @@
+header
+    .header-wrapper.header-wrapper--main_no-index
+        .header__icon-menu_mobile
+            svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 20' fill='none')
+                path(d='M29 17H1C0.447715 17 0 17.4477 0 18V19C0 19.5523 0.447716 20 1 20H29C29.5523 20 30 19.5523 30 19V18C30 17.4477 29.5523 17 29 17Z' fill='#ffffff')
+                path(d='M29 8.31982H1.13135C0.579063 8.31982 0.131348 8.76754 0.131348 9.31982V11.0624C0.131348 11.6147 0.579063 12.0624 1.13135 12.0624H29C29.5523 12.0624 30 11.6147 30 11.0624V9.31982C30 8.76754 29.5523 8.31982 29 8.31982Z' fill='#ffffff')
+                path(d='M29.0001 0H1.1311C0.578819 0 0.131104 0.447716 0.131104 1V2.74255C0.131104 3.29484 0.578819 3.74255 1.1311 3.74255H29.0001C29.5524 3.74255 30.0001 3.29484 30.0001 2.74255V1C30.0001 0.447715 29.5524 0 29.0001 0Z' fill='#ffffff')
+        
+        ul.header__list.header__list_no-index(data-variant='catalog') 
+            li.header__item
+                a.header__link(href='about.html') О БРЕНДЕ
+            li.header__item
+                a.header__link(href='about-tea.html') БОЛЬШЕ О ЧАЕ
+            .header__logo
+                a(href='index.html')
+                    .header__logo--img
+            li.header__item
+                a.header__link(href='catalog.html') КАТАЛОГ
+            li.header__item
+                a.header__link(href='contacts.html') КОНТАКТЫ
+            li.search-item
+                .search__container
+                    input#toggle(type='checkbox' name='' value='')
+                    label(for='toggle')
+                    .box
+                        .input__group
+                            input.input__field(type='text' name='search' placeholder='Что вы ищете ?')
+                            button.search__submit(type='button') ПОИСК
+
+        .header__wr-mobile-menu
+            ul.header__mobile-menu-list
+                li.header__mobile-menu-item 
+                    a(href="./about.html" title="О бренде").header__mobile-menu-link О БРЕНДЕ
+                li.header__mobile-menu-item 
+                    a(href="./about-tea.html" title="Больше о чае").header__mobile-menu-link БОЛЬШЕ О ЧАЕ
+                li.header__mobile-menu-item 
+                    a(href="./catalog.html" title="Каталог").header__mobile-menu-link КАТАЛОГ
+                li.header__mobile-menu-item 
+                    a(href="./contacts.html" title="Контакты").header__mobile-menu-link КОНТАКТЫ
+            .header__mobile-menu-close 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                    <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>

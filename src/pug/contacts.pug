@@ -14,34 +14,10 @@ html(lang='ru')
             <link rel="stylesheet" href="css/style.css"> 
         title Контакты
     body(data-variant='contacts')
-        header
-            .header__icon-menu_mobile
-                svg(xmlns='http://www.w3.org/2000/svg' width='30' height='20' viewBox='0 0 30 20' fill='none')
-                    path(d='M29 17H1C0.447715 17 0 17.4477 0 18V19C0 19.5523 0.447716 20 1 20H29C29.5523 20 30 19.5523 30 19V18C30 17.4477 29.5523 17 29 17Z' fill='#ffffff')
-                    path(d='M29 8.31982H1.13135C0.579063 8.31982 0.131348 8.76754 0.131348 9.31982V11.0624C0.131348 11.6147 0.579063 12.0624 1.13135 12.0624H29C29.5523 12.0624 30 11.6147 30 11.0624V9.31982C30 8.76754 29.5523 8.31982 29 8.31982Z' fill='#ffffff')
-                    path(d='M29.0001 0H1.1311C0.578819 0 0.131104 0.447716 0.131104 1V2.74255C0.131104 3.29484 0.578819 3.74255 1.1311 3.74255H29.0001C29.5524 3.74255 30.0001 3.29484 30.0001 2.74255V1C30.0001 0.447715 29.5524 0 29.0001 0Z' fill='#ffffff')
-            .header-wrapper
-                ul.header__list(data-variant='catalog')
-                    li.header__item
-                        a.header__link(href='about.html') О БРЕНДЕ
-                    li.header__item
-                        a.header__link(href='about-tea.html') БОЛЬШЕ О ЧАЕ
-                    .header__logo
-                        a(href='index.html')
-                            img.header__logo--img(src='../img/icons/logo.svg' alt='logo')
-                    li.header__item
-                        a.header__link(href='catalog.html') КАТАЛОГ
-                    li.header__item
-                        a.header__link(href='contacts.html') КОНТАКТЫ
-                    li.search-item
-                        .search__container
-                            input#toggle(type='checkbox' name='' value='')
-                            label(for='toggle')
-                            .box
-                                .input__group
-                                    input.input__field(type='text' name='search' placeholder='Что вы ищете ?')
-                                    button.search__submit(type='button') ПОИСК
-        main.main
+        
+        include ./modules/header.pug
+
+        main.main.contacts__main
             .breadcrumbs__container
                 ul.breadcrumbs__list
                     li.breadcrumbs__item
@@ -105,12 +81,12 @@ html(lang='ru')
                                                         .invalid-feedback
                                                     .input__section
                                                         label.reg-label(for='email') Ваш город
-                                                        select#email.registry__input--field.select--city.form-control(type='' name='email' required='')
-                                                            option(value='' disabled='' selected='' hidden='') Выберите город из списка
-                                                            option(value='Moscow') Москва
-                                                            option(value='Vlladimir') Владимир
-                                                            option(value='Suzdal') Суздаль
-                                                            option(value='Perm') Пермь
+                                                        input#email.registry__input--field.select--city.form-control(type='text' name='city' value="Укажите город" required)
+                                                            //- option(value='' disabled='' selected='' hidden='') Укажите
+                                                            //- option(value='Moscow') Москва
+                                                            //- option(value='Vlladimir') Владимир
+                                                            //- option(value='Suzdal') Суздаль
+                                                            //- option(value='Perm') Пермь
                                                         .invalid-feedback
                                                 // //
                                                 .input__section.input__section--text.card3
@@ -125,6 +101,44 @@ html(lang='ru')
                                                         label.form-check-label(for='invalidCheck')
                                                             p
                                                                 | Я согласен на обработку персональных данных и с публичной офертой
+
+                                    .contacts__wr-form-sended-desc 
+                                        .contacts__wr-form-sended-content
+                                            .contacts__wr-form-sended-close
+                                                .contacts__form-sended-close-icon 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                                                        <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                        <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                    </svg>
+                                            .contacts__wr-form-sended-icon 
+                                                .contacts__form-sended-icon
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" fill="none">
+                                                        <g clip-path="url(#clip0_2391_3844)">
+                                                            <path d="M65 130C29.1015 130 0 100.899 0 65C0 29.1015 29.1015 0 65 0C100.899 0 130 29.1015 130 65C130 100.899 100.899 130 65 130ZM65 123.5C97.3087 123.5 123.5 97.3087 123.5 65C123.5 32.6913 97.3087 6.5 65 6.5C32.6913 6.5 6.5 32.6913 6.5 65C6.5 97.3087 32.6913 123.5 65 123.5ZM85.4519 46.4519C86.7211 45.1827 88.7789 45.1827 90.0481 46.4519C91.3173 47.7211 91.3173 49.7789 90.0481 51.0481L57.5481 83.5481C56.2789 84.8173 54.2211 84.8173 52.9519 83.5481L39.9519 70.5481C38.6827 69.2789 38.6827 67.2211 39.9519 65.9519C41.2211 64.6827 43.2789 64.6827 44.5481 65.9519L55.25 76.6538L85.4519 46.4519Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2391_3844">
+                                                                <rect width="130" height="130" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+
+                                            .contacts__wr-form-sended-text 
+                                                span Ваша заявка успешно
+                                                span отправлена
+                                            .contacts__wr-form-sended-start.contacts__wr-form-sended-start-1 
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 36" fill="none">
+                                                    <path d="M0 18.035C9.37476 18.035 17.033 9.99612 17.033 0C17.033 9.99612 24.6252 18.035 34 18.035C24.6252 18.035 17.033 26.0738 17.033 36C17.033 26.0738 9.37476 18.035 0 18.035Z" fill="#FEFEFE"/>
+                                                </svg>
+                                            .contacts__wr-form-sended-start.contacts__wr-form-sended-start-2
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 36" fill="none">
+                                                    <path d="M0 18.035C9.37476 18.035 17.033 9.99612 17.033 0C17.033 9.99612 24.6252 18.035 34 18.035C24.6252 18.035 17.033 26.0738 17.033 36C17.033 26.0738 9.37476 18.035 0 18.035Z" fill="#FEFEFE"/>
+                                                </svg>
+                                            .contacts__wr-form-sended-start.contacts__wr-form-sended-start-3
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 36" fill="none">
+                                                    <path d="M0 18.035C9.37476 18.035 17.033 9.99612 17.033 0C17.033 9.99612 24.6252 18.035 34 18.035C24.6252 18.035 17.033 26.0738 17.033 36C17.033 26.0738 9.37476 18.035 0 18.035Z" fill="#FEFEFE"/>
+                                                </svg>
+
                             .card--container.card--container_desctop
                                 .contacts__card.contacts__card--business
                                     .contacts-flover--right
@@ -216,7 +230,10 @@ html(lang='ru')
 
                                     .contacts-flover--right.contacts-flover--right_mobile
 
-                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-form.contacts__wr-card-address-item_active
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-form
+                                    .contacts-flover--left.contacts-flover--left-form_mobile
+                                        img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
+
                                     .contacts__wr-card-address-header 
                                         .contacts__wr-card-address-title
                                             h2 Чай для бизнеса
@@ -261,11 +278,56 @@ html(lang='ru')
                                                 label.contacts__address-form-checkbox-label(type="text" for="contacts__address-form-checkbox")
                                                     | Я согласен на обработку персональных данных и с публичной офертой
                                             .contacts__wr-address-form-text
-                                                textarea.contacts__address-form-text(name="text" rows="10") Текст
+                                                textarea.contacts__address-form-text(name="text" rows="7") Текст
                                             .contacts__wr-address-button-submit
                                                 button.contacts__address-button-submit(type="button")
                                                     span.contacts__address-button-submit_deco ОТПРАВИТЬ
-                                                    
+
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-sended.contacts__wr-card-address-item_active    
+                                    .contacts-flover--left.contacts-flover--left-sended_mobile
+                                        img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
+
+                                    .contacts__wr-card-address-header 
+                                        .contacts__wr-card-address-title
+                                            h2 Чай для бизнеса
+                                        .contacts__wr-card-address-title
+                                            h2 Чай для дома    
+
+                                    .contacts__wr-form-sended-content
+                                            .contacts__wr-form-sended-close
+                                                .contacts__form-sended-close-icon 
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
+                                                        <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                        <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                                    </svg>
+                                            .contacts__wr-form-sended-icon 
+                                                .contacts__form-sended-icon
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 130" fill="none">
+                                                        <g clip-path="url(#clip0_2391_3844)">
+                                                            <path d="M65 130C29.1015 130 0 100.899 0 65C0 29.1015 29.1015 0 65 0C100.899 0 130 29.1015 130 65C130 100.899 100.899 130 65 130ZM65 123.5C97.3087 123.5 123.5 97.3087 123.5 65C123.5 32.6913 97.3087 6.5 65 6.5C32.6913 6.5 6.5 32.6913 6.5 65C6.5 97.3087 32.6913 123.5 65 123.5ZM85.4519 46.4519C86.7211 45.1827 88.7789 45.1827 90.0481 46.4519C91.3173 47.7211 91.3173 49.7789 90.0481 51.0481L57.5481 83.5481C56.2789 84.8173 54.2211 84.8173 52.9519 83.5481L39.9519 70.5481C38.6827 69.2789 38.6827 67.2211 39.9519 65.9519C41.2211 64.6827 43.2789 64.6827 44.5481 65.9519L55.25 76.6538L85.4519 46.4519Z" fill="white"/>
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2391_3844">
+                                                                <rect width="130" height="130" fill="white"/>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+
+                                            .contacts__wr-form-sended-text 
+                                                span Ваша заявка успешно
+                                                span отправлена
+                                            .contacts__wr-form-sended-start.contacts__wr-form-sended-start-1 
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 36" fill="none">
+                                                    <path d="M0 18.035C9.37476 18.035 17.033 9.99612 17.033 0C17.033 9.99612 24.6252 18.035 34 18.035C24.6252 18.035 17.033 26.0738 17.033 36C17.033 26.0738 9.37476 18.035 0 18.035Z" fill="#FEFEFE"/>
+                                                </svg>
+                                            .contacts__wr-form-sended-start.contacts__wr-form-sended-start-2
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 36" fill="none">
+                                                    <path d="M0 18.035C9.37476 18.035 17.033 9.99612 17.033 0C17.033 9.99612 24.6252 18.035 34 18.035C24.6252 18.035 17.033 26.0738 17.033 36C17.033 26.0738 9.37476 18.035 0 18.035Z" fill="#FEFEFE"/>
+                                                </svg>
+                                            .contacts__wr-form-sended-start.contacts__wr-form-sended-start-3
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 36" fill="none">
+                                                    <path d="M0 18.035C9.37476 18.035 17.033 9.99612 17.033 0C17.033 9.99612 24.6252 18.035 34 18.035C24.6252 18.035 17.033 26.0738 17.033 36C17.033 26.0738 9.37476 18.035 0 18.035Z" fill="#FEFEFE"/>
+                                                </svg>  
 
 
                         .card--container.card--container-map

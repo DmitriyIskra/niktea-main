@@ -31,7 +31,7 @@ html(lang='ru')
                             .contacts-flover--left.contacts-flover--left_desctop
                                         img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
                             .card--container.card--container_desctop
-                                .contacts__card.card--container--left
+                                .contacts__card.card--container--left(data-type="desctop")
                                     
                                     .contacts__card--back
                                     h1 Чай для бизнеса
@@ -77,11 +77,11 @@ html(lang='ru')
                                                         .invalid-feedback
                                                     .input__section
                                                         label.reg-label(for='email') Ваша электронная почта
-                                                        input#email.registry__input--field.form-control(type='text' name='email' placeholder='e-mail' required='')
+                                                        input#email.registry__input--field.form-control(type='text' name='email' placeholder='email' required='')
                                                         .invalid-feedback
                                                     .input__section
-                                                        label.reg-label(for='email') Ваш город
-                                                        input#email.registry__input--field.select--city.form-control(type='text' name='city' value="Укажите город" required)
+                                                        label.reg-label(for='city') Ваш город
+                                                        input#city.registry__input--field.select--city.form-control(type='text' name='city' placeholder="Укажите город" required)
                                                             //- option(value='' disabled='' selected='' hidden='') Укажите
                                                             //- option(value='Moscow') Москва
                                                             //- option(value='Vlladimir') Владимир
@@ -93,11 +93,11 @@ html(lang='ru')
                                                     textarea#text.registry__input--field.registry__input--text.form-control(type='text' name='text') Текст
                                                     .invalid-feedback
                                                 .button-w.card4
-                                                    button.button--submit ОТПРАВИТЬ
+                                                    button.button--submit(type="button") ОТПРАВИТЬ
                                                 // //
                                                 .card1
                                                     .form-check
-                                                        input#invalidCheck.form-check-input(type='checkbox' value='' required='')
+                                                        input#invalidCheck.form-check-input(type='checkbox' name="checkpolicy" value='' required='')
                                                         label.form-check-label(for='invalidCheck')
                                                             p
                                                                 | Я согласен на обработку персональных данных и с публичной офертой
@@ -163,15 +163,15 @@ html(lang='ru')
                                     .buttons__row
                                         a.contatcts__buton(href='https://oasis-msk.ru/') ПЕРЕЙТИ НА САЙТ
 
-                            ul.contacts__cards-address-list_mobile
-                                li.contacts__wr-card-address-item.contacts__wr-card-address-item_left(data-type="left")
+                            ul.contacts__cards-address-list_mobile(data-type="mobile")
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item_left.contacts__wr-card-address-item_active(data-type="left")
                                     .contacts-flover--left.contacts-flover--left_mobile
                                         img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
                                     
                                     header.contacts__wr-card-address-header 
                                             .contacts__wr-card-address-title.contacts__wr-card-address-title_active
                                                 h2 Чай для бизнеса
-                                            .contacts__wr-card-address-title
+                                            .contacts__wr-card-address-title(data-open='right')
                                                 h2 Чай для дома
 
                                     .contacts__wr-card-address-text 
@@ -194,7 +194,7 @@ html(lang='ru')
                                             a.contacts__link(href='https://alephtrade.ru/') ПЕРЕЙТИ НА САЙТ
 
                                         .contacts__button-callback
-                                            .contacts__wr-icon-button-callback
+                                            .contacts__wr-icon-button-callback(data-open="form")
                                                 <svg class="contacts__icon-button-callback" class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70" fill="none">
                                                     <path d="M24.1543 27.9233L35.3081 35.731L46.462 27.9233" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                     <path d="M13 45.7692V23.4615C13 20.9975 14.9975 19 17.4615 19H53.1538C55.618 19 57.6154 20.9975 57.6154 23.4615V45.7692C57.6154 48.2333 55.618 50.2308 53.1538 50.2308H17.4615C14.9975 50.2308 13 48.2333 13 45.7692Z" stroke="white" stroke-width="3"/>
@@ -204,9 +204,9 @@ html(lang='ru')
                                     
                                 li.contacts__wr-card-address-item.contacts__wr-card-address-item_right(data-type="right")
                                     .contacts__wr-card-address-header 
-                                        .contacts__wr-card-address-title
+                                        .contacts__wr-card-address-title(data-open="left")
                                             h2 Чай для бизнеса
-                                        .contacts__wr-card-address-title
+                                        .contacts__wr-card-address-title.contacts__wr-card-address-title_active
                                             h2 Чай для дома
                                     
                                     .contacts__wr-card-address-text 
@@ -230,20 +230,20 @@ html(lang='ru')
 
                                     .contacts-flover--right.contacts-flover--right_mobile
 
-                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-form
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-form(data-type='form')
                                     .contacts-flover--left.contacts-flover--left-form_mobile
                                         img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
 
                                     .contacts__wr-card-address-header 
-                                        .contacts__wr-card-address-title
+                                        .contacts__wr-card-address-title(data-open="left")
                                             h2 Чай для бизнеса
-                                        .contacts__wr-card-address-title
+                                        .contacts__wr-card-address-title(data-open="right")
                                             h2 Чай для дома
 
 
                                     .contacts__wr-card-address-form 
                                         .contacts__wr-card-address-form-close
-                                            <svg class="contacts__wr-card-address-close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
+                                            <svg class="contacts__wr-card-address-close-icon" data-open="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" fill="none">
                                                 <g clip-path="url(#clip0_2295_1339)">
                                                     <path d="M1.35352 1.35303L20.487 20.4865" stroke="white" stroke-width="3" stroke-linecap="round"/>
                                                     <path d="M20.2947 1.35303L1.35352 20.2942" stroke="white" stroke-width="3" stroke-linecap="round"/>
@@ -268,7 +268,7 @@ html(lang='ru')
                                                 li.contacts__wr-address-input-item
                                                     label.contacts__address-form-label(type="text" for="#contacts__address-form-mail")
                                                         | Ваша электронная почта
-                                                    input#contacts__address-form-mail.contacts__address-form-input(name="mail" value="e-mail")
+                                                    input#contacts__address-form-mail.contacts__address-form-input(name="email" value="e-mail")
                                                 li.contacts__wr-address-input-item
                                                     label.contacts__address-form-label(type="text" for="#contacts__address-form-city")
                                                         | Ваш город
@@ -280,22 +280,22 @@ html(lang='ru')
                                             .contacts__wr-address-form-text
                                                 textarea.contacts__address-form-text(name="text" rows="7") Текст
                                             .contacts__wr-address-button-submit
-                                                button.contacts__address-button-submit(type="button")
+                                                button.contacts__address-button-submit(type="button" data-open="success")
                                                     span.contacts__address-button-submit_deco ОТПРАВИТЬ
 
-                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-sended.contacts__wr-card-address-item_active    
+                                li.contacts__wr-card-address-item.contacts__wr-card-address-item-sended(data-type="success")   
                                     .contacts-flover--left.contacts-flover--left-sended_mobile
                                         img.contacts-flover--left-img(src='../img/icons/cont-tea-left.png' alt='' )
 
                                     .contacts__wr-card-address-header 
-                                        .contacts__wr-card-address-title
+                                        .contacts__wr-card-address-title(data-open="left")
                                             h2 Чай для бизнеса
-                                        .contacts__wr-card-address-title
+                                        .contacts__wr-card-address-title(data-open="right")
                                             h2 Чай для дома    
 
                                     .contacts__wr-form-sended-content
                                             .contacts__wr-form-sended-close
-                                                .contacts__form-sended-close-icon 
+                                                .contacts__form-sended-close-icon(data-open="left")
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="none">
                                                         <path d="M1.76465 1.76465L26.7214 26.7214" stroke="white" stroke-width="3" stroke-linecap="round"/>
                                                         <path d="M26.4705 1.76465L1.76465 26.4705" stroke="white" stroke-width="3" stroke-linecap="round"/>

@@ -907,7 +907,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
 
 @media (max-width: 768px) {
   .contacts-flover--left-form_mobile {
-    top: -3.5%;
+    top: -3.9%;
     left: -5.1%;
 
     display: block;
@@ -1003,6 +1003,11 @@ ymaps.ymaps-2-1-79-copyright__wrap {
     border: 0;
     outline: 0;
   }
+
+  .contacts__form-input_no-valid {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1045,7 +1050,21 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 
   .contacts__address-form-checkbox:checked + .contacts__address-form-checkbox-label::before {
-    background: black;
+    border: 1px solid #fff;
+    background: #EBFFFA;
+    background-image: url('../img/icons/check-form-modile.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+
+  .contacts__form-input_no-valid + .contacts__address-form-checkbox-label::before {
+    border: 1px solid #ff0000;
+    background: #FFA1A1;
+  } 
+
+  .contacts__form-input_no-valid + .contacts__address-form-checkbox-label {
+    color: #ff0000;
   }
 }
 
@@ -1057,12 +1076,18 @@ ymaps.ymaps-2-1-79-copyright__wrap {
 
 @media (max-width: 768px) {
   .contacts__address-form-text {
-    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 53.33vw;
+    min-height: 53.33vw;
     padding: 4.27vw;
 
     border-radius: 6.67vw;
     border: 0;
     background: #EBFFFA;
+    background-image: none;
+
+    resize: none;
   }
 
   .contacts__address-form-text:focus {

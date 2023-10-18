@@ -1240,24 +1240,47 @@ height: 45px; */
 }
 
 .brand__description {
-  padding-right: 3vw;
   text-align: center;
 }
 
 .brand__description--img {
-  transform: translateY(8%);
+  height: 31.77vw;
+  width: 44.27vw;
   margin-left: auto;
   margin-right: auto;
+
+  background: no-repeat url(../img/icons/about-brand.png);
+  background-size: contain;
+  background-position: center;
+
+  transform: translateY(8%);
+}
+
+.about-brand__wr-text {
+  padding-right: 3vw;
 }
 
 .brand__description--text {
-  text-align: left;
-  color: #fff;
+  display: flex;
+  gap: 1.67vw;
+
   font-family: Blogger Sans;
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 200;
-  line-height: 1.875;
+  text-align: left;
+
+  color: #fff;
+
+  flex-direction: column;
+}
+
+.about-brand__wr-text-short {
+  display: none;
+}
+
+.brand__description--text p {
+  margin: 0;
 }
 
 .breadcrumbs__container {
@@ -1349,7 +1372,7 @@ ul.breadcrumbs__item li + li:before {
     justify-content: space-between;
     align-items: center;
   }
-
+ 
   .header-wrapper--main_no-index {
     display: flex;
     height: 16vw !important;
@@ -1453,25 +1476,7 @@ ul.breadcrumbs__item li + li:before {
   }
 }
 
-@media (max-width: 768px) {
-  
-}
 
-@media (max-width: 768px) {
-  
-}
-
-@media (max-width: 768px) {
-  
-}
-
-@media (max-width: 768px) {
-  
-}
-
-@media (max-width: 768px) {
-  
-}
 
 
 
@@ -1646,6 +1651,77 @@ ul.breadcrumbs__item li + li:before {
   .recepies .cards {
     margin-top: 5.87vw;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand__description--img {
+    width: 91.20vw;
+    height: 67.73vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand__description--text {
+    padding-left: 5.33vw;
+    padding-right: 5.33vw;
+    gap: 5.33vw;
+  }
+
+  .brand__description--text p {
+    height: 100%;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-brand__wr-text-short {
+    display: flex;
+  }
+
+  .about-brand__wr-text-short_unactive {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand__description--text_full {
+    display: none;
+
+    overflow: hidden;
+  }
+
+  .brand__description--text_full_active {
+    display: flex;
+
+    transition: all 0.5s linear;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-brand__text-short {
+    display: flex;
+    gap: 5.33vw;;
+
+    flex-direction: column;
+  }
+
+  .about-brand__text-short p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-brand__read-more {
+    margin-top: 5vw;
   }
 }
 

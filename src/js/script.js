@@ -83,8 +83,8 @@ if(document.querySelector('.mySwiper') || document.querySelector('.brandSlider')
     }
   });
   
-
-  var swiper2 = new Swiper(".brandSlider", {    
+ 
+  var swiper2 = new Swiper("brandSlider", {    
     grabCursor: true,
     keyboard: true,       
     centeredSlides: true,

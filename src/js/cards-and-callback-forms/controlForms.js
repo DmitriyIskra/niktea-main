@@ -16,8 +16,6 @@ export default class ControlForms {
             lazy: false, 
             placeholderChar: '_',           
         })
-
-        // this.draw.formPhoneMobile.value = '+7 (___) ___-__-__';
     }
 
     registerEvents() {

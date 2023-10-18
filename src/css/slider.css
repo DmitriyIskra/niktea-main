@@ -21,12 +21,12 @@
 }
 
 
-.swiper {
+/* .swiper {
   /* width: 95%; */
-  width: 75vw;
+  /* width: 75vw;
   max-width: 100%;
   overflow: visible;
-  overflow: hidden;
+  overflow: hidden; */
   /* position: absolute;
   top: 50%;
   left: 50%;
@@ -35,29 +35,29 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%); */
-}
+/* } */ 
 
 
 @media (max-width: 540px) {
-  .swiper {
+  /* .swiper {
     overflow: hidden;
-  }
+  } */
 }
 
-.swiper-slide {  
+/* .swiper-slide {  
   width: 100px;
   height: 100px;
   text-align: center;
-}
+} */
 
-.swiper-slide::after {
+/* .swiper-slide::after {
   position: absolute;
   content: "";
   inset: 0;
-  width: 100%;
+  width: 100%; */
   /* aspect-ratio: 1/1; */
-}
-.swiper-slide-active::after {
+/* } */
+/* .swiper-slide-active::after {
   background: none;
 }
 .swiper-slide > div {
@@ -68,7 +68,7 @@
 .swiper-slide-active div {
   display: block;
   opacity: 1;
-}
+} */
 
 /* .swiper-slide h2 {
   font-size: 1.2rem;
@@ -126,7 +126,7 @@
 
 
 
- .slider-button-next, .slider-button-prev {
+ /* .slider-button-next, .slider-button-prev {
   outline: none;
  }
 
@@ -136,42 +136,42 @@
 
 .slider-button-prev:after {
   content: url(../img/icons/lefarrow_main-slide.svg)
-}
+} */
 
 
 
-.slider-button-next, .slider-button-prev {
+/* .slider-button-next, .slider-button-prev {
   filter: none;
   -webkit-filter: none;
   transition: filter 0.3s ease; 
-}
+} */
 
-.slider-button-next:hover, .slider-button-prev:hover {
+/* .slider-button-next:hover, .slider-button-prev:hover {
   filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.7));
   -webkit-filter: drop-shadow(1px 1px 3px rgb(255, 255, 255));
   transition: filter 0.3s ease; 
-}
+} */
 
 
-.slider-slide-active h2::after {
+/* .slider-slide-active h2::after {
   animation: line 0.5s linear forwards;
-}
+} */
 
 
-.slider-slide img {
+/* .slider-slide img { */
   /* display: block;
   width: 100%;
   object-fit: cover; */
   /* box-shadow: 0px 3px 17px rgb(0 0 0 / 25%); */
   /* border-radius: 50%; */
   /* aspect-ratio: 3/4; */
-}
+/* } */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .swiper-slide h2 {
     font-size: 2rem;
   }
-}
+} */
 
 .catalog__slide {
     position: relative;

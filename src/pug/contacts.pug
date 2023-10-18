@@ -4,26 +4,15 @@ html(lang='ru')
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
         <script src="https://api-maps.yandex.ru/2.1.79/?apikey=ваш API-ключ&lang=ru_RU">	</script>
-        // <link rel="stylesheet" href="css/bootstrap.css">
-        // <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        //
-            <link rel="stylesheet" href="css/catalog.css">
-            <link rel="stylesheet" href="css/contacts.css">
-            <link rel="stylesheet" href="css/search.css">
-            <link rel="stylesheet" href="css/recept.css">
-            <link rel="stylesheet" href="css/style.css"> 
         title Контакты
     body(data-variant='contacts')
         
         include ./modules/header.pug
 
         main.main.contacts__main
-            .breadcrumbs__container
-                ul.breadcrumbs__list
-                    li.breadcrumbs__item
-                        a.breadcrumbs__item__link(href='index.html') Главная
-                    li.breadcrumbs__item
-                        a.breadcrumbs__item__link(href='catalog.html')  Контакты 
+
+            include ./modules/bread-crumbs
+            
             .contacts
                 .catalog__container
                     .cards__container

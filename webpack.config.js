@@ -118,6 +118,14 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/about-brand.pug',
+      filename: './about-brand.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
     
     
     

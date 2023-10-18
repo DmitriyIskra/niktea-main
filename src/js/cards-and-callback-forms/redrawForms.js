@@ -36,6 +36,7 @@ export default class RedrawForms {
     }
 
     // DESCTOP
+    
     getDataDesc() {
         const result = this.validationFormDesc();
 

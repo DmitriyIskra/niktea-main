@@ -1,0 +1,144 @@
+.about-brand__wr-slider {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-style: normal;
+    font-weight: 400;
+ 
+    list-style-type: none;
+}
+
+.about-brand__wr-slider a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+
+/* ------------------------------------------- */
+
+.about-brand__wr-slider {
+    display: flex;
+    width: 84.17vw;
+    min-width: 0;
+    margin-top: 16.2vw;
+    margin-bottom: 9.06vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-brand__button-prev-icon {
+    width: 4.17vw;
+    height: 4.17vw;
+
+    cursor: pointer;
+
+}
+
+.about-brand__swiper {
+    width: 80%;
+    min-width: 0;
+}
+
+div.swiper-slide {
+    height: 21.88vw;
+}
+
+.about-brand__slide-1 {
+    background: no-repeat url(../img/content/brand-slide1.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.about-brand__slide-2 {
+    background: no-repeat url(../img/content/brand-slide2.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.about-brand__slide-3 {
+    background: no-repeat url(../img/content/brand-slide3.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.about-brand__slide-4 {
+    background: no-repeat url(../img/content/brand-slide4.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.about-brand__slide-5 {
+    background: no-repeat url(../img/content/brand-slide5.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.about-brand__button-next-icon {
+    width: 4.17vw;
+    height: 4.17vw;
+
+    cursor: pointer;
+    z-index: 300;
+}
+
+/* src/img/icons/rightarrow-main-slide.svg */
+@media (max-width: 768px) {
+    .about-brand__wr-slider {
+        width: 100%;
+        margin-top: 16.53vw;
+        margin-left: 0;
+        margin-right: 0;
+
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-brand__swiper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    div.swiper-slide {
+        height: 62vw;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .swiper-pagination {
+        position: static;
+
+        display: block;
+    }
+
+    .swiper-pagination span {
+        border: 1px solid #ffffff !important;
+        background: none;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #fff !important;
+    }
+} */
+
+@media (max-width: 768px) {
+    .about-brand__button-icon {
+        display: none;
+    }
+}

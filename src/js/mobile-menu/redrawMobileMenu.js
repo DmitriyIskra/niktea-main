@@ -7,8 +7,8 @@ export default class RedrawMobileMenu {
         this.duration = 0.2;
 
         // указывается в методе анимации открытия
-        this.paddingTop = 3.2;
-        this.paddingBottom = 3.2;
+        this.paddingTop = 4.8;
+        // this.paddingBottom = 3.2;
     }
 
     openMenu() {
@@ -30,18 +30,19 @@ export default class RedrawMobileMenu {
     }
 
     animateOpenMobileMenu() {
-        const heightChild = this.menu.children[0].offsetHeight;
-        const heightInVw = heightChild / innerWidth * 100;
+        const heightChildFirst = this.menu.children[0].offsetHeight;
+        const heightChildSecond = this.menu.children[1].offsetHeight;
+        const heightInVw = ((heightChildFirst + heightChildSecond) / innerWidth) * 100;
         this.menu.style.paddingTop = `${this.paddingTop}vw`;
-        this.menu.style.paddingBottom = `${this.paddingBottom}vw`;
+        // this.menu.style.paddingBottom = `${this.paddingBottom}vw`;
 
-        const heightMenu = heightInVw + this.paddingTop + this.paddingBottom;
+        const heightMenu = heightInVw + this.paddingTop; // + this.paddingBottom
         this.menu.style.height = `${heightMenu}vw`;
     }
 
     animateCloseMobileMenu() {
         this.menu.style.paddingTop = `0`;
-        this.menu.style.paddingBottom = `0`;
+        // this.menu.style.paddingBottom = `0`;
         this.menu.style.height = `0`;
     }
 }

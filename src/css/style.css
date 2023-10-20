@@ -145,6 +145,10 @@ body[data-variant="about-tea"] {
   display: none;
 }
 
+.header__slider-mobile {
+  display: none;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -791,27 +795,48 @@ height: 45px; */
   height: 0;
   padding-top: 0;
   padding-bottom: 0;
-  padding-right: 5.33vw;
+  padding-right: 0;
 
-  background: #97F8E4;
-
-  justify-content: space-between;
+  background: #01A57B;;
   
   overflow: hidden;
-  z-index: 20;
+  z-index: 500;
 }
 
 .header__wr-mobile-menu_active {
   display: flex;
+
+  flex-direction: column;
+}
+
+.header__mobile-menu-close {
+  height: 8vw;
+  width: 100%;
+  padding-left: 5.07vw;
+
+  align-self: flex-start;
+}
+
+.header__mobile-menu-close-icon {
+  width: 8vw;
 }
 
 .header__mobile-menu-list {
   display: flex;
   height: fit-content;
   margin-bottom: 0;
-  gap: 6.67vw;
+  padding: 0;
+  gap: 1.87vw;
 
   flex-direction: column;
+}
+
+.header__mobile-menu-item {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  padding-left: 5.07vw;
+
+  border-bottom: 1px solid #E0FDF8;
 }
 
 .header__mobile-menu-link {
@@ -821,12 +846,7 @@ height: 45px; */
   color: #007653;
 }
 
-.header__mobile-menu-close {
-  height: 8vw;
-  width: 8vw;
 
-  align-self: flex-start;
-}
 
 /*------------------- КОНЕЦ МОБИЛЬНОЕ МЕНЮ ----------------------------*/
 
@@ -1362,10 +1382,18 @@ ul.breadcrumbs__item li + li:before {
 }
 
 @media(max-width: 768px) {
+  .header-index {
+    position: relative;
+    top: -1px;
+  }
+}
+
+@media(max-width: 768px) {
   .header-wrapper--main {
     display: flex;
     height: 16vw !important;
-    padding-left: 2vw;
+    padding-left: 5.33vw;
+    padding-right: 5.33vw;
     padding-top: 1vw;
     margin-bottom: -15.6458vw;
 
@@ -1376,7 +1404,8 @@ ul.breadcrumbs__item li + li:before {
   .header-wrapper--main_no-index {
     display: flex;
     height: 16vw !important;
-    padding-left: 2vw;
+    padding-left: 5.33vw;
+    padding-right: 5.33vw;
 
     justify-content: space-between;
     align-items: center;
@@ -1395,7 +1424,7 @@ ul.breadcrumbs__item li + li:before {
 
     width: 57.5%;
     padding-left: 0;
-    padding-right: 2vw;
+    padding-right: 0;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -1433,13 +1462,17 @@ ul.breadcrumbs__item li + li:before {
   .header__logo--img {
     height: 13.33vw;
     width: 13.33vw;
+
+    background: no-repeat url(../img/icons/logo-mobile.svg);
+    background-size: contain;
+    background-position: center;
   }
 }
 
 @media(max-width: 768px) {
   .search-item {
     display: flex;
-    width: auto;
+    width: 7.5vw;
     height: 38px;
     padding-left: 0;
     padding-right: 0;
@@ -1453,18 +1486,20 @@ ul.breadcrumbs__item li + li:before {
 @media(max-width: 768px) {
   .search__container {
     align-items: center;
+    width: 100%;
   }
 }
 
 @media(max-width: 768px) {
   .search__container label {
-    height: 7vw;
+    height: 9vw;
+    width: 100%;
   }
 
   .header-wrapper--main #toggle + label:after {
     display: inline-block;
-    height: 7vw !important;
-    width: 7vw;
+    height: 100% !important;
+    width: 100%;
     padding: 0;
   }
 }
@@ -1474,6 +1509,53 @@ ul.breadcrumbs__item li + li:before {
     height: 100%;
     width: 14.3vw;
   }
+}
+
+@media (max-width: 768px) {
+  .header-slider-desctop {
+    display: none;
+  }
+
+  .header__slider-mobile {
+    position: relative;
+
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .fl-row {
+    z-index: 200;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand__slide-image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .main__slider--frame {
+    z-index: 98;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
+}
+
+@media (max-width: 768px) {
+  
 }
 
 
@@ -1722,6 +1804,8 @@ ul.breadcrumbs__item li + li:before {
 @media (max-width: 768px) {
   .about-brand__read-more {
     margin-top: 5vw;
+
+    text-align: center;
   }
 }
 
@@ -1818,7 +1902,7 @@ ul.breadcrumbs__item li + li:before {
   .copyright {
     display: flex;
     height: 10.67vw;
-    margin-top: 13.07vw;
+    margin-top: 1.07vw;
 
     font-family: Blogger Sans;
     font-size: 3.20vw;

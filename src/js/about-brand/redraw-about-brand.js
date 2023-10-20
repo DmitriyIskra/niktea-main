@@ -22,14 +22,12 @@ export default class RedrawAboutBrand {
                 clickable: true
             },
             initialSlide: 1,
-            spaceBetween: 69,
-            slidesPerView: 3,
             centeredSlides: true,
             loop: true,
             breakpoints: {
                 1280: {
                     slidesPerView: 3,
-                    spaceBetween: 69
+                    spaceBetween: 50
                 },
                 375: {
                     slidesPerView: 1.5,

@@ -698,25 +698,25 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 
   .contacts__wr-card-address-item_left {
-    background: no-repeat url(../img/contacts-fon-cards-address.png);
+    background: no-repeat url(../img/contacts-fon-cards-address.webp);
     background-size: 100% 100%;
     background-position: center;
   }
 
   .contacts__wr-card-address-item_right {
-    background: no-repeat url(../img/contacts-fon-cards-addres2.png);
+    background: no-repeat url(../img/contacts-fon-cards-addres2.webp);
     background-size: 100% 100%;
     background-position: center;
   }
 
   .contacts__wr-card-address-item-form {
-    background: no-repeat url(../img/contacts-fon-cards-address-form.png);
+    background: no-repeat url(../img/contacts-fon-cards-address-form.webp);
     background-size: 100% 100%;
     background-position: center;
   }
 
   .contacts__wr-card-address-item-sended {
-    background: no-repeat url(../img/contacts-fon-cards-sended.png);
+    background: no-repeat url(../img/contacts-fon-cards-sended.webp);
     background-size: 100% 100%;
     background-position: center;
   }
@@ -806,9 +806,20 @@ ymaps.ymaps-2-1-79-copyright__wrap {
     font-style: normal;
     font-weight: 400;
 
-    color: #FFF;
+    color: #ffffff;
 
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts__card-address-tel-link {
+    font-family: Blogger Sans;
+    font-size: 4.80vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #ffffff;
   }
 }
 

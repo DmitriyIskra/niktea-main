@@ -15,6 +15,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 import IMask from 'imask';
+import ControllHeadSlider from "./header-slider/controllHeadSlider";
+import RedrawHeadSlider from "./header-slider/redrawHeadSlider";
 
 const mobileMenu = document.querySelector('.header__wr-mobile-menu');
 
@@ -51,3 +53,16 @@ if(sliderAboutBrand) {
     const controllAboutBrand = new ControllAboutBrand(redrawAboutBrand);
     controllAboutBrand.init();
 }
+
+
+// СЛАЙДЕР ГЛАВНАЯ СТРАНИЦА ( МОБИЛЬНАЯ ВЕРСИЯ )
+
+const indexSlider = document.querySelector('.header-index__swiper');
+
+if(indexSlider) {
+    const redrawHeadSlider = new RedrawHeadSlider(indexSlider, Swiper, Pagination);
+    const controllHeadSlider = new ControllHeadSlider(redrawHeadSlider);
+    controllHeadSlider.init();
+}
+
+

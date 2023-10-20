@@ -72,7 +72,7 @@
 }
 
 .recept__card--img {    
-    height: auto;
+    min-height: 90%;
     /* width: 90%; */
     width: 75%;
     padding-top: 10%;
@@ -86,17 +86,22 @@
 .recept__description {
     position: absolute;
     top: 82%;
-    left: 5%;    
+    left: 5%;  
+
     width: 90%;
     height: 40%;
     padding-left: 15px;
     padding-right: 15px;
-    transition: 1s;
-    flex-shrink: 0;
+
     border-radius: 16px;
     background: linear-gradient(180deg, #587cb4f0 54.47%, rgba(43, 81, 107, 0.00) 100%);
     backdrop-filter: blur(3px);
     box-shadow: 0px 0px 0px 0px rgba(8, 43, 34, 0.10), -1px -4px 9px 0px rgba(8, 43, 34, 0.10), -4px -16px 17px 0px rgba(8, 43, 34, 0.09), -9px -37px 23px 0px rgba(8, 43, 34, 0.05), -16px -66px 27px 0px rgba(8, 43, 34, 0.01), -26px -102px 30px 0px rgba(8, 43, 34, 0.00);
+
+    transition: 1s;
+
+    flex-shrink: 0;
+    z-index: 1000;
 }
 
 .recept__description--opened {
@@ -347,6 +352,12 @@
 
 }
 
+@media (max-width: 768px) {
+    .recept__card--img {
+        min-height: 100%;
+    }
+}
+
 @media (max-width: 540px) {
     
 
@@ -406,3 +417,4 @@
         transform: translateY(19vw); /*29%*/
     }
 }
+

@@ -31,7 +31,6 @@
     margin-left: auto;
     margin-right: auto;
 
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -48,7 +47,7 @@
     min-width: 0;
 }
 
-div.swiper-slide {
+div.about-brand__slide {
     height: 21.88vw;
 }
 
@@ -115,7 +114,7 @@ div.swiper-slide {
 }
 
 @media (max-width: 768px) {
-    div.swiper-slide {
+    div.about-brand__slide {
         height: 62vw;
     }
 }

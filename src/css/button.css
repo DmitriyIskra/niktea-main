@@ -1,0 +1,48 @@
+.button__link {
+    display: flex;
+    padding: 2px;
+
+    font-family: Arsenal;
+    font-size: 1.46vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #ffffff;
+    background: linear-gradient(180deg, #00BD8D, #00392D);
+    border-radius: 2.60vw;
+
+    transition: filter 0.3s linear;
+}
+
+.button__link span {
+    display: flex;
+    width: 100%;
+
+    background: #7A78B1;
+    border-radius: 2.60vw;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.button__link:hover {
+    filter: drop-shadow(0 0 5px #ffffff);
+}
+
+
+
+@media(max-width: 768px) {
+    .button__link {
+        font-size: 4.27vw;
+
+        border-radius: 13.33vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .button__link span {
+        
+
+        border-radius: 13.33vw;
+    }
+}

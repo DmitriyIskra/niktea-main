@@ -1,0 +1,438 @@
+
+
+.wrapper-page {
+    display: flex;
+
+    background: no-repeat url(../img/fon-dev.png);
+    background-position: center;
+    background-size: contain;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev__main {
+    position: relative;
+
+    display: flex;
+    width: 100%;
+    padding-top: 8.13vw;
+    padding-bottom: 40.89vw;
+
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.dev__wr-info_out {
+    position: relative;
+
+    width: 59.43vw;
+    padding: 2px;
+
+    background: linear-gradient(180deg, #00BD8D, #00392D);
+    box-shadow: 0px 0px 6px 8px rgba(255, 255, 255, 0.50);
+    border-radius: 2.60vw;
+}
+
+.dev__wr-info_in {
+    display: flex;
+    width: 100%;
+    padding-top: 6.77vw;
+    padding-bottom: 4.06vw;
+
+    background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);
+    border-radius: 2.60vw;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.dev__info-text {
+    width: 90%;
+}
+
+.dev__info-text p {
+    font-family: Arsenal;
+    font-size: 2.60vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+    color: #FFF;
+}
+
+.dev__wr-info-button {
+    display: flex;
+    width: 100%;
+    margin-top: 3.80vw;
+
+    justify-content: center;
+}
+
+.dev__wr-info-button-link {
+    width: 16.77vw;
+    height: 3.65vw;
+}
+
+.dev__wr-info-button-link span {
+    width: 100%;
+}
+
+.dev__fl-transp {
+    background: no-repeat url(../img/flowers/flower-transparent.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.dev__flower {
+    background: no-repeat url(../img/flowers/jasmine.png);
+    background-size: auto 100%;
+    background-position: center;
+}
+
+.dev__star {
+    width: 1.77vw;
+    height: 1.61vw;
+
+    background: no-repeat url(../img/icons/star__.png);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* **  Цветы и звезды слева  ** */
+
+.dev__fl-transp_left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 11.25vw; /*216*/
+    height: 11.25vw;
+
+    transform: translate(-85%, 1.66%);
+}
+
+.dev__fl-left84-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 4.38vw;
+    height: 4.48vw;
+
+    transform: translate(-123%, 36%);
+}
+
+.dev__fl-left84-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 4.38vw;
+    height: 4.48vw;
+
+    transform: translate(132.68%, 72.18%);
+}
+
+.dev__fl-left51 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 2.66vw;
+    height: 2.71vw;
+
+    transform: translate(-246%, 238%);
+}
+
+.dev__fl-star-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(39%, 138%);
+}
+
+
+
+/* **  Цветы и звезды справа  ** */
+
+.dev__fl-transp_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 8.13vw;
+    height: 8.13vw;
+
+    transform: translate(45%, -50%);
+}
+
+.dev__fl-right81-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 4.22vw;
+    height: 4.32vw;
+
+    transform: translate(18%, -100%);
+}
+
+.dev__fl-right81-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 4.22vw;
+    height: 4.32vw;
+
+    transform: translate(213%, -40%);
+}
+
+.dev__fl-right129 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 6.72vw;
+    height: 6.88vw;
+
+    transform: translate(108%, 36%);
+}
+
+.dev__fl-right84 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 4.38vw;
+    height: 4.48vw;
+
+    transform: translate(-24%, -152%);
+}
+
+.dev__fl-star-right_top-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    transform: translate(-322%, -408%);
+}
+
+.dev__fl-star-right_top-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    transform: translate(-188%, -300%);
+}
+
+.dev__fl-star-right_bottom-1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    transform: translate(-277%, -312%);
+}
+
+.dev__fl-star-right_bottom-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    transform: translate(-203%, -186%);
+}
+
+
+
+
+.dev__m-star-1 {
+    position: absolute;
+    left: 9.7vw;
+    bottom: 30vw;
+}
+
+.dev__m-star-2 {
+    position: absolute;
+    bottom: 13vw;
+    right: 26vw;
+}
+
+.dev__m-star-3 {
+    position: absolute;
+    bottom: 11.5vw;
+    right: 28.3vw;
+}
+
+.dev__m-star-4 {
+    position: absolute;
+    bottom: 6.2vw;
+    right: 12.7vw;
+}
+
+
+
+
+@media(max-width: 768px) {
+    .wrapper-page {
+        background: no-repeat url(../img/fon-dev-mobile.png);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/* fon-dev-mobile.png */
+@media(max-width: 768px) {
+    .dev__main {
+        padding-top: 10.67vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__wr-info_out {
+        width: 89.60vw;
+
+        box-shadow: 0px 0px 5px 5px rgb(255, 255, 255, 0.5);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__wr-info_in {
+        padding-top: 12.53vw;
+        padding-bottom: 6.13vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__info-text p {
+        font-size: 6.40vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__wr-info-button {
+        margin-top: 7.47vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__wr-info-button-link {
+        width: 74.67vw;
+        height: 11.73vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__star {
+        height: 4.53vw;
+        width: 4.27vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-transp_left {
+        width: 16.53vw;
+        height: 16.53vw;
+
+        transform: translate(-57%, -243.34%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-left84-1 {
+        height: 10.67vw;
+        width: 10.67vw;
+
+        transform: translate(-45%, 196%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-left84-2 {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-left51 {
+        height: 6.67vw;
+        width: 6.67vw;
+
+        transform: translate(28%, 648%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-star-left {
+        transform: translate(58%, 131%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-right81-2 {
+        transform: translate(89%, -40%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-right129 {
+        transform: translate(37%, 36%);
+    }
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}

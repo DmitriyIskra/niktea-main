@@ -20,5 +20,7 @@ import './css/recept.css';
 import './css/search.css';
 import './css/slider.css';
 import './css/steam.css';
+import './css/button.css';
+import './css/in-development.css';
 import './css/style.css';
 // import './css/swiper-bundle.min.css';

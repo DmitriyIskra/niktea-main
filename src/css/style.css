@@ -61,7 +61,7 @@ body[data-variant="product-card"] {
   z-index: -10;
 }
 
-body[data-variant="brand"] {
+/* body[data-variant="brand"] {
   content: "";
   width: 100%;
   height: 100%;
@@ -72,7 +72,7 @@ body[data-variant="brand"] {
     linear-gradient(180deg, #00bd8d 32.29%, #00392d 100%);
   background-size: cover auto;
   z-index: -10;
-}
+} */
 
 body[data-variant="contacts"] {
   content: "";
@@ -510,6 +510,10 @@ h2 {
   flex-shrink: 0;
 }
 
+.header-all {
+  width: 100%;
+}
+
 .header-wrapper {
   height: 100px;
 }
@@ -843,7 +847,7 @@ height: 45px; */
   font-family: Arsenal;
   font-size: 5.33vw;
 
-  color: #007653;
+  color: #ffffff;
 }
 
 
@@ -863,6 +867,10 @@ height: 45px; */
   transform: translateY(-50%) !important;
 }
 
+.footer {
+  width: 100%;
+}
+
 .footer__top {
   padding-bottom: 30px;
 }
@@ -874,7 +882,8 @@ height: 45px; */
 }
 
 .footer__link:hover {
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.9);
+  transition: filter 0.2s linear;
+  filter: drop-shadow(0 0 5px #ffffff);
 }
 
 .footer__item span {
@@ -1760,6 +1769,11 @@ ul.breadcrumbs__item li + li:before {
   .brand__description--text p {
     height: 100%;
 
+    font-family: Blogger Sans;
+    font-size: 4.80vw;
+    font-style: normal;
+    font-weight: 400;
+
     text-align: center;
   }
 }
@@ -1797,15 +1811,35 @@ ul.breadcrumbs__item li + li:before {
   }
 
   .about-brand__text-short p {
+    font-family: Blogger Sans;
+    font-size: 4.80vw;
+    font-style: normal;
+    font-weight: 400;
     text-align: center;
   }
 }
 
 @media (max-width: 768px) {
   .about-brand__read-more {
+    display: flex;
     margin-top: 5vw;
 
-    text-align: center;
+    font-family: Blogger Sans;
+    font-size: 4.80vw;
+    font-style: normal;
+    font-weight: 400;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-brand__read-more::after {
+    content: "";
+
+    width: 32vw;
+    height: 1px;
+
+    background: #ffffff;
   }
 }
 
@@ -1890,6 +1924,7 @@ ul.breadcrumbs__item li + li:before {
   .footer__link-address {
     display: flex;
     padding-top: 0 !important;
+    gap: 1.8vw;
 
     font-size: 3.73vw;
 

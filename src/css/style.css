@@ -398,7 +398,7 @@ h2 {
   transition: box-shadow 0.3s ease;
 }
 
-.promo__card span {
+/* .promo__card span {
   color: #fff;
   font-family: Arsenal;
   font-size: 64px;
@@ -406,7 +406,7 @@ h2 {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-}
+} */
 
 @media (max-width: 540px) {
   .promo__card span {
@@ -477,29 +477,19 @@ h2 {
 .promo__button--wrap {
   position: static;
 
-  display: flex;
   width: 15.68vw;
   height: 3.65vw;
-  margin-top: 6vw;
+  margin-top: 5vw;
 
-  font-family: Arsenal;
-  font-size: 27px;
+  font-size: 1.41vw !important;
 
-  color: #fff;
-  border-radius: 13.33vw;
-  border: 2px solid #00bd8d;
-  background: rgba(255, 255, 255, 0.27);
-  box-shadow: 0 2px 2px #181818;
-
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(180deg, #00BD8D 50%, #00392D);
 }
 
-.promo__button--wrap:active {
-  box-shadow: none;
-
-  transform: translateY(2px);
+.promo__button--wrap span {
+  background: #45C2A2;
 }
+
 
 
 #flower-1 {
@@ -1583,7 +1573,7 @@ ul.breadcrumbs__item li + li:before {
     width: 89%;
     margin-top: 3vw;
 
-    font-size: 16px;
+    font-size: 4.27vw !important;
   }
 }
 

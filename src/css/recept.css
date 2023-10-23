@@ -57,7 +57,7 @@
 @media (max-width: 540px) {
   .recept__card {
     width: 100%;
-    height: 510px;    
+    height: 356px;    
     border-radius: 50px;
   }
 
@@ -71,16 +71,20 @@
 
 }
 
-.recept__card--img {    
+.recept__card--wr-img {    
     min-height: 90%;
     /* width: 90%; */
     width: 75%;
-    padding-top: 10%;
+    padding-top: 0.68vw;
     z-index: 1;
     object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
     border-radius: 16px;  
+}
+
+.recept__card--img_mobile {
+    display: none;
 }
 
 .recept__description {
@@ -187,34 +191,18 @@
 .recepies__button {
     position: static;
 
-    display: flex;
     width: 19.27vw;
     height: 3.65vw;
     margin-top: 6vw;
 
-    font-family: Arsenal;
-    font-size: 27px;
+    font-size: 1.41vw !important;
 
-    color: #fff;
-    border-radius: 13.33vw;
-    border: 2px solid #00bd8d;
-    background: rgba(255, 255, 255, 0.27);
-    box-shadow: 0 2px 2px #181818;
-
-    align-items: center;
-    justify-content: center;  
+    background: linear-gradient(180deg, #00BD8D 50%, #00392D) !important;
 }
 
-.recepies__button:active {
-    box-shadow: none;
-
-    transform: translateY(2px);
+.recepies__button span {
+    background: #45C2A2 !important;
 }
-
-/* .recepies__button:hover {
-  box-shadow: 0px 0px 3px 3px rgba(255, 255, 255, 0.41);
-  transition: box-shadow 0.3s ease;   
-} */
 
 .recept__card--back {
     text-align: center;
@@ -353,8 +341,40 @@
 }
 
 @media (max-width: 768px) {
-    .recept__card--img {
+    .recept__card--wr-img {
         min-height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .recept__card--img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .recept__card--img_mobile {
+        display: block;
+        height: 100vw;
+        width: 100%;
+    }
+
+    .recept__card--img-1_mobile {
+        background: no-repeat url(../img/recipes-img-1-mobile.png);
+        background-size: contain;
+        background-position: top -3vw center;
+    }
+
+    .recept__card--img-2_mobile {
+        background: no-repeat url(../img/recipes-img-2-mobile.png);
+        background-size: contain;
+        background-position: top -3vw center;
+    }
+
+    .recept__card--img-3_mobile {
+        background: no-repeat url(../img/recipes-img-3-mobile.png);
+        background-size: contain;
+        background-position: top -3vw center;
     }
 }
 
@@ -367,7 +387,7 @@
         padding-bottom: 7.20vw;
         padding-top: 1.5vw;
 
-        transform: translateY(6vw); /*29%*/
+        transform: translateY(-26vw); /*29%*/
     }
 
     .recept__description--text {
@@ -403,18 +423,26 @@
     }
 
     .recepies__button {
-        height: 11.73vw;
+        height: 11.73vw; 
         width: 89%;
         margin-top: 6.67vw;
 
-        font-size: 16px;
+        font-size: 4.27vw !important;
     }
 
 }
 
 @media(max-width: 400px) {
     .recept__description--opened {
-        transform: translateY(19vw); /*29%*/
+        padding-bottom: 15.2vw;
+
+        transform: translateY(-23vw); /*29%*/
+    }
+}
+
+@media(max-width: 375px) {
+    .recept__description--opened {
+        transform: translateY(-16vw); /*29%*/
     }
 }
 

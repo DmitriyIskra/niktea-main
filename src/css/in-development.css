@@ -16,11 +16,13 @@
 
     display: flex;
     width: 100%;
+    max-width: 100%;
     padding-top: 8.13vw;
     padding-bottom: 40.89vw;
 
     justify-content: center;
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .dev__wr-info_out {
@@ -151,6 +153,10 @@
     left: 0;
 
     transform: translate(39%, 138%);
+}
+
+.dev__fl-star-left_mobile {
+    display: none;
 }
 
 
@@ -299,8 +305,11 @@
 
 @media(max-width: 768px) {
     .dev__wr-info_in {
+        max-width: 100%;
         padding-top: 12.53vw;
         padding-bottom: 6.13vw;
+
+        overflow: hidden;
     }
 }
 
@@ -370,55 +379,109 @@
 }
 
 @media(max-width: 768px) {
+    .dev__fl-star-left_mobile {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: block;
+
+        transform: translate(28%, -126%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-right81-1 {
+        width: 10.40vw;
+        height: 10.67vw;
+
+        transform: translate(22%, -82%);
+    }
+}
+
+@media(max-width: 768px) {
+    .dev__fl-transp_right {
+        width: 23.47vw;
+        height: 23.47vw;
+
+        transform: translate(17%, -50%);
+    }
+}
+
+@media(max-width: 768px) {
     .dev__fl-right81-2 {
-        transform: translate(89%, -40%);
+        width: 10.40vw;
+        height: 10.67vw;
+
+        transform: translate(-154%, -40%);
     }
 }
 
 @media(max-width: 768px) {
     .dev__fl-right129 {
-        transform: translate(37%, 36%);
+        width: 81px;
+        height: 18.13vw;
+
+        transform: translate(71%, 22%);
     }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__fl-right84 {
+        width: 6.40vw;
+        height: 6.67vw;
+
+        transform: translate(-125%, 52%);
+    }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__fl-star-right_top-1 {
+        display: none;
+    }
 }
 
 @media(max-width: 768px) {
-
+    .dev__fl-star-right_top-2 {
+        display: none;
+    }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__fl-star-right_bottom-1 {
+        transform: translate(-152%, -404%);
+    }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__fl-star-right_bottom-2 {
+        transform: translate(-54%, -305%);
+    }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__m-star-1 {
+        bottom: 17vw;
+    }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__m-star-2 {
+        display: none;
+    }
 }
 
 @media(max-width: 768px) {
-    
+    .dev__m-star-3 {
+        right: 24.3vw;
+    }
 }
 
 @media(max-width: 768px) {
-
-}
-
-@media(max-width: 768px) {
-    
+    .dev__m-star-4 {
+        right: 6.5vw;
+        bottom: 29.2vw;
+    }
 }
 
 @media(max-width: 768px) {

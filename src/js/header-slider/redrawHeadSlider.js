@@ -6,7 +6,6 @@ export default class RedrawHeadSlider {
     }
 
     initSwiper() {
-        console.log(this.wrSlider)
         new this.Swiper(this.wrSlider, {
             modules:[this.Pagination],
             pagination: {

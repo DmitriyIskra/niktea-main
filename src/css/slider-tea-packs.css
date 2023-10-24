@@ -25,15 +25,25 @@
     margin-bottom: 0;
 }
 
-/* сюда высчитывать */
+
 .tea-sl__slide-item {
     display: flex;
 
     outline: 1px solid black;
     justify-content: center;
     align-items: center;
-    flex-basis: 416.64px;
+    flex-basis: 416.64px; /* назначать програмно */
     flex-shrink: 0;
+}
+
+.tea-sl__slide-item-prev {
+    padding-bottom: 5vw;
+    padding-right: 7vw;
+}
+
+.tea-sl__slide-item-next {
+    padding-bottom: 5vw;
+    padding-left: 7vw;
 }
 
 .tea-sl__image {

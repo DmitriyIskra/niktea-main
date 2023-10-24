@@ -1,12 +1,8 @@
 
 
-.wrapper-page {
+.wrapper-page-in-dev { 
     display: flex;
-
-    background: no-repeat url(../img/fon-dev.png);
-    background-position: center;
-    background-size: contain;
-
+  
     flex-direction: column;
     align-items: center;
 }
@@ -280,13 +276,7 @@
 
 
 
-@media(max-width: 768px) {
-    .wrapper-page {
-        background: no-repeat url(../img/fon-dev-mobile.png);
-        background-position: center;
-        background-size: cover;
-    }
-}
+
 
 /* fon-dev-mobile.png */
 @media(max-width: 768px) {

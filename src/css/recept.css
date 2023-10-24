@@ -98,7 +98,7 @@
     padding-right: 15px;
 
     border-radius: 16px;
-    background: linear-gradient(180deg, #587cb4f0 54.47%, rgba(43, 81, 107, 0.00) 100%);
+    background: linear-gradient(180deg, hsla(217, 38%, 53%, 0.941) 54.47%, rgba(43, 81, 107, 0.00) 100%);
     backdrop-filter: blur(3px);
     box-shadow: 0px 0px 0px 0px rgba(8, 43, 34, 0.10), -1px -4px 9px 0px rgba(8, 43, 34, 0.10), -4px -16px 17px 0px rgba(8, 43, 34, 0.09), -9px -37px 23px 0px rgba(8, 43, 34, 0.05), -16px -66px 27px 0px rgba(8, 43, 34, 0.01), -26px -102px 30px 0px rgba(8, 43, 34, 0.00);
 
@@ -342,6 +342,7 @@
 
 @media (max-width: 768px) {
     .recept__card--wr-img {
+        display: flex;
         min-height: 100%;
     }
 }
@@ -357,38 +358,43 @@
         display: block;
         height: 100vw;
         width: 100%;
+
+        flex-grow: 1;
     }
 
     .recept__card--img-1_mobile {
         background: no-repeat url(../img/recipes-img-1-mobile.png);
-        background-size: contain;
+        background-size: 85%;
         background-position: top -3vw center;
     }
 
     .recept__card--img-2_mobile {
         background: no-repeat url(../img/recipes-img-2-mobile.png);
-        background-size: contain;
+        background-size: 85%;
         background-position: top -3vw center;
     }
 
     .recept__card--img-3_mobile {
         background: no-repeat url(../img/recipes-img-3-mobile.png);
-        background-size: contain;
+        background-size: 85%;
         background-position: top -3vw center;
+    }
+}
+
+@media (max-width: 768px) {
+    .recept__description {
+        top: 77%;
+    }
+}
+
+@media (max-width: 768px) {
+    .recept__description--opened {
+        transform: translateY(-89vw);
     }
 }
 
 @media (max-width: 540px) {
     
-
-
-    .recept__description--opened {
-        height: fit-content;
-        padding-bottom: 7.20vw;
-        padding-top: 1.5vw;
-
-        transform: translateY(-26vw); /*29%*/
-    }
 
     .recept__description--text {
         margin-top: 22px;
@@ -432,17 +438,37 @@
 
 }
 
+@media (max-width: 400px) {
+    .recept__card--img-1_mobile {
+        background-size: 93%;
+    }
+
+    .recept__card--img-2_mobile {
+        background-size: 93%;
+    }
+
+    .recept__card--img-3_mobile {
+        background-size: 93%;
+    }
+}
+
+@media(max-width: 400px) {
+    .recept__description {
+        top: 78%;
+    }
+}
+
 @media(max-width: 400px) {
     .recept__description--opened {
-        padding-bottom: 15.2vw;
+        padding-bottom: 18.2vw;
 
-        transform: translateY(-23vw); /*29%*/
+        transform: translateY(-101.5%); /*29%*/
     }
 }
 
 @media(max-width: 375px) {
     .recept__description--opened {
-        transform: translateY(-16vw); /*29%*/
+        transform: translateY(-98%); /*29%*/
     }
 }
 

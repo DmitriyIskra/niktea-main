@@ -13,14 +13,49 @@
         color: #FFC300;
         font-family: Arsenal;
         font-size: 3.75rem;
-        font-style: normal;
+        font-style: normal; 
         font-weight: 200;
         line-height: normal;
         text-align: center;
         transform: translateX(-0.8vw);
 }
 
-.catalog__description--text {
+.catalog__wr-text {
+    display: flex;
+    gap: 1.35vw;
+
+    flex-direction: column;
+    overflow: hidden;
+
+    transition: height 0.3s linear;
+}
+
+.catalog__wr-text p {
+    height: 100%;
+    margin-bottom: 0;
+
+    font-family: Blogger Sans;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 200;
+
+    color: #ffffff;
+}
+
+.catalog__read-more {
+    margin-top: 1.09vw;
+
+    font-family: Blogger Sans;
+    font-size: 0.73vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    cursor: pointer;
+}
+
+/* .catalog__description--text {
     color: #FFF;
     font-family: Blogger Sans;
     font-size: 1.5rem;
@@ -33,7 +68,7 @@
 .catalog__description--text p{
     line-clamp: 2;
     -webkit-line-clamp: 2;
-}
+} */
 
 /* .catalog__container {
     width: 100%;
@@ -296,6 +331,28 @@ padding: 0;
     scale: 1;
     transition: scale 1.8s linear;    
 }
+
+
+/* СЛАЙДЕРЫ */
+
+.catalog__slider-container_desctop {
+    display: flex;
+    margin-top: 5.31vw;
+
+    justify-content: center;
+}
+
+.tea-sl__wrapper-catalog {
+    width: 84.17vw;
+}
+
+
+.catalog__slider--container_mobile {
+    display: none;
+}
+
+
+
 
 @media (min-width: 576px) and (max-width: 800px) {
        

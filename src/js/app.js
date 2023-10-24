@@ -7,6 +7,9 @@ import RedrawForms from "./cards-and-callback-forms/redrawForms";
 import ControllAboutBrand from "./about-brand/controll-about-brand";
 import RedrawAboutBrand from "./about-brand/redraw-about-brand";
 
+import ControllReadMore from "./catalog-read-more/controllReadMore";
+import RedrawReadMore from "./catalog-read-more/redrawReadMore";
+
 import Swiper from "swiper";
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -65,4 +68,14 @@ if(indexSlider) {
     controllHeadSlider.init();
 }
 
+
+// КАТАЛОГ READ MORE
+
+const wrCatalogArticle = document.querySelector('.catalog__description');
+
+if(wrCatalogArticle) {
+    const redrawReadMore = new RedrawReadMore(wrCatalogArticle);
+    const controllReadMore = new ControllReadMore(redrawReadMore);
+    controllReadMore.init();
+}
 

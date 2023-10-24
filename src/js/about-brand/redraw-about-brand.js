@@ -18,7 +18,7 @@ export default class RedrawAboutBrand {
                 prevEl: ".about-brand__button-prev-icon",
             },
             pagination: {
-                el: '.swiper-pagination', 
+                el: '.swiper-pagination',  
                 clickable: true
             },
             initialSlide: 1,
@@ -49,10 +49,13 @@ export default class RedrawAboutBrand {
             return acc += el.offsetHeight;
         }, 0);
         
-        console.log('height', heightFullText)
+        // Расчтываем сумму gap у родительского элемента
+        const gap = parseFloat(getComputedStyle(this.fullText).gap);
+        const gapSumm = gap * this.fullText.children.length;
+        console.log('height', heightFullText + gapSumm)
 
         setTimeout( () => {
-            this.startAnimation(heightFullText);
+            this.startAnimation(heightFullText + gapSumm);
         });
     }
 

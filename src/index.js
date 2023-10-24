@@ -23,4 +23,5 @@ import './css/steam.css';
 import './css/button.css';
 import './css/in-development.css';
 import './css/style.css';
+import './css/slider-tea-packs.css';
 // import './css/swiper-bundle.min.css';

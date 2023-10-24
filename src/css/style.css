@@ -29,7 +29,7 @@ body[data-variant="main-page"]::after {
   height: 60%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../img/icons/boat.png);
+  background-image: url(../img/icons/boat-big-bg.png); /*boat.png*/
   background-position-x: center;
   background-position-y: bottom;
   z-index: -10;
@@ -139,6 +139,16 @@ body[data-variant="about-tea"] {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+}
+
+
+
+
+
+.wrapper-page {
+  background: no-repeat url(../img/fon-wrapper-main.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .header__icon-menu_mobile {
@@ -1378,6 +1388,17 @@ ul.breadcrumbs__item li + li:before {
 
 .copyright {
   display: none;
+}
+
+
+
+
+@media(max-width: 768px) {
+  .wrapper-page {
+      background: no-repeat url(../img/fon-wrapper-main-mobile.png);
+      background-position: center;
+      background-size: cover;
+  }
 }
 
 @media(max-width: 768px) {

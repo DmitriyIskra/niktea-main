@@ -3,12 +3,10 @@ margin-top: 50px;
 margin-bottom: 0px;
 padding-left: 150px;
 padding-right: 150px;
-}
+} 
 
 
-.product-card {
 
-}
 
 
 .product__image {    
@@ -69,7 +67,7 @@ line-height: normal;
     align-items: center;
 }
 
-.product__card--image .catalog__card--img{    
+.product__card--image{    
     width: unset;   
 }
 

@@ -52,91 +52,91 @@ searchButton.addEventListener('click', function(){
 
 })
   
-if(document.querySelector('.mySwiper') || document.querySelector('.brandSlider')){
+// if(document.querySelector('.mySwiper') || document.querySelector('.brandSlider')){
 
-  var swiper = new Swiper(".mySwiper", {
-    effect: "coverflow",    
-    grabCursor: true,
-    spaceBetween: 30,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: "1",    
-    speed: 2000,
-    navigation: {
-        nextEl: ".slider-button-next",
-        prevEl: ".slider-button-prev",
-      },
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 400,
-      modifier: 1,
-      slideShadows: false
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2
-      },
-      540: {
-        slidesPerView: 1
-      }
-    }
-  });
+//   var swiper = new Swiper(".mySwiper", { 
+//     effect: "coverflow",    
+//     grabCursor: true,
+//     spaceBetween: 30,
+//     centeredSlides: true,
+//     loop: true,
+//     slidesPerView: "1",    
+//     speed: 2000,
+//     navigation: {
+//         nextEl: ".slider-button-next",
+//         prevEl: ".slider-button-prev",
+//       },
+//     coverflowEffect: {
+//       rotate: 0,
+//       stretch: 0,
+//       depth: 400,
+//       modifier: 1,
+//       slideShadows: false
+//     },
+//     breakpoints: {
+//       640: {
+//         slidesPerView: 2
+//       },
+//       540: {
+//         slidesPerView: 1
+//       }
+//     }
+//   });
   
  
-  var swiper2 = new Swiper("brandSlider", {     
-    grabCursor: true,
-    keyboard: true,       
-    centeredSlides: true,
-    freeMode: true,    
-    loop: true,
-    slidesPerView: "3",
-    spaceBetween: 5,      
-    navigation: {
-      nextEl: ".slider-button-next",
-      prevEl: ".slider-button-prev",
-    }
+//   var swiper2 = new Swiper("brandSlider", {     
+//     grabCursor: true,
+//     keyboard: true,       
+//     centeredSlides: true,
+//     freeMode: true,    
+//     loop: true,
+//     slidesPerView: "3",
+//     spaceBetween: 5,      
+//     navigation: {
+//       nextEl: ".slider-button-next",
+//       prevEl: ".slider-button-prev",
+//     }
 
-  });
+//   });
   
  
  
   
-let slideNext = document.querySelector('.slider-button-next');
-let slidePrev = document.querySelector('.slider-button-prev');
-let activeAnimation = document.querySelectorAll('.slide__card--animated--img');
+// let slideNext = document.querySelector('.slider-button-next');
+// let slidePrev = document.querySelector('.slider-button-prev');
+// let activeAnimation = document.querySelectorAll('.slide__card--animated--img');
 
-slideNext.addEventListener('click', function(){
+// slideNext.addEventListener('click', function(){
 
-activeAnimation.forEach(element =>{
+// activeAnimation.forEach(element =>{
  
-element.animate(
-  [
-    { width: 0 + 'px' },
+// element.animate(
+//   [
+//     { width: 0 + 'px' },
     
-    { width: 500 + 'px'}
-  ], 960) 
+//     { width: 500 + 'px'}
+//   ], 960) 
 
-}
-  );
-})
+// }
+//   );
+// })
 
-slidePrev.addEventListener('click', function(){
+// slidePrev.addEventListener('click', function(){
 
-  activeAnimation.forEach(element =>{
+//   activeAnimation.forEach(element =>{
    
-  element.animate(
-    [
-      { width: 0 + 'px' },
+//   element.animate(
+//     [
+//       { width: 0 + 'px' },
       
-      { width: 500 + 'px'}
-    ], 960) 
+//       { width: 500 + 'px'}
+//     ], 960) 
   
-  }
-    );
-  })
+//   }
+//     );
+//   })
 
-}
+// }
 
 
 

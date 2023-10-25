@@ -1,14 +1,22 @@
 .tea-sl__wrapper {
     display: flex;
-    /*min-height: 100%; высоту задать програмно*/
-    min-height: 400px;
+    min-height: 26.04vw;
 
     justify-content: space-between;
+}
+
+.tea-sl__wr-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .tea-sl__button {
     width: 4.17vw;
     height: 4.17vw;
+
+    cursor: pointer;
 }
 
 .tea-sl__wr-slides {
@@ -29,27 +37,37 @@
 .tea-sl__slide-item {
     display: flex;
 
-    outline: 1px solid black;
     justify-content: center;
     align-items: center;
     flex-basis: 416.64px; /* назначать програмно */
     flex-shrink: 0;
 }
 
-.tea-sl__slide-item-prev {
-    padding-bottom: 5vw;
-    padding-right: 7vw;
+.tea-sl__slide-item img {
+    width: 80%;
+    height: auto;
+
+    transition: all 0.3s ease;
 }
 
-.tea-sl__slide-item-next {
-    padding-bottom: 5vw;
-    padding-left: 7vw;
+
+
+.tea-sl__slide-item-prev img {
+    width: 60%;
+    height: auto;
+
+    transform: translate(-30%, -12%);
 }
 
-.tea-sl__image {
-    width: 90%;
-    height: 90%;
-
-    object-fit: contain;
-    object-position: center;
+.tea-sl__slide-item-center img {
+    width: 80%;
+    height: auto;
 }
+
+.tea-sl__slide-item-next img {
+    width: 60%;
+    height: auto;
+
+    transform: translate(30%, -12%);
+}
+

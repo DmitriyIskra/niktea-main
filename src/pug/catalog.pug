@@ -30,8 +30,11 @@ html(lang='ru')
                             .catalog__item
                                 a.catalog--link(href='#0')
                                     .product__card.catalog__item--pack
-                                        .product__card-label
-                                            span Пакетированный чай в пирамидках
+                                        .product__card-label.product__card-label_desctop
+                                            span Порционный чай в пирамидках
+                                        .product__card-label.product__card-label_mobile
+                                            span Порционный чай в 
+                                            span пирамидках
                                         .product__card--back
                                         .product__card--image
                                             img.catalog__card--img(src='../img/content/earl-grey__pyrapack.png' alt='cup-tea')
@@ -41,22 +44,28 @@ html(lang='ru')
                             .catalog__item
                                 a.catalog--link(href='#0')
                                     .product__card.catalog__item--pack
-                                        .product__card-label
-                                            span Пакетированный чай в чашку
+                                        .product__card-label.product__card-label_desctop
+                                            span Пакетированный чай на чашку
+                                        .product__card-label.product__card-label_mobile
+                                            span Пакетированный
+                                            span чай на чашку
                                         .product__card--back
                                         .product__card--image
-                                            img.catalog__card--img(src='../img/content/emerald.png' alt='cup-tea')
+                                            img.catalog__card--img.catalog__card--img_2(src='../img/content/emerald.png' alt='cup-tea')
                                         .catalog__card--animated
                                             img.catalog__card--animated--img(src='../img/content/emerald-anima.png' alt='cup-tea')
                         .card__body
                             .catalog__item
                                 a.catalog--link(href='#0')
                                     .product__card.catalog__item--tea-pot
-                                        .product__card-label
+                                        .product__card-label.product__card-label_desctop
                                             span Пакетированный чай на чайник
+                                        .product__card-label.product__card-label_mobile
+                                            span Пакетированный
+                                            span чай на чайник
                                         .product__card--back
                                         .product__card--image
-                                            img.catalog__card--img(src='../img/content/oolong.png' alt='cup-tea')
+                                            img.catalog__card--img.catalog__card--img_4(src='../img/content/oolong.png' alt='cup-tea')
                                         .catalog__card--animated
                                             img.catalog__card--animated--img(src='../img/content/oolung_ainmation.png' alt='cup-tea')
                         .card__body
@@ -77,14 +86,17 @@ html(lang='ru')
                             .catalog__item
                                 a.catalog--link(href='#0')
                                     .product__card.catalog__item--leaf
-                                        .product__card-label
+                                        .product__card-label.product__card-label_desctop
                                             span
                                                 | Листовой чай TOP
                                                 br
                                                 | SELECTION
+                                        .product__card-label.product__card-label_mobile
+                                            span Листовой чай
+                                            span TOP SELECTION
                                         .product__card--back
                                         .product__card--image
-                                            img.catalog__card--img(src='../img/content/meadow3.png' alt='cup-tea')
+                                            img.catalog__card--img.catalog__card--img_6(src='../img/content/meadow3.png' alt='cup-tea')
                                         .catalog__card--animated
                                             img.catalog__card--animated--img(src='../img/content/powder-ainmation.png' alt='cup-tea')
                         .card__body
@@ -102,7 +114,7 @@ html(lang='ru')
             
             .catalog__slider-container_desctop 
                 .tea-sl__wrapper.tea-sl__wrapper-catalog
-                    .tea-sl__wr-button-prev
+                    .tea-sl__wr-button.tea-sl__wr-button-prev
                         .tea-sl__button.tea-sl__button-prev
                             svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' fill='none')
                                 path(d='M52.573 66.5934C52.0819 66.5934 51.5988 66.4016 51.2369 66.0397L34.5337 49.3385C34.1793 48.9841 33.98 48.5044 33.98 48.0024C33.98 47.5004 34.1793 47.0207 34.5337 46.6663L51.2369 29.9611C51.7797 29.4183 52.5914 29.2637 53.2963 29.5515C54.0011 29.8433 54.4624 30.5332 54.4624 31.2973V64.7036C54.4624 65.4676 54.0031 66.158 53.2963 66.4493C53.0621 66.5457 52.8166 66.5934 52.573 66.5934Z' fill='white')
@@ -127,7 +139,7 @@ html(lang='ru')
                             li.tea-sl__slide-item
                                 img.tea-sl__image(src='../img/content/pyramid-earl-grey.png')
 
-                    .tea-sl__wr-button-next
+                    .tea-sl__wr-button.tea-sl__wr-button-next
                         .tea-sl__button.tea-sl__button-next
                             svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none')
                                 path(d='M35.4271 58.5922C35.9182 58.5922 36.4014 58.4004 36.7632 58.0385L53.4663 41.3374C53.8207 40.983 54.02 40.5033 54.02 40.0013C54.02 39.4993 53.8207 39.0196 53.4663 38.6652L36.7632 21.9601C36.2204 21.4173 35.4087 21.2627 34.7039 21.5506C33.999 21.8423 33.5377 22.5323 33.5377 23.2963V56.7024C33.5377 57.4664 33.997 58.1568 34.7039 58.4481C34.938 58.5445 35.1835 58.5922 35.4271 58.5922Z' fill='white')

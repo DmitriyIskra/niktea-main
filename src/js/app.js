@@ -10,6 +10,9 @@ import RedrawAboutBrand from "./about-brand/redraw-about-brand";
 import ControllReadMore from "./catalog-read-more/controllReadMore";
 import RedrawReadMore from "./catalog-read-more/redrawReadMore";
 
+import ControllSl from "./tea-pack-slider/controllSl";
+import RedrawSl from "./tea-pack-slider/redrawSl";
+
 import Swiper from "swiper";
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -77,5 +80,15 @@ if(wrCatalogArticle) {
     const redrawReadMore = new RedrawReadMore(wrCatalogArticle);
     const controllReadMore = new ControllReadMore(redrawReadMore);
     controllReadMore.init();
+}
+
+// SLIDER TEA
+
+const sliderTea = document.querySelector('.tea-sl__wrapper');
+
+if(sliderTea) {
+    const redrawSl = new RedrawSl(sliderTea);
+    const controllSl = new ControllSl(redrawSl);
+    controllSl.init();
 }
 

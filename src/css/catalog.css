@@ -184,6 +184,20 @@
 }
 
 
+/* Начало Карточки */
+
+.same-packs__wr-pack-img_pyramid {
+    margin-top: -2.24vw;
+}
+
+.same-packs__pack-img_pyramid {
+    width: 13.59vw;
+    height: 18.75vw;
+}
+
+/* Конец Карточки */
+
+
 .catalog__card--img--width {
     /* width: 85%;     */
     width: 90%; 
@@ -333,6 +347,12 @@ padding: 0;
 .product__card:hover  .catalog__card--animated--img{        
     /* width: 380px;  */
     scale: 1;
+    transition: scale 1.8s linear;    
+}
+
+.product__card:hover  .catalog__card--animated--img_2{        
+    /* width: 380px;  */
+    scale: 1.15 !important;
     transition: scale 1.8s linear;    
 }
 
@@ -516,27 +536,11 @@ padding: 0;
 }
 
 @media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
+    .catalog__slider--container_mobile {
+        display: block;
+        margin-top: 21.33vw;
+        margin-bottom: 26vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -545,201 +549,5 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
-    
-}
 
-
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
-
-@media (max-width: 768px) {
-    
-}
 

@@ -1,0 +1,161 @@
+.same-packs__wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-style: normal;
+    font-weight: 400;
+ 
+    list-style-type: none;
+}
+
+.same-packs__wrapper a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+.same-packs__wrapper {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.same-packs__wr-title {
+    display: flex;
+    width: 100%;
+    margin-top: 3.13vw;
+
+    justify-content: center;
+}
+
+.same-packs__title {
+    font-family: Arsenal;
+    font-size: 2.86vw;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.same-packs__list {
+    display: flex;
+    max-width: 67.55vw;
+    margin-top: 5.05vw;
+    padding-left: 0;
+
+    flex-wrap: wrap;
+}
+
+.same-packs__item {
+    display: flex;
+    width: 33.333%;
+    justify-content: center;
+}
+
+.same-packs__item:nth-child(n + 4) {
+    margin-top: 2.60vw;
+}
+
+.same-packs__wr-link {
+    display: flex;
+    width: 19.90vw;
+    min-height: 26.56vw;
+    padding: 2px;
+
+    background: linear-gradient(180deg, #00BD8D, #00392D);
+    border-radius: 2.60vw;
+
+    overflow: hidden;
+}
+
+.same-packs__link {
+    position: relative;
+
+    display: flex !important;
+
+    background: no-repeat url(../img/background-card-packs-same.png), linear-gradient(180deg, #7775B6, #494694);
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    justify-content: center;
+}
+
+.same-packs__wr-animate-img {
+    position: absolute;
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+
+    justify-content: center;
+    align-items: center;
+    transform: scale(40%, 40%);
+
+    z-index: 1;
+}
+
+.same-packs__animate-img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+.same-packs__wr-pack-img {
+    position: absolute;
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 2;
+}
+
+.same-packs__wr-description {
+    position: absolute;
+    bottom: -3.5%;
+
+    display: flex;
+    height: 7.9vw;
+    width: 18.28vw;
+
+    background: linear-gradient(180deg, rgba(88, 124, 180, 0.79) 33.85%, rgba(43, 81, 107, 0.00) 100%);
+    border-radius: 0.83vw;
+    
+    justify-content: center;
+
+    z-index: 3;
+}
+
+.same-packs__wr-description p {
+    display: flex;
+    margin-top: 0.5vw;
+    margin-bottom: 0;
+
+    font-family: Blogger Sans;
+    font-weight: 400;
+
+    color: #ffffff;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.same-packs__wr-description p span:first-child {
+    font-size: 1.88vw;
+}
+
+.same-packs__wr-description p span:last-child {
+    font-size: 1.25vw;
+}

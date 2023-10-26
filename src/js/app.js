@@ -13,6 +13,9 @@ import RedrawReadMore from "./catalog-read-more/redrawReadMore";
 import ControllSl from "./tea-pack-slider/controllSl";
 import RedrawSl from "./tea-pack-slider/redrawSl";
 
+import ControllTeaSLM from "./tea-sl-swiper_mobile/controllTeaSLM";
+import RedrawTeaSLM from "./tea-sl-swiper_mobile/redrawTeaSLM";
+
 import Swiper from "swiper";
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -74,7 +77,7 @@ if(indexSlider) {
 
 // КАТАЛОГ READ MORE
 
-const wrCatalogArticle = document.querySelector('.catalog__description');
+const wrCatalogArticle = document.querySelector('.catalog__description-read-more');
 
 if(wrCatalogArticle) {
     const redrawReadMore = new RedrawReadMore(wrCatalogArticle);
@@ -91,4 +94,18 @@ if(sliderTea) {
     const controllSl = new ControllSl(redrawSl);
     controllSl.init();
 }
+
+
+// SWIPER TEA MOBILE для нескольктх страниц
+
+const swiperTeaSLM = document.querySelector('.tea-sl-swiper_mobile');
+
+if(swiperTeaSLM) {
+    const redrawTeaSLM = new RedrawTeaSLM(Swiper, swiperTeaSLM);
+    const controllTeaSLM = new ControllTeaSLM(redrawTeaSLM);
+
+    controllTeaSLM.init();
+}
+
+
 

@@ -14,7 +14,7 @@ html(lang='ru')
 
             .catalog
                 .catalog__container
-                    .catalog__description
+                    .catalog__description.catalog__description-read-more
                         h1.catalog__title Каталог
                         .catalog__wr-text 
                             p Яркая коллекция чая Niktea собрала в себе широкий ассортимент вкусов в любом удобном формате: листовой, пакетированный на чашку и на чайник, чай в пирамидках.
@@ -28,7 +28,7 @@ html(lang='ru')
                     .card__container.grid
                         .card__body
                             .catalog__item
-                                a.catalog--link(href='#0')
+                                a.catalog--link(href='./catalog-pyramid.html')
                                     .product__card.catalog__item--pack
                                         .product__card-label.product__card-label_desctop
                                             span Порционный чай в пирамидках
@@ -53,7 +53,7 @@ html(lang='ru')
                                         .product__card--image
                                             img.catalog__card--img.catalog__card--img_2(src='../img/content/emerald.png' alt='cup-tea')
                                         .catalog__card--animated
-                                            img.catalog__card--animated--img(src='../img/content/emerald-anima.png' alt='cup-tea')
+                                            img.catalog__card--animated--img.catalog__card--animated--img_2(src='../img/content/emerald-anima.png' alt='cup-tea')
                         .card__body
                             .catalog__item
                                 a.catalog--link(href='#0')
@@ -146,27 +146,33 @@ html(lang='ru')
                                 path(d='M40.0002 80C62.0568 80 80 62.0587 80 40.0017C80 17.9447 62.0568 0 40.0002 0C17.9437 0 0.000495911 17.9452 0.000495911 40.0017C0.000495911 62.0582 17.9432 80 40.0002 80ZM40.0002 3.77923C59.9715 3.77923 76.2208 20.0299 76.2208 40.0017C76.2208 59.9735 59.9715 76.2203 40.0002 76.2203C20.029 76.2203 3.77972 59.973 3.77972 40.0017C3.77972 20.0304 20.0285 3.77923 40.0002 3.77923Z' fill='white')
             
             
-            .catalog__slider--container_mobile
-                .slider-button-prev
+            .catalog__slider--container_mobile.swiper__wr-tea-sl_mobile
                 // Swiper
-                .swiper.mySwiper(init='false')
+                .swiper.tea-sl-swiper_mobile
                     .swiper-wrapper
-                        .catalog__slide.swiper-slide
-                            img.slide__image(src='../img/content/forest-meditaiton.png')
-                            .slide__image--animation
-                                img.slide__card--animated--img(src='../img/content/forest-meditaiton-animation.png')
-                        .catalog__slide.swiper-slide
-                            img.slide__image(src='../img/content/ginger-topic.png')
-                            .slide__image--animation
-                                img.slide__card--animated--img(src='../img/content/gigger-topic-bg.png')
-                        .catalog__slide.swiper-slide
-                            img.slide__image(src='../img/content/siberian-berries.png')
-                            .slide__image--animation
-                                img.slide__card--animated--img(src='../img/content/siberian-berries-animation.png')
-                        a.catalog__slide.swiper-slide(href='product-card.html')
-                            img.slide__image(src='../img/content/strawberry-pana-cotta.png')
-                            .slide__image--animation
-                                img.slide__card--animated--img(src='../img/content/strawberry-pana-cotta-animation.png')
-                .slider-button-next
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-siberian-berries.png')
+                            //- .slide__image--animation
+                            //-     img.slide__card--animated--img(src='../img/content/forest-meditaiton-animation.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-ginger-tropic.png')
+                            //- .slide__image--animation
+                            //-     img.slide__card--animated--img(src='../img/content/gigger-topic-bg.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-strawberry-pana-cotta.png')
+                            //- .slide__image--animation
+                            //-     img.slide__card--animated--img(src='../img/content/siberian-berries-animation.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-green-wind.png')
+                            //- .slide__image--animation
+                            //-     img.slide__card--animated--img(src='../img/content/strawberry-pana-cotta-animation.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-forest-meditation.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-milk-oolong.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-russian-breakfast.png')
+                        .swiper-slide.tea-sl-m__slide
+                            img.tea-sl-m__slide-img(src='../img/content/pyramid-earl-grey.png')
 
-            include ./modules/footer
+        include ./modules/footer

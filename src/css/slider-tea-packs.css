@@ -39,7 +39,7 @@
 
     justify-content: center;
     align-items: center;
-    flex-basis: 416.64px; /* назначать програмно */
+    /* flex-basis: 416.64px;*/ /* назначать програмно */
     flex-shrink: 0;
 }
 

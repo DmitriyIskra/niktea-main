@@ -142,6 +142,14 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/catalog-pyramid.pug',
+      filename: './catalog-pyramid.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
     
     
     

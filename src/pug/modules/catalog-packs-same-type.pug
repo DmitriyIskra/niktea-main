@@ -12,5 +12,8 @@
                             img(class="same-packs__pack-img_" + classPage).same-packs__pack-img(src=el.img)
                         .same-packs__wr-description 
                             p 
-                                span #{el.string1}
-                                span #{el.string2}
+                                each item in el.string1
+                                    span #{item} 
+                            p
+                                each item in el.string2
+                                    span #{item} 

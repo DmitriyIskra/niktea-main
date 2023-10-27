@@ -549,5 +549,11 @@ padding: 0;
     }
 }
 
+@media (max-width: 768px) {
+    .same-packs__pack-img_pyramid {
+        width: 49.60vw;
+        height: 62.13vw;
+    }
+}
 
 

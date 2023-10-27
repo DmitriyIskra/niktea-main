@@ -23,6 +23,7 @@ export default class RedrawSl {
         this.counterNextSlide = 2;
         this.counterMove = 0;
         this.maxMove = null;
+        this.stop = null;
     }
 
     initSlider() {
@@ -54,6 +55,10 @@ export default class RedrawSl {
     }
 
     moveNext() {
+        if(this.stop) {
+            return;
+        }
+        
         this.counterMove += 1; 
         
         // находим следующий элемент
@@ -100,10 +105,17 @@ export default class RedrawSl {
                 this.counterMove = 0;
             }
         }, {once: true})
+        
+        this.stop = true;
+
+        setTimeout( () => this.stop = false, 400 );
+        
     }
 
     movePrev() {
-        console.log('move prev');
+        if(this.stop) {
+            return;
+        }
 
         this.wrSlides.style.transition = '';
 
@@ -143,5 +155,9 @@ export default class RedrawSl {
                 this.counterMove = 0;
             }, {once: true})
         })
+
+        this.stop = true;
+
+        setTimeout( () => this.stop = false, 200 );
     }
 }

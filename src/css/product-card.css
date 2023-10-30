@@ -1,0 +1,53 @@
+.prc__wr-title-slider {
+    margin-top: 9.11vw;
+}
+
+.prc__title-slider {
+    margin-bottom: 0;
+
+    font-family: Arsenal;
+    font-size: 3.13vw;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.prc__wr-slider {
+    display: flex;
+    margin-top: 3.44vw;
+    margin-bottom: 14vw;
+
+    justify-content: center;
+}
+
+.prc__wr-slider_mobile {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .prc__wr-title-slider {
+        margin-top: 10.67vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__title-slider {
+        font-size: 7.47vw;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__wr-slider {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__wr-slider_mobile {
+        display: block;
+        margin-top: 14.93vw;
+        margin-bottom: 64.27vw;
+    }
+}

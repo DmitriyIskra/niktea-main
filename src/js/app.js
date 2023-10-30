@@ -10,8 +10,8 @@ import RedrawAboutBrand from "./about-brand/redraw-about-brand";
 import ControllReadMore from "./catalog-read-more/controllReadMore";
 import RedrawReadMore from "./catalog-read-more/redrawReadMore";
 
-import ControllSl from "./tea-pack-slider/controllSl";
-import RedrawSl from "./tea-pack-slider/redrawSl";
+import ControllSl from "./tea-sl-slider/controllSl";
+import RedrawSl from "./tea-sl-slider/redrawSl";
 
 import ControllTeaSLM from "./tea-sl-swiper_mobile/controllTeaSLM";
 import RedrawTeaSLM from "./tea-sl-swiper_mobile/redrawTeaSLM";

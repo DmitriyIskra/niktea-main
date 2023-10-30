@@ -88,15 +88,6 @@
     background-position: center;
 }
 
-.dev__star {
-    width: 1.77vw;
-    height: 1.61vw;
-
-    background: no-repeat url(../img/icons/star__.png);
-    background-size: 100% 100%;
-    background-position: center;
-}
-
 /* **  Цветы и звезды слева  ** */
 
 .dev__fl-transp_left {

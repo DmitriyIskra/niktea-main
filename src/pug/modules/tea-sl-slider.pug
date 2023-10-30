@@ -1,0 +1,32 @@
+.tea-sl__wrapper.tea-sl__wrapper-catalog
+    .tea-sl__wr-button.tea-sl__wr-button-prev
+        .tea-sl__button.tea-sl__button-prev
+            svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 96' fill='none')
+                path(d='M52.573 66.5934C52.0819 66.5934 51.5988 66.4016 51.2369 66.0397L34.5337 49.3385C34.1793 48.9841 33.98 48.5044 33.98 48.0024C33.98 47.5004 34.1793 47.0207 34.5337 46.6663L51.2369 29.9611C51.7797 29.4183 52.5914 29.2637 53.2963 29.5515C54.0011 29.8433 54.4624 30.5332 54.4624 31.2973V64.7036C54.4624 65.4676 54.0031 66.158 53.2963 66.4493C53.0621 66.5457 52.8166 66.5934 52.573 66.5934Z' fill='white')
+                path(d='M48 88.0005C25.9434 88.0005 8 70.0591 8 48.002C8 25.9448 25.9434 8 48 8C70.0566 8 88 25.9453 88 48.002C88 70.0586 70.0571 88.0005 48 88.0005ZM48 11.7792C28.0286 11.7792 11.7792 28.0301 11.7792 48.002C11.7792 67.9739 28.0286 84.2208 48 84.2208C67.9714 84.2208 84.2207 67.9734 84.2207 48.002C84.2207 28.0306 67.9719 11.7792 48 11.7792Z' fill='white')
+
+    .tea-sl__wr-slides 
+        ul.tea-sl__wr-slide-list 
+            each item in dataSlider
+                li.tea-sl__slide-item  
+                    img.tea-sl__image(src={item.path} alt={item.alt})
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-ginger-tropic.png')
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-strawberry-pana-cotta.png')
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-green-wind.png')
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-forest-meditation.png')
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-milk-oolong.png')
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-russian-breakfast.png')
+            //- li.tea-sl__slide-item
+            //-     img.tea-sl__image(src='../img/content/pyramid-earl-grey.png')
+
+    .tea-sl__wr-button.tea-sl__wr-button-next
+        .tea-sl__button.tea-sl__button-next
+            svg(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' fill='none')
+                path(d='M35.4271 58.5922C35.9182 58.5922 36.4014 58.4004 36.7632 58.0385L53.4663 41.3374C53.8207 40.983 54.02 40.5033 54.02 40.0013C54.02 39.4993 53.8207 39.0196 53.4663 38.6652L36.7632 21.9601C36.2204 21.4173 35.4087 21.2627 34.7039 21.5506C33.999 21.8423 33.5377 22.5323 33.5377 23.2963V56.7024C33.5377 57.4664 33.997 58.1568 34.7039 58.4481C34.938 58.5445 35.1835 58.5922 35.4271 58.5922Z' fill='white')
+                path(d='M40.0002 80C62.0568 80 80 62.0587 80 40.0017C80 17.9447 62.0568 0 40.0002 0C17.9437 0 0.000495911 17.9452 0.000495911 40.0017C0.000495911 62.0582 17.9432 80 40.0002 80ZM40.0002 3.77923C59.9715 3.77923 76.2208 20.0299 76.2208 40.0017C76.2208 59.9735 59.9715 76.2203 40.0002 76.2203C20.029 76.2203 3.77972 59.973 3.77972 40.0017C3.77972 20.0304 20.0285 3.77923 40.0002 3.77923Z' fill='white')

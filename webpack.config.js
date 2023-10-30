@@ -150,6 +150,14 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/strawberry-panna-cotta.pug',
+      filename: './strawberry-panna-cotta.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
     
     
     

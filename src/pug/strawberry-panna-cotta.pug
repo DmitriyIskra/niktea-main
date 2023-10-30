@@ -1,0 +1,71 @@
+- 
+    let dataProductCard = {
+        title: ['Strawberry panna cotta', 'Клубничная Панна-Котта'],
+        img: '../img/content/product-card-pyramid-strawberry-panna-cotta.png',
+        'img-animate': '',
+        description: 'Роскошный десертный купаж, который сочетает в себе тягучую сливочность итальянского лакомства, легкий древесный вкус ройбуша и ягодную кислинку.',
+        composition: 'Состав: ройбуш, кусочки клубники, ароматизаторы пищевые “Клубника” и “Молочная карамель”.',
+        'amount-icon-type': 'pyramid',
+        'amount-text': '15шт.',
+        'weight-text': '40,5г.',
+        'method-size': '200мл.',
+        'method-temp': '90-100С',
+        'method-time': '3-5мин.'
+    }
+
+
+- 
+    let dataSlider = [
+        {
+            path: '../img/content/pyramid-siberian-berries.png',
+            alt: 'Сибирский сбор'
+        },
+        {
+            path:'../img/content/pyramid-ginger-tropic.png',
+            alt: 'Имбирный тропик'
+        },
+        {
+            path: '../img/content/pyramid-strawberry-pana-cotta.png',
+            alt: 'Клубничная Панна-Котта'
+        },                          
+        {
+            path: '../img/content/pyramid-green-wind.png',
+            alt: 'Зеленый ветер'
+        },
+        {
+            path: '../img/content/pyramid-forest-meditation.png',
+            alt: 'Лесная Медитация'
+        },
+        {
+            path: '../img/content/pyramid-milk-oolong.png',
+            alt: 'Молочный Улун'
+        },
+        {
+            path: '../img/content/pyramid-russian-breakfast.png',
+            alt: 'Русский Завтрак'
+        },
+        {
+            path: '../img/content/pyramid-earl-grey.png',
+            alt: 'Эрл Грей'
+        },
+    
+    ]
+
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Каталог
+    body(data-variant='catalog')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs 
+
+            include ./modules/product-card
+
+        include ./modules/footer

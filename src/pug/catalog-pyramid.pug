@@ -4,84 +4,99 @@
                 href: './in-development.html',
                 string1: ['Эрл Грей'],
                 string2: ['черный чай'],
-                img: '../img/content/earl-grey__pyrapack.png',
+                img: '../img/content/pyramid-earl-grey.png',
                 'img-anim': '../img/content/pyramid-earl-grey-animation.png',
                 alt: 'Эрл Грей',
+                classCard: 'pyramid',
             },
             {
                 href: './in-development.html',
                 string1: ['Зеленый ветер'],
                 string2: ['зеленый чай'],
-                img: '../img/content/GreenWind.png',
+                img: '../img/content/pyramid-green-wind.png',
                 'img-anim': '../img/content/pyramid-greenWind-animation.png',
                 alt: 'Зеленый ветер',
+                classCard: 'pyramid',
             },
             {
                 href: './in-development.html',
                 string1: ['Имбирный тропик'],
                 string2: ['зеленый чай'],
-                img: '../img/content/ginger-topic.png',
+                img: '../img/content/pyramid-ginger-tropic.png',
                 'img-anim': '../img/content/pyramid-gigger-tropic-animation.png',
                 alt: 'Имбирный тропик',
+                classCard: 'pyramid',
             },
             {
-                href: './strawberry-panna-cotta.html',
+                href: './product-card-strawberry-panna-cotta.html',
                 string1: ['Клубничная','Панна-Котта'],
                 string2: ['травяной чай'],
-                img: '../img/content/strawberry-pana-cotta.png',
+                img: '../img/content/pyramid-strawberry-pana-cotta.png',
                 'img-anim': '../img/content/pyramid-strawberry-pana-cotta-animation.png',
                 alt: 'Клубничная Панна-Котта',
+                classCard: 'pyramid',
             },
             {
                 href: './in-development.html',
                 string1: ['Лесная медитация'],
                 string2: ['травяной чай'],
-                img: '../img/content/forest-meditaiton.png',
+                img: '../img/content/pyramid-forest-meditation.png',
                 'img-anim': '../img/content/pyramid-forest-meditaiton-animation.png',
                 alt: 'Лесная медитация',
+                classCard: 'pyramid',
             },
             {
                 href: './in-development.html',
                 string1: ['Молочный улун'],
                 string2: ['зеленый чай'],
-                img: '../img/content/milk-oolong-pyra.png',
+                img: '../img/content/pyramid-milk-oolong.png',
                 'img-anim': '../img/content/pyramid-milk-oolong-anim.png',
                 alt: 'Молочный улун',
+                classCard: 'pyramid',
             },
             {
                 href: './in-development.html',
                 string1: ['Сибирский сбор'],
                 string2: ['черный чай'],
-                img: '../img/content/siberian-berries.png',
+                img: '../img/content/pyramid-siberian-berries.png',
                 'img-anim': '../img/content/pyramid-siberian-berries-animation.png',
                 alt: 'Сибирский сбор',
+                classCard: 'pyramid',
             },
             {
                 href: './in-development.html',
                 string1: ['Русский завтрак'],
                 string2: ['черный чай'],
-                img: '../img/content/russian-breakfast-pyra.png',
+                img: '../img/content/pyramid-russian-breakfast.png',
                 'img-anim': '../img/content/pyramid-russian-breakfast-anim.png',
                 alt: 'Русский завтрак',
+                classCard: 'pyramid',
             },
         ];
         
 - let classPage = 'pyramid'
 - let title = 'Порционный чай в пирамидках'
 
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Порционный чай в пирамидках', url: './catalog-pyramid.html'}
+    ]
+
 doctype html
 html(lang='ru')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        title Пирапак
+        title Порционный чай в пирамидках
     body(data-variant='catalog')
         include ./modules/header.pug
 
         main.main
             include ./modules/bread-crumbs
                 
-            include ./modules/catalog-packs-same-type
+            include ./modules/catalog-packs-cards
                 
 
         include ./modules/footer

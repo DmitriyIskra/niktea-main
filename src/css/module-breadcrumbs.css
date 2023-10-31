@@ -1,0 +1,41 @@
+.breadcrumbs__wrapper {
+    display: flex;
+    margin-top: 1.25vw;
+    padding-right: 10.86vw;
+
+    justify-content: flex-end;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    gap: 0.36vw;
+
+    align-items: center;
+}
+
+.breadcrumbs__item__link {
+    font-family: Blogger Sans;
+    font-size: 0.73vw;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.breadcrumbs__slash {
+    font-family: Blogger Sans;
+    font-size: 1.04vw;
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+.breadcrumbs__active {
+    font-size: 0.89vw;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs__wrapper {
+        display: none;
+    }
+}

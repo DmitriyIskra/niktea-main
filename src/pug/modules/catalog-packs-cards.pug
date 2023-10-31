@@ -1,15 +1,15 @@
 .same-packs__wrapper 
     .same-packs__wr-title 
-        h2.same-packs__title #{title}
+        h2.same-packs__title #{title} 
     ul.same-packs__list 
         each el,i in dataCards
             li.same-packs__item
                 .same-packs__wr-link
-                    a.same-packs__link(href=el.href) 
+                    a.same-packs__link(class="same-packs__link_" + el.classCard href=el.href) 
                         .same-packs__wr-animate-img
                             img.same-packs__animate-img(src=el['img-anim'])
-                        .same-packs__wr-pack-img(class="same-packs__wr-pack-img_" + classPage)
-                            img(class="same-packs__pack-img_" + classPage).same-packs__pack-img(src=el.img)
+                        .same-packs__wr-pack-img(class="same-packs__wr-pack-img_" + el.classCard)
+                            img(class="same-packs__pack-img_" + el.classCard).same-packs__pack-img(src=el.img)
                         .same-packs__wr-description 
                             p 
                                 each item in el.string1

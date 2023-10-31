@@ -1,3 +1,9 @@
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+    ]
+
 doctype html
 html(lang='ru')
     head
@@ -29,7 +35,7 @@ html(lang='ru')
                         .card__body
                             .catalog__item
                                 a.catalog--link(href='./catalog-pyramid.html')
-                                    .product__card.catalog__item--pack
+                                    .product__card.catalog__item--pyra
                                         .product__card-label.product__card-label_desctop
                                             span Порционный чай в пирамидках
                                         .product__card-label.product__card-label_mobile
@@ -42,7 +48,7 @@ html(lang='ru')
                                             img.catalog__card--animated--img(src='../img/content/pyramid-earl-grey-animation.png' alt='cup-tea')
                         .card__body
                             .catalog__item
-                                a.catalog--link(href='./in-development.html')
+                                a.catalog--link(href='./catalog-dellipack-per-cup.html')
                                     .product__card.catalog__item--pack
                                         .product__card-label.product__card-label_desctop
                                             span Пакетированный чай на чашку

@@ -1,9 +1,15 @@
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Контакты', url: './contacts.html'},
+    ]
+
 doctype html
 html(lang='ru')
-    head
+    head 
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        <script src="https://api-maps.yandex.ru/2.1.79/?apikey=ваш API-ключ&lang=ru_RU">	</script>
+        //- <script src="https://api-maps.yandex.ru/2.1.79/?apikey=ваш API-ключ&lang=ru_RU">	</script>
         title Контакты
     body(data-variant='contacts')
         
@@ -320,7 +326,6 @@ html(lang='ru')
 
 
                         .card--container.card--container-map
-                            .contacts__card-map.contacts__card--map
-                                .contacts__card--back
-                                #map-yandex.map-image
+                            .contacts__card-map
+                                .contacts__map-image
         include ./modules/footer

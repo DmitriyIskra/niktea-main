@@ -1,0 +1,129 @@
+- 
+    let dataCards = [
+            {
+                href: './in-development.html',
+                string1: ['Эрл Грей', Ультрамарин],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-earl-grey-ultramarine.png',
+                'img-anim': '../img/content/dellipack-earl-grey-ultramarine-animate.png',
+                alt: 'Эрл Грей Ультрамарин',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Жасмин изумруд'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-jasmine-emerald.png',
+                'img-anim': '../img/content/dellipack-jasmine-emerald-animate.png',
+                alt: 'Жасмин изумруд',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Горный чабрец'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-mountain-thyme.png',
+                'img-anim': '../img/content/dellipack-mountain-thyme-animate.png',
+                alt: 'Горный чабрец',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Ориентал Блум'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-oriental-bloom.png',
+                'img-anim': '../img/content/dellipack-oriental-bloom-animate.png',
+                alt: 'Ориентал Блум',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Фрут Маджента'],
+                string2: ['фруктовый чай'],
+                img: '../img/content/dellipack-fruit-magenta.png',
+                'img-anim': '../img/content/dellipack-fruit-magenta-animate.png',
+                alt: 'Фрут Маджента',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Ройбуш апельсин'],
+                string2: ['травяной чай'],
+                img: '../img/content/dellipack-rooibush-orange.png',
+                'img-anim': '../img/content/dellipack-rooibush-orange-animate.png',
+                alt: 'Ройбуш апельсин',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Ассорти'],
+                string2: ['пять вкусов'],
+                img: '../img/content/dellipack-assorti.png',
+                'img-anim': '../img/content/dellipack-assorti-animate.png',
+                alt: 'Ассорти',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Английский завтрак'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-english-breakfast.png',
+                'img-anim': '../img/content/dellipack-english-breakfast-animate.png',
+                alt: 'Английский завтрак',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Кения Сапфир'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-kenya-sapphire.png',
+                'img-anim': '../img/content/dellipack-kenya-sapphire-animate.png',
+                alt: 'Кения Сапфир',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Красная поляна'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-red-meadow.png',
+                'img-anim': '../img/content/dellipack-red-meadow-animate.png',
+                alt: 'Красная поляна',
+                classCard: 'dellipack',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Молочный Улун'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-milk-oolong.png',
+                'img-anim': '../img/content/dellipack-milk-oolong-animate.png',
+                alt: 'Молочный Улун',
+                classCard: 'dellipack',
+            },
+        ];
+        
+- let classPage = 'dellipack';
+- let title = 'Пакетированный чай на чашку';
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Пакетированный чай на чашку', url: './catalog-dellipack-per-cup.html'}
+    ];
+
+doctype html 
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Пакетированный чай на чашку
+    body(data-variant='catalog')
+        include ./modules/header.pug
+
+        main.main
+            include ./modules/bread-crumbs
+                
+            include ./modules/catalog-packs-cards
+                
+
+        include ./modules/footer

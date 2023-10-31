@@ -78,16 +78,27 @@
 
     display: flex !important;
 
-    background: no-repeat url(../img/background-card-packs-same.png), linear-gradient(180deg, #7775B6, #494694);
-    background-size: cover;
-    background-position: center;
     border-radius: 2.57vw;
 
-    overflow: hidden;
+    overflow: hidden; 
     justify-content: center;
 }
 
-.same-packs__wr-animate-img {
+.same-packs__link_dellipack {
+    background: no-repeat url(../img/card-background-dellipack.png), linear-gradient(180deg, #7775B6, #494694);
+    background-size: cover;
+    background-position: center;
+}
+
+.same-packs__link_pyramid {
+    background: no-repeat url(../img/card-background-pyramid.png), linear-gradient(180deg, #7775B6, #494694);
+    background-size: cover;
+    background-position: center;
+}
+/*  */
+/* card-background-pyramid.png */
+
+.same-packs__wr-animate-img { 
     position: absolute;
     top: -8%;
 
@@ -124,6 +135,25 @@
     justify-content: center;
 
     z-index: 2;
+}
+
+/* Индивидуальные размеры */
+
+.same-packs__wr-pack-img_pyramid {
+    width: 13.59vw !important;
+}
+
+.same-packs__wr-pack-img_dellipack {
+    width: 11.15vw;
+}
+
+/* Конец индивидуальные размеры  */
+
+.same-packs__pack-img {
+    object-fit: contain;
+    object-position: center;
+    height: 100%;
+    width: 100%;
 }
 
 .same-packs__wr-description {
@@ -240,6 +270,16 @@
 @media (max-width: 768px) {
     .same-packs__wr-animate-img {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .same-packs__wr-pack-img_pyramid {
+        width: 49.60vw;
+    }
+
+    .same-packs__wr-pack-img_dellipack {
+        width: 42.40vw;
     }
 }
 

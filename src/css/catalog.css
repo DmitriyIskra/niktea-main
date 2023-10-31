@@ -184,18 +184,7 @@
 }
 
 
-/* Начало Карточки */
 
-.same-packs__wr-pack-img_pyramid {
-    margin-top: -2.24vw;
-}
-
-.same-packs__pack-img_pyramid {
-    width: 13.59vw;
-    height: 18.75vw;
-}
-
-/* Конец Карточки */
 
 
 .catalog__card--img--width {
@@ -204,13 +193,13 @@
 }
 .catalog__item--pyra {
     background-size: contain;
-    background-image: url(../img/icons/pyra.svg);
+    background-image: url(../img/card-background-pyramid.png);
 }
 
 .catalog__item--pack {
     background-size: contain;
-    background-image: url(../img/icons/tea-bug.svg);
-}
+    background-image: url(../img/card-background-dellipack.png);
+} 
 
 .catalog__item--tea-pot {
     background-size: contain;
@@ -549,11 +538,6 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
-    .same-packs__pack-img_pyramid {
-        width: 49.60vw;
-        height: 62.13vw;
-    }
-}
+
 
 

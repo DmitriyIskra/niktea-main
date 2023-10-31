@@ -1,6 +1,10 @@
-.breadcrumbs__container
+.breadcrumbs__wrapper
     ul.breadcrumbs__list
-        li.breadcrumbs__item
-            a.breadcrumbs__item__link(href='index.html') Крошка
-        li.breadcrumbs__item
-            a.breadcrumbs__item__link(href='catalog.html') Крошка
+        each item,i in breadcrumbs
+            if i !== breadcrumbs.length - 1
+                li.breadcrumbs__item 
+                    a.breadcrumbs__item__link(href=item.url title=item.name) #{item.name}
+                div.breadcrumbs__slash /
+            else
+                li.breadcrumbs__item 
+                    a.breadcrumbs__item__link.breadcrumbs__active(href=item.url title=item.name) #{item.name}

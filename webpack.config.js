@@ -151,8 +151,16 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/strawberry-panna-cotta.pug',
-      filename: './strawberry-panna-cotta.html',   // куда компилировать
+      template: './src/pug/catalog-dellipack-per-cup.pug',
+      filename: './catalog-dellipack-per-cup.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-strawberry-panna-cotta.pug',
+      filename: './product-card-strawberry-panna-cotta.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },

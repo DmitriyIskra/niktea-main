@@ -166,6 +166,62 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-siberian-berries.pug',
+      filename: './product-card-siberian-berries.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-ginger-tropic.pug',
+      filename: './product-card-ginger-tropic.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-green-wind.pug',
+      filename: './product-card-green-wind.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-forest-meditation.pug',
+      filename: './product-card-forest-meditation.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-milk-oolong.pug',
+      filename: './product-card-milk-oolong.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-russian-breakfast.pug',
+      filename: './product-card-russian-breakfast.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-earl-grey.pug',
+      filename: './product-card-earl-grey.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
     
     
     

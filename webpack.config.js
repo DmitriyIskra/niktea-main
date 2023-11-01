@@ -159,64 +159,152 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-strawberry-panna-cotta.pug',
-      filename: './product-card-strawberry-panna-cotta.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-strawberry-panna-cotta.pug',
+      filename: './product-card-pyramid-strawberry-panna-cotta.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-siberian-berries.pug',
-      filename: './product-card-siberian-berries.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-siberian-berries.pug',
+      filename: './product-card-pyramid-siberian-berries.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-ginger-tropic.pug',
-      filename: './product-card-ginger-tropic.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-ginger-tropic.pug',
+      filename: './product-card-pyramid-ginger-tropic.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-green-wind.pug',
-      filename: './product-card-green-wind.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-green-wind.pug',
+      filename: './product-card-pyramid-green-wind.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-forest-meditation.pug',
-      filename: './product-card-forest-meditation.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-forest-meditation.pug',
+      filename: './product-card-pyramid-forest-meditation.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-milk-oolong.pug',
-      filename: './product-card-milk-oolong.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-milk-oolong.pug',
+      filename: './product-card-pyramid-milk-oolong.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-russian-breakfast.pug',
-      filename: './product-card-russian-breakfast.html',   // куда компилировать
+      template: './src/pug/product-card-pyramid-russian-breakfast.pug',
+      filename: './product-card-pyramid-russian-breakfast.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking', 
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-pyramid-earl-grey.pug',
+      filename: './product-card-pyramid-earl-grey.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/product-card-earl-grey.pug',
-      filename: './product-card-earl-grey.html',   // куда компилировать
+      template: './src/pug/product-card-dellipack-earl-grey.pug',
+      filename: './product-card-dellipack-earl-grey.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-jasmine-emerald.pug',
+      filename: './product-card-dellipack-jasmine-emerald.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-mountain-thyme.pug',
+      filename: './product-card-dellipack-mountain-thyme.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-oriental-bloom.pug',
+      filename: './product-card-dellipack-oriental-bloom.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-fruit-magenta.pug',
+      filename: './product-card-dellipack-fruit-magenta.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-rooibush-orange.pug',
+      filename: './product-card-dellipack-rooibush-orange.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-assorti.pug',
+      filename: './product-card-dellipack-assorti.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-english-breakfast.pug',
+      filename: './product-card-dellipack-english-breakfast.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-kenya-sapphire.pug',
+      filename: './product-card-dellipack-kenya-sapphire.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-red-meadow.pug',
+      filename: './product-card-dellipack-red-meadow.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-milk-oolong.pug',
+      filename: './product-card-dellipack-milk-oolong.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },

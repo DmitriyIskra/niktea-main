@@ -182,6 +182,10 @@
         width: 100%;
         height: 94vw;
     }
+
+    .prc__wr-product-img_dellipack {
+        height: 103vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -275,7 +279,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { 
     .prc__start-bottom {
         right: 12vw;
         bottom: 49.33vw;

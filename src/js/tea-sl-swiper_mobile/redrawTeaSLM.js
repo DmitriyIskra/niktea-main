@@ -1,8 +1,19 @@
 export default class RedrawTeaSLM {
-    #VAL
     constructor(Swiper, slider) {
         this.slider = slider;
         this.Swiper = Swiper;
+        this.spaceBetween = null;
+    }
+
+    controllType() {
+        const href = location.href;
+        if(href.indexOf('pyramid') !== -1) {
+            console.log(href.indexOf('pyramid'))
+            this.spaceBetween = 16;
+        } else if(href.indexOf('dellipack') !== -1) {
+            console.log('dellipack')
+            this.spaceBetween = 0;
+        }
     }
 
     render() {
@@ -13,7 +24,7 @@ export default class RedrawTeaSLM {
             breakpoints: {
                 375: {
                     slidesPerView: 1.5,
-                    spaceBetween: 16,
+                    spaceBetween: this.spaceBetween,
                 }
             }   
         })

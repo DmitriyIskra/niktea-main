@@ -1,17 +1,18 @@
 - 
     let dataProductCard = {
-        title: ['Milk Oolong', 'Молочный Улун'],
-        img: '../img/content/product-card-pyramid-milk-oolong.png',
+        title: ['Russian Breakfast', 'Русский Завтрак'],
+        img: '../img/content/product-card-pyramid-russian-breakfast.png',
         'img-animate': '',
-        description: 'Классический улун с шелковистой текстурой и мягким сливочным вкусом. Универсальный чай, подходит к легким закускам и полноценным блюдам.',
-        composition: 'Состав: Чай частично ферментированный (оолонг) крупнолистовой китайский, ароматизатор пищевой «Молоко».',
+        description: 'Искусно купажированный чай с плантаций Индии и Цейлона. Благодаря насыщенному живому вкусу и хорошей сладости им можно наслаждаться во время даже самого плотного завтрака.',
+        composition: 'Состав: Чай черный байховый среднелистовой индийский и цейлонский.',
         'amount-icon-type': 'pyramid',
         //- 'amount-icon-type': 'dellipack',
         'amount-text': '15шт.',
         'weight-text': '40,5г.',
         'method-size': '200мл.',
         'method-temp': '90-100С',
-        'method-time': '3-5мин.'
+        'method-time': '3-5мин.',
+        'class-page': 'pyramid',
     }
 
 
@@ -57,7 +58,7 @@
         {name: 'Главная', url: './index.html'},
         {name: 'Каталог', url: './catalog.html'},
         {name: 'Порционный чай в пирамидках', url: './catalog-pyramid.html'},
-        {name: 'Milk Oolong | Молочный Улун', url: './product-card-milk-oolong.html'},
+        {name: 'Russian Breakfast | Русский Завтрак', url: './product-card-russian-breakfast.html'},
     ]
 
 
@@ -66,7 +67,7 @@ html(lang='ru')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        title Молочный Улун
+        title Русский Завтрак
     body(data-variant='catalog')
 
         include ./modules/header.pug

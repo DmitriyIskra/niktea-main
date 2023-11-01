@@ -1,17 +1,18 @@
 - 
     let dataProductCard = {
-        title: ['Green Wind', 'Зеленый Ветер'],
-        img: '../img/content/product-card-pyramid-green-wind.png',
+        title: ['Forest Meditation', 'Лесная Медитация'],
+        img: '../img/content/product-card-pyramid-forest-meditation.png',
         'img-animate': '',
-        description: 'Свежий зеленый чай из Китая с очень насыщенным и ярким вкусом. В его букете фруктовые ноты, молодой зеленый горошек и чуть терпкие травянистые оттенки. На послевкусии - микс сладости и легкой горчинки.',
-        composition: 'Состав: Чай зеленый байховый крупнолистовой китайский.',
+        description: 'Полезный травяной сбор с теплым бальзамическим ароматом летнего леса. Раскрывается сладостью и в завершении - прохладной ментольной ноткой.',
+        composition: 'Состав: Листья ежевики, цветки липы, листья мяты, листья земляники, цветы ромашки, листья мелиссы.',
         'amount-icon-type': 'pyramid',
         //- 'amount-icon-type': 'dellipack',
         'amount-text': '15шт.',
         'weight-text': '40,5г.',
         'method-size': '200мл.',
         'method-temp': '90-100С',
-        'method-time': '3-5мин.'
+        'method-time': '3-5мин.',
+        'class-page': 'pyramid',
     }
 
 
@@ -57,7 +58,7 @@
         {name: 'Главная', url: './index.html'},
         {name: 'Каталог', url: './catalog.html'},
         {name: 'Порционный чай в пирамидках', url: './catalog-pyramid.html'},
-        {name: 'Green Wind | Зеленый Ветер', url: './product-card-green-wind.html'},
+        {name: 'Forest Meditation | Лесная Медитация', url: './product-card-forest-meditation.html'},
     ]
 
 
@@ -66,7 +67,7 @@ html(lang='ru')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        title Зеленый Ветер
+        title Лесная Медитация
     body(data-variant='catalog')
 
         include ./modules/header.pug

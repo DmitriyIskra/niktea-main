@@ -4,6 +4,7 @@ export default class ControllTeaSLM  {
     }
     
     init() {
+        this.draw.controllType();
         this.draw.render();
     }
 }

@@ -6,7 +6,7 @@
                     span #{item}
 
     .prc__about-product
-        .prc__wr-product-img 
+        .prc__wr-product-img(class="prc__wr-product-img_" + dataProductCard['class-page'])
             img.prc__product-img(src=dataProductCard.img alt=dataProductCard.title[1])
         .prc__wr-product-description_back
             .prc__wr-product-description

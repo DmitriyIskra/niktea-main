@@ -1,0 +1,103 @@
+- 
+    let dataProductCard = {
+        title: ['Jasmine Emerald', 'Жасмин Эмеральд'],
+        img: '../img/content/product-card-dellipack-jasmine-emerald.png',
+        'img-animate': '',
+        description: 'Воздушный зеленый чай с белоснежными лепестками летнего жасмина и элегантным чувственным ароматом. Полезен благодаря содержанию эфирных масел.',
+        composition: 'Состав: Чай зеленый байховый, цветки жасмина',
+        //- 'amount-icon-type': 'pyramid',
+        'amount-icon-type': 'dellipack',
+        'amount-text': '25шт.',
+        'weight-text': '50г.',
+        'method-size': '200мл.',
+        'method-temp': '90-100С',
+        'method-time': '3-5мин.',
+        'class-page': 'dellipack',
+    }
+
+
+- 
+    let dataSlider = [
+        {
+            path: '../img/content/dellipack-earl-grey-ultramarine.png',
+            alt: 'Эрл Грей Ультрамарин'
+        },
+        {
+            path:'../img/content/dellipack-jasmine-emerald.png',
+            alt: 'Жасмин Изумруд'
+        },
+        {
+            path: '../img/content/dellipack-mountain-thyme.png',
+            alt: 'Горный чабрец'
+        },                          
+        {
+            path: '../img/content/dellipack-oriental-bloom.png',
+            alt: 'Ориентал Блум'
+        },
+        {
+            path: '../img/content/dellipack-fruit-magenta.png',
+            alt: 'Фрут Маджента'
+        },
+        {
+            path: '../img/content/dellipack-rooibush-orange.png',
+            alt: 'Ройбуш апельсин'
+        },
+        {
+            path: '../img/content/dellipack-assorti.png',
+            alt: 'Ассорти'
+        },
+        {
+            path: '../img/content/dellipack-english-breakfast.png',
+            alt: 'Английский завтрак'
+        },
+        {
+            path: '../img/content/dellipack-kenya-sapphire.png',
+            alt: 'Кения Сапфир'
+        },
+        {
+            path: '../img/content/dellipack-red-meadow.png',
+            alt: 'Красная поляна'
+        },
+        {
+            path: '../img/content/dellipack-milk-oolong.png',
+            alt: 'Молочный Улун'
+        },
+    
+    ]
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Пакетированный чай на чашку', url: './catalog-dellipack-per-cup.html'},
+        {name: 'Jasmine Emerald | Жасмин Эмеральд', url: './product-card-dellipack-jasmine-emerald.html'},
+    ]
+
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Жасмин Эмеральд
+    body(data-variant='catalog')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs 
+
+            include ./modules/product-card-description
+
+            .prc__wr-title-slider
+                h2.prc__title-slider Попробуйте другие вкусы
+
+            .prc__wr-slider
+                include ./modules/tea-sl-slider
+
+            .prc__wr-slider_mobile
+                include ./modules/tea-sl-swiper-mobile
+
+
+        include ./modules/footer

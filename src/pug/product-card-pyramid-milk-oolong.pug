@@ -1,17 +1,18 @@
 - 
     let dataProductCard = {
-        title: ['Earl Grey', 'Эрл Грей'],
-        img: '../img/content/product-card-pyramid-earl-grey.png',
+        title: ['Milk Oolong', 'Молочный Улун'],
+        img: '../img/content/product-card-pyramid-milk-oolong.png',
         'img-animate': '',
-        description: 'Крепкий черный чай с превосходной текстурой, дополненный приятными цитрусовыми нотами. Бергамот смягчает присущую чаю терпкость и добавляет свежести. Подходит для подачи с молоком и в чистом виде.',
-        composition: 'Состав: Чай черный байховый среднелистовой индийский, ароматизатор пищевой «Бергамот».',
+        description: 'Классический улун с шелковистой текстурой и мягким сливочным вкусом. Универсальный чай, подходит к легким закускам и полноценным блюдам.',
+        composition: 'Состав: Чай частично ферментированный (оолонг) крупнолистовой китайский, ароматизатор пищевой «Молоко».',
         'amount-icon-type': 'pyramid',
         //- 'amount-icon-type': 'dellipack',
         'amount-text': '15шт.',
         'weight-text': '40,5г.',
         'method-size': '200мл.',
         'method-temp': '90-100С',
-        'method-time': '3-5мин.'
+        'method-time': '3-5мин.',
+        'class-page': 'pyramid',
     }
 
 
@@ -57,7 +58,7 @@
         {name: 'Главная', url: './index.html'},
         {name: 'Каталог', url: './catalog.html'},
         {name: 'Порционный чай в пирамидках', url: './catalog-pyramid.html'},
-        {name: 'Earl Grey | Эрл Грей', url: './product-card-earl-grey.html'},
+        {name: 'Milk Oolong | Молочный Улун', url: './product-card-milk-oolong.html'},
     ]
 
 
@@ -66,7 +67,7 @@ html(lang='ru')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        title Эрл Грей
+        title Молочный Улун
     body(data-variant='catalog')
 
         include ./modules/header.pug

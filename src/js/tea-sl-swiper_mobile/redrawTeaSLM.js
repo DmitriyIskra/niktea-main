@@ -8,12 +8,12 @@ export default class RedrawTeaSLM {
     controllType() {
         const href = location.href;
         if(href.indexOf('pyramid') !== -1) {
-            console.log(href.indexOf('pyramid'))
+            this.spaceBetween = 16;
+        } else if(href.indexOf('dellipack-tea-pot') !== -1) {
             this.spaceBetween = 16;
         } else if(href.indexOf('dellipack') !== -1) {
-            console.log('dellipack')
             this.spaceBetween = 0;
-        }
+        } 
     }
 
     render() {

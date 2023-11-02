@@ -159,6 +159,14 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
+      template: './src/pug/catalog-dellipack-per-tea-pot.pug',
+      filename: './catalog-dellipack-per-tea-pot.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
       template: './src/pug/product-card-pyramid-strawberry-panna-cotta.pug',
       filename: './product-card-pyramid-strawberry-panna-cotta.html',   // куда компилировать
       minify: {
@@ -305,6 +313,62 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/pug/product-card-dellipack-milk-oolong.pug',
       filename: './product-card-dellipack-milk-oolong.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-mountain-thyme.pug',
+      filename: './product-card-dellipack-tea-pot-mountain-thyme.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-milk-oolong.pug',
+      filename: './product-card-dellipack-tea-pot-milk-oolong.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-berry-cocktail.pug',
+      filename: './product-card-dellipack-tea-pot-berry-cocktail.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-earl-grey.pug',
+      filename: './product-card-dellipack-tea-pot-earl-grey.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-silver-jasmine.pug',
+      filename: './product-card-dellipack-tea-pot-silver-jasmine.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-king-breakfast.pug',
+      filename: './product-card-dellipack-tea-pot-king-breakfast.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-tea-pot-sencha-classic.pug',
+      filename: './product-card-dellipack-tea-pot-sencha-classic.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },

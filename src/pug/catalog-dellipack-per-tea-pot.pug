@@ -1,0 +1,93 @@
+- 
+    let dataCards = [ 
+            {
+                href: './product-card-dellipack-tea-pot-mountain-thyme.html',
+                string1: ['Горный чабрец'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-tea-pot-mountain-thyme.png',
+                'img-anim': '../img/content/dellipack-tea-pot-mountain-thyme-animation.png',
+                alt: 'Горный чабрец',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './product-card-dellipack-tea-pot-milk-oolong.html',
+                string1: ['Молочный Улун'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-tea-pot-milk-oolong.png',
+                'img-anim': '../img/content/dellipack-tea-pot-milk-oolong-animation.png',
+                alt: 'Молочный Улун',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './product-card-dellipack-tea-pot-berry-cocktail.html',
+                string1: ['Ягодный коктейль'],
+                string2: ['фруктовый чай'],
+                img: '../img/content/dellipack-tea-pot-berry-cocktail.png',
+                'img-anim': '../img/content/dellipack-tea-pot-berry-cocktail-animation.png',
+                alt: 'Ягодный коктейль',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './product-card-dellipack-tea-pot-earl-grey.html',
+                string1: ['Эрл Грей'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-tea-pot-earl-gray.png',
+                'img-anim': '../img/content/dellipack-tea-pot-earl-gray-animate.png',
+                alt: 'Эрл Грей',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './product-card-dellipack-tea-pot-silver-jasmine.html',
+                string1: ['Серебряный жасмин'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-tea-pot-silver-jasmine.png',
+                'img-anim': '../img/content/dellipack-tea-pot-silver-jasmine-animation.png',
+                alt: 'Серебряный жасмин',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './product-card-dellipack-tea-pot-king-breakfast.html',
+                string1: ['Королевский завтрак'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-tea-pot-king-breakfast.png',
+                'img-anim': '../img/content/dellipack-tea-pot-king-breakfast-animation.png',
+                alt: 'Королевский завтрак',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './product-card-dellipack-tea-pot-sencha-classic.html',
+                string1: ['Сенча Классик'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-tea-pot-sencha-classic.png',
+                'img-anim': '../img/content/dellipack-tea-pot-sencha-classic-animation.png',
+                alt: 'Сенча Классик',
+                classCard: 'tea-pot',
+            },
+        ];
+        
+- let classPage = 'dellipack-tea-pot'
+- let title = 'Пакетированный чай на чайник'
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Пакетированный чай на чайник', url: './catalog-dellipack-per-tea-pot.html'}
+    ]
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Пакетированный чай на чайник
+    body(data-variant='catalog')
+        include ./modules/header.pug
+
+        main.main
+            include ./modules/bread-crumbs
+                
+            include ./modules/catalog-packs-cards
+                
+
+        include ./modules/footer

@@ -40,6 +40,11 @@
     height: 37.45vw;
 }
 
+.prc__wr-product-img_tea-pot {
+    height: 38.45vw;
+    width: 41.46vw;
+}
+
 .prc__product-img {
     width: 100%;
     height: 100%;
@@ -185,6 +190,10 @@
 
     .prc__wr-product-img_dellipack {
         height: 103vw;
+    }
+
+    .prc__wr-product-img_tea-pot {
+        height: 70vw;
     }
 }
 

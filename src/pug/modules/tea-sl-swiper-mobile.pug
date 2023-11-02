@@ -1,7 +1,7 @@
 .swiper.tea-sl-swiper_mobile
     .swiper-wrapper
         each item in dataSlider
-            .swiper-slide.tea-sl-m__slide
+            .swiper-slide.tea-sl-m__slide(class="tea-sl-m__slide_" + classSlMobileSlider)
                 img.tea-sl-m__slide-img(src=item.path alt=item.alt)
         //- .swiper-slide.tea-sl-m__slide
         //-     img.tea-sl-m__slide-img(src='../img/content/pyramid-ginger-tropic.png')

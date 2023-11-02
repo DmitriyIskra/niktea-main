@@ -1,0 +1,87 @@
+- 
+    let dataProductCard = {
+        title: ['Mountain Thyme', 'Горный Чабрец'],
+        img: '../img/content/product-card-dellipack-tea-pot-mountain-thyme.png',
+        'img-animate': '',
+        description: 'Пряный черный чай с листочками душистого горного чабреца. Букет зрелый, древесный, чуть маслянистый. Прекрасно сочетается с блюдами из мяса и печеных овощей.',
+        composition: 'Состав: Чай черный листовой, чабрец.',
+        //- 'amount-icon-type': 'pyramid',
+        'amount-icon-type': 'dellipack',
+        'amount-text': '20шт.',
+        'weight-text': '80г.',
+        'method-size': '200мл.',
+        'method-temp': '90-100С',
+        'method-time': '3-5мин.',
+        'class-page': 'tea-pot',
+    }
+
+- let classSlMobileSlider = 'dellipack-tea-pot';
+
+- 
+    let dataSlider = [
+        {
+            path: '../img/content/dellipack-tea-pot-mountain-thyme.png',
+            alt: 'Горный чабрец'
+        },
+        {
+            path:'../img/content/dellipack-tea-pot-milk-oolong.png',
+            alt: 'Молочный Улун'
+        },
+        {
+            path: '../img/content/dellipack-tea-pot-berry-cocktail.png',
+            alt: 'Ягодный коктейль'
+        },                          
+        {
+            path: '../img/content/dellipack-tea-pot-earl-gray.png',
+            alt: 'Эрл Грей'
+        },
+        {
+            path: '../img/content/dellipack-tea-pot-silver-jasmine.png',
+            alt: 'Серебряный жасмин'
+        },
+        {
+            path: '../img/content/dellipack-tea-pot-king-breakfast.png',
+            alt: 'Королевский завтрак'
+        },
+        {
+            path: '../img/content/dellipack-tea-pot-sencha-classic.png',
+            alt: 'Сенча Классик'
+        },    
+    ]
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Пакетированный чай на чайник', url: './catalog-dellipack-per-tea-pot.html'},
+        {name: 'Mountain Thyme | Горный Чабрец', url: './product-card-dellipack-tea-pot-mountain-thyme.html'},
+    ]
+
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Горный Чабрец
+    body(data-variant='catalog')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs 
+
+            include ./modules/product-card-description
+
+            .prc__wr-title-slider
+                h2.prc__title-slider Попробуйте другие вкусы
+
+            .prc__wr-slider
+                include ./modules/tea-sl-slider
+
+            .prc__wr-slider_mobile
+                include ./modules/tea-sl-swiper-mobile
+
+
+        include ./modules/footer

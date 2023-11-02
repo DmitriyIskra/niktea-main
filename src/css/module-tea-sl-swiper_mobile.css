@@ -4,7 +4,7 @@
 
         transition: height 0.3s ease;
         align-self: center;
-    }
+    } 
 
     .tea-sl-m__slide.swiper-slide-prev {
         height: 80.6vw;
@@ -12,6 +12,23 @@
 
     .tea-sl-m__slide.swiper-slide-next {
         height: 80.6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .tea-sl-m__slide_dellipack-tea-pot {
+        height: 64.6vw;
+
+        transition: height 0.3s ease;
+        align-self: center;
+    } 
+
+    .tea-sl-m__slide_dellipack-tea-pot.swiper-slide-prev {
+        height: 56.6vw;
+    }
+
+    .tea-sl-m__slide_dellipack-tea-pot.swiper-slide-next {
+        height: 56.6vw;
     }
 }
 

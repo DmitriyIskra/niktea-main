@@ -1,6 +1,8 @@
 .same-packs__wrapper 
     .same-packs__wr-title 
-        h2.same-packs__title #{title} 
+        h2.same-packs__title
+            each item in title 
+                span #{item} 
     ul.same-packs__list 
         each el,i in dataCards
             li.same-packs__item

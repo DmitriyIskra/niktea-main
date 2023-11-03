@@ -167,6 +167,14 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
+      template: './src/pug/catalog-leaf.pug',
+      filename: './catalog-leaf.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
       template: './src/pug/product-card-pyramid-strawberry-panna-cotta.pug',
       filename: './product-card-pyramid-strawberry-panna-cotta.html',   // куда компилировать
       minify: {
@@ -357,7 +365,7 @@ module.exports = {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
       scriptLoading: 'blocking',
-    }),
+    }), 
     new HtmlWebPackPlugin({
       template: './src/pug/product-card-dellipack-tea-pot-king-breakfast.pug',
       filename: './product-card-dellipack-tea-pot-king-breakfast.html',   // куда компилировать
@@ -374,6 +382,31 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-leaf-jin-hao.pug',
+      filename: './product-card-leaf-jin-hao.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-leaf-tie-guan-yin.pug',
+      filename: './product-card-leaf-tie-guan-yin.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-leaf-da-hong-pao.pug',
+      filename: './product-card-leaf-da-hong-pao.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+
     
     
     

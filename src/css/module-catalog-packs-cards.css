@@ -103,6 +103,12 @@
     background-size: cover;
     background-position: center;
 }
+
+.same-packs__link_leaf {
+    background: no-repeat url(../img/card-background-leaf.png), linear-gradient(180deg, #7775B6, #494694);
+    background-size: cover;
+    background-position: center;
+}
 /*  */
 /* card-background-pyramid.png */
 
@@ -158,6 +164,11 @@
 .same-packs__wr-pack-img_tea-pot {
     width: 14.84vw;
     margin-top: -1vw;
+}
+
+.same-packs__wr-pack-img_leaf {
+    margin-top: -0.4vw;
+    width: 13.15vw;
 }
 
 /* Конец индивидуальные размеры  */
@@ -219,7 +230,7 @@
 
 @media (min-width: 769px) {
     .same-packs__wr-link:hover .same-packs__wr-animate-img {
-        transform: scale(120%, 120%);
+        transform: scale(125%, 125%);
     }
 }
 
@@ -299,6 +310,11 @@
 
     .same-packs__wr-pack-img_tea-pot {
         width: 59.40vw;
+        margin-top: -4vw;
+    }
+
+    .same-packs__wr-pack-img_leaf {
+        width: 50.40vw;
         margin-top: -4vw;
     }
 }

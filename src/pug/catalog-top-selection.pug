@@ -1,0 +1,60 @@
+- 
+    let dataCards = [
+            {
+                //- href: './product-card-top-selection-cedar-powder.html',
+                href: './in-development.html',
+                string1: ['Матча травяная'],
+                string2: ['кедр'],
+                img: '../img/content/top-selection-cedar-powder.png',
+                'img-anim': '../img/content/top-selection-cedar-powder-animation.png',
+                alt: 'Матча травяная кедр',
+                classCard: 'top-selection',
+            },
+            {
+                //- href: './product-card-top-selection-meadowsweet.html',
+                href: './in-development.html',
+                string1: ['Матча травяная'],
+                string2: ['таволга'],
+                img: '../img/content/top-selection-meadow-sweet-powder.png',
+                'img-anim': '../img/content/top-selection-meadow-sweet-powder-animation.png',
+                alt: 'Матча травяная таволга',
+                classCard: 'top-selection',
+            },
+            {
+                //- href: './product-card-top-selection-japan-matcha-traditional.html',
+                href: './in-development.html',
+                string1: ['Матча'], 
+                string2: ['традиционная'],
+                img: '../img/content/top-selection-traditional-matcha.png',
+                'img-anim': '../img/content/top-selection-traditional-matcha-animation.png',
+                alt: 'Матча традиционная',
+                classCard: 'top-selection',
+            },
+        ];
+        
+- let classPage = 'top-selection';
+- let title = ['Листовой чай TOP SELECTION'];
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Листовой чай TOP SELECTION', url: './catalog-top-selection.html'}
+    ]
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title TOP SELECTION
+    body(data-variant='catalog')
+        include ./modules/header.pug
+
+        main.main
+            include ./modules/bread-crumbs
+                
+            include ./modules/catalog-packs-cards
+                
+
+        include ./modules/footer

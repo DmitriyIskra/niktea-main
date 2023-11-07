@@ -167,8 +167,16 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/catalog-leaf.pug',
-      filename: './catalog-leaf.html',   // куда компилировать
+      template: './src/pug/catalog-leaf-basic.pug',
+      filename: './catalog-leaf-basic.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/catalog-top-selection.pug',
+      filename: './catalog-top-selection.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
@@ -436,7 +444,7 @@ module.exports = {
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },
-      scriptLoading: 'blocking',
+      scriptLoading: 'blocking', 
     }),
     new HtmlWebPackPlugin({
       template: './src/pug/product-card-leaf-healing-herbs.pug',
@@ -622,6 +630,30 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    // new HtmlWebPackPlugin({
+    //   template: './src/pug/product-card-top-selection-japan-matcha-traditional.pug',
+    //   filename: './product-card-top-selection-japan-matcha-traditional.html',   // куда компилировать
+    //   minify: {
+    //     html: false // отключаем минификацию html, еще есть версия minify: false
+    //   },
+    //   scriptLoading: 'blocking',
+    // }),
+    // new HtmlWebPackPlugin({
+    //   template: './src/pug/product-card-top-selection-meadowsweet.pug',
+    //   filename: './product-card-top-selection-meadowsweet.html',   // куда компилировать
+    //   minify: {
+    //     html: false // отключаем минификацию html, еще есть версия minify: false
+    //   },
+    //   scriptLoading: 'blocking',
+    // }),
+    // new HtmlWebPackPlugin({
+    //   template: './src/pug/product-card-top-selection-cedar-powder.pug',
+    //   filename: './product-card-top-selection-cedar-powder.html',   // куда компилировать
+    //   minify: {
+    //     html: false // отключаем минификацию html, еще есть версия minify: false
+    //   },
+    //   scriptLoading: 'blocking',
+    // }),
 
     
     

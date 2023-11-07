@@ -7,14 +7,14 @@
         each el,i in dataCards
             li.same-packs__item
                 .same-packs__wr-link
-                    .same-packs__wr-animate-img
+                    .same-packs__wr-animate-img(class="same-packs__wr-animate-img_" + el.classCard)
                             img.same-packs__animate-img(src=el['img-anim'])
                     a.same-packs__link(class="same-packs__link_" + el.classCard href=el.href)   
                         .same-packs__wr-pack-img(class="same-packs__wr-pack-img_" + el.classCard)
                             img(class="same-packs__pack-img_" + el.classCard).same-packs__pack-img(src=el.img)
                         .same-packs__wr-description 
                             p 
-                                each item in el.string1
+                                each item in el.string1 
                                     span #{item} 
                             p
                                 each item in el.string2

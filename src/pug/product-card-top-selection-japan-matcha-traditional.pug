@@ -1,0 +1,74 @@
+- 
+    let dataProductCard = {
+        title: ['Japan Matcha Traditional', 'Япония - Матча Традиционная'],
+        img: '../img/content/product-card-top-selection-traditional-matcha.png',
+        'img-animate': '',
+        description: 'Классический японский зеленый чай, который используется в традиционной чайной церемонии. Нежная чайная пудра изготовлена из молодых весенних листьев и обладает освежающим, чуть терпким вкусом. Чай богат антиоксидантами и аминокислотами, благодаря чему оказывает мягкий бодрящий эффект и способствует концентрации внимания. Неизменный ингредиент ультрамодных чайных коктейлей.',
+        composition: 'Состав: Чай зеленый байховый (порошковый)',
+        //- 'amount-icon-type': 'pyramid',
+        //- 'amount-icon-type': 'dellipack',
+        //- 'amount-icon-type': 'leaf',
+        'amount-icon-type': 'top-selection',
+        //- 'amount-text': '20шт.',
+        'weight-text': '150г.',
+        'method-size': '50мл.',
+        'method-temp': '80-85С',
+        'method-spoon-weight': '1.5г.',
+        'method-time': '25сек.',
+        'class-page': 'top-selection', 
+    }
+
+- let classSlMobileSlider = 'top-selection';
+
+- 
+    let dataSlider = [
+        {
+            path: '../img/content/top-selection-cedar-powder.png',
+            alt: 'Матча травяная кедр',
+        },
+        {
+            path: '../img/content/top-selection-meadow-sweet-powder.png',
+            alt: 'Матча травяная таволга',
+        },
+        {
+            path: '../img/content/top-selection-traditional-matcha.png',
+            alt: 'Матча традиционная',
+        },
+    ]
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Листовой чай TOP SELECTION', url: './catalog-top-selection.html'},
+        {name: 'Japan Matcha Traditional | Япония - Матча Традиционная', url: './product-card-top-selection-japan-matcha-traditional.html'},
+    ]
+
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Japan Matcha Traditional
+    body(data-variant='catalog')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs 
+
+            include ./modules/product-card-description
+
+            .prc__wr-title-slider
+                h2.prc__title-slider Попробуйте другие вкусы
+
+            .prc__wr-slider
+                include ./modules/tea-sl-slider
+
+            .prc__wr-slider_mobile
+                include ./modules/tea-sl-swiper-mobile
+
+
+        include ./modules/footer

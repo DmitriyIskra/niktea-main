@@ -158,6 +158,6 @@ export default class RedrawSl {
 
         this.stop = true;
 
-        setTimeout( () => this.stop = false, 200 );
+        setTimeout( () => this.stop = false, 400 );
     }
 }

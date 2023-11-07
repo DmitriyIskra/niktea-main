@@ -1,0 +1,180 @@
+- 
+    let dataProductCard = {
+        title: ['Rooibush', 'Ройбуш'],
+        img: '../img/content/product-card-leaf-rooibush.png',
+        'img-animate': '',
+        description: 'Ройбуш выращивается только в Седерберге, небольшом горном районе Западно-Капской провинции Южной Африки. Подобно традиционному черному чаю, специально отобранные, длинно нарезанные листья ройбуша ферментируются для получения сладкого янтарного настоя с древесно-медовыми и ягодными нотками.',
+        composition: 'Состав: Ройбуш',
+        //- 'amount-icon-type': 'pyramid',
+        //- 'amount-icon-type': 'dellipack',
+        'amount-icon-type': 'leaf',
+        //- 'amount-text': '20шт.',
+        'weight-text': '250г.',
+        'method-size': '400мл.',
+        'method-temp': '90-100С',
+        'method-time': '4-6мин.',
+        'class-page': 'leaf',
+    }
+
+- let classSlMobileSlider = 'leaf';
+
+- 
+    let dataSlider = [
+        {
+            path: '../img/content/leaf-jin-hao.png',
+            alt: 'Jin Hao',
+        },
+        {
+            path: '../img/content/leaf-tie-guan-yin.png',
+            alt: 'Tie Guan Yin',
+        },
+        {
+            path: '../img/content/leaf-da-hong-pao.png',
+            alt: 'Da hong pao',
+        },
+        {
+            path: '../img/content/leaf-uzbek-tea-95.png.png',
+            alt: 'Uzbek tea №95',
+        },
+        {
+            path: '../img/content/leaf-georgian-green-tea-36.png',
+            alt: 'Georgian green tea №36',
+        },
+        {
+            path: '../img/content/leaf-georgian-black-tea-36.png',
+            alt: 'Georgian black tea №36',
+        },
+        {
+            path: '../img/content/leaf-traditional-sbiten.png',
+            alt: 'Сбитень монастырский',
+        },
+        {
+            path: '../img/content/leaf-healing-herbs.png',
+            alt: 'Мыс целебных трав',
+        },
+        {
+            path: '../img/content/leaf-fireweed-natural.png',
+            alt: 'Иван-чай',
+        },
+        {
+            path: '../img/content/leaf-creamy-oolong.png',
+            alt: 'Сливочный улун',
+        },
+        {
+            path: '../img/content/leaf-dian-hong.png',
+            alt: 'Dian hong',
+        },
+        {
+            path: '../img/content/leaf-altai-herbal-mix-3.png',
+            alt: 'Алтайский сбор №3',
+        },
+        {
+            path: '../img/content/leaf-sagan-dale.png',
+            alt: 'Саган-Дайля',
+        },
+        {
+            path: '../img/content/leaf-altaic-herbs.png',
+            alt: 'Травы Алтая',
+        },
+        {
+            path: '../img/content/leaf-spicy-black.png',
+            alt: 'Черный купаж со специями',
+        },
+        {
+            path: '../img/content/leaf-altai-herbal-mix-1.png',
+            alt: 'Алтайский сбор №1',
+        },
+        {
+            path: '../img/content/leaf-altai-herbal-mix-2.png',
+            alt: 'Алтайский сбор №2',
+        },
+        {
+            path: '../img/content/leaf-thyme.png',
+            alt: 'Чабрец',
+        },
+        {
+            path: '../img/content/leaf-oregano.png',
+            alt: 'Душица',
+        },
+        {
+            path: '../img/content/leaf-black-currant-leaf.png',
+            alt: 'Лист смородины',
+        },
+        {
+            path: '../img/content/leaf-bergenia.png',
+            alt: 'Бадан',
+        },
+        {
+            path: '../img/content/leaf-lavender.png',
+            alt: 'Лаванда',
+        },
+        {
+            path: '../img/content/leaf-buckwheat-granulated.png',
+            alt: 'Гречишный чай гранулированный',
+        },
+        {
+            path: '../img/content/leaf-cascara.png',
+            alt: 'Каскара',
+        },
+        {
+            path: '../img/content/leaf-buckwheat.png',
+            alt: 'Гречишный чай',
+        },
+        {
+            path: '../img/content/leaf-butterly-pea-flower.png',
+            alt: 'Анчан',
+        },
+        {
+            path: '../img/content/leaf-gaba-oolong.png',
+            alt: 'Gaba Oolong',
+        },
+        {
+            path: '../img/content/leaf-rosehi-p.png',
+            alt: 'Шиповник',
+        },
+        {
+            path: '../img/content/leaf-hibiscus.png',
+            alt: 'Каркаде',
+        },
+        {
+            path: '../img/content/leaf-rooibush.png',
+            alt: 'Ройбуш',
+        },
+    ]
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Листовой чай Базовая линейка', url: './catalog-leaf.html'},
+        {name: 'Rooibush | Ройбуш', url: './product-card-leaf-rooibush.html'},
+    ]
+
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Rooibush
+    body(data-variant='catalog')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs 
+
+            include ./modules/product-card-description
+
+            .prc__wr-title-slider
+                h2.prc__title-slider Попробуйте другие вкусы
+
+            .prc__wr-slider
+                include ./modules/tea-sl-slider
+
+            .prc__wr-slider_mobile
+                include ./modules/tea-sl-swiper-mobile
+
+
+        include ./modules/footer

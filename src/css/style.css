@@ -49,7 +49,7 @@ body[data-variant="catalog"] {
   z-index: -10;
 }
 
-body[data-variant="product-card"] {
+body[data-variant="product-card"] { 
   content: "";
   width: 100%;
   height: 100%;
@@ -1712,6 +1712,7 @@ height: 45px; */
   .recepies .cards {
     margin-top: 5.87vw;
     margin-bottom: 0;
+    gap: 40px;
   }
 }
 

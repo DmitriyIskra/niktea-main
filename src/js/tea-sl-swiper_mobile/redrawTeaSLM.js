@@ -3,6 +3,10 @@ export default class RedrawTeaSLM {
         this.slider = slider;
         this.Swiper = Swiper;
         this.spaceBetween = null;
+
+        this.slides = this.slider.querySelectorAll('.swiper-slide');
+        this.amountSlides = this.slides.length;
+        this.slidesPerView = this.amountSlides <= 3 ? 1 : 1.5;
     }
 
     controllType() {
@@ -13,8 +17,10 @@ export default class RedrawTeaSLM {
             this.spaceBetween = 16;
         } else if(href.indexOf('dellipack') !== -1) {
             this.spaceBetween = 0;
-        } 
-    }
+        } else if(href.indexOf('top-selection') !== -1) {
+        this.spaceBetween = 0;
+        }
+    } 
 
     render() {
         new this.Swiper(this.slider, {
@@ -23,7 +29,7 @@ export default class RedrawTeaSLM {
             loop: true,
             breakpoints: {
                 375: {
-                    slidesPerView: 1.5,
+                    slidesPerView: this.slidesPerView,
                     spaceBetween: this.spaceBetween,
                 }
             }   

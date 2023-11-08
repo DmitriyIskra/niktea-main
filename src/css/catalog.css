@@ -3,10 +3,16 @@
     color: white;
 }
 
+.catalog__wr-description {
+    display: flex;
+
+    justify-content: center;
+}
+
 .catalog__description {
+    width: 67.55vw;
     padding-left: 15px;
     padding-right: 15px; 
-    margin-bottom: 100px;
 }
 
 .catalog__title {
@@ -43,6 +49,7 @@
 }
 
 .catalog__read-more {
+    display: inline-block;
     margin-top: 1.09vw;
 
     font-family: Blogger Sans;
@@ -187,7 +194,7 @@
 
 
 
-.catalog__card--img--width {
+.catalog__card--img--width { 
     /* width: 85%;     */
     width: 90%; 
 }

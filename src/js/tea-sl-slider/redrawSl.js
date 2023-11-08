@@ -29,6 +29,8 @@ export default class RedrawSl {
     initSlider() {
         if(this.totalSlides <= this.amountShowSlides) {
             [...this.controllButtons].forEach( item => item.style.display = 'none');
+            this.el.classList.add('tea-sl__unactive');
+
             return;
         }
 

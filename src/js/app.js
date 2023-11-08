@@ -85,7 +85,7 @@ if(wrCatalogArticle) {
     controllReadMore.init();
 }
 
-// SLIDER TEA
+// SLIDER TEA  tea-sl
 
 const sliderTea = document.querySelector('.tea-sl__wrapper');
 

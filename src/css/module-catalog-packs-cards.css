@@ -116,6 +116,12 @@
     background-size: cover;
     background-position: center;
 }
+
+.same-packs__link_accessories {
+    background: no-repeat url(../img/card-background-accessories.png), linear-gradient(180deg, #7775B6, #494694);
+    background-size: cover;
+    background-position: center;
+}
 /*  */
 /* card-background-pyramid.png */
 
@@ -147,6 +153,12 @@
 
 .same-packs__wr-animate-img_top-selection {
     top: -4%;
+}
+
+.same-packs__wr-animate-img_accessories {
+    top: 4%;
+
+    transform: scale(40%, 40%);
 }
 
 .same-packs__animate-img {
@@ -248,6 +260,10 @@
 
 @media (min-width: 769px) {
     .same-packs__link:hover .same-packs__wr-description {
+        bottom: -31.3%;
+    }
+
+    .same-packs__wr-animate-img:hover + .same-packs__link .same-packs__wr-description {
         bottom: -31.3%;
     }
 }

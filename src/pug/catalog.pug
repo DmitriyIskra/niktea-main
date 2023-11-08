@@ -1,3 +1,64 @@
+- 
+    let dataCards = [
+            {
+                href: './catalog-pyramid.html',
+                string1: ['Порционный чай в', 'пирамидках'],
+                string2: [''],
+                img: '../img/content/pyramid-earl-grey.png',
+                'img-anim': '../img/content/pyramid-earl-grey-animation.png',
+                alt: 'Порционный чай в пирамидках',
+                classCard: 'pyramid',
+            },
+            {
+                href: './catalog-dellipack-per-cup.html',
+                string1: ['Пакетированный', 'чай на чашку'],
+                string2: [''],
+                img: '../img/content/dellipack-milk-oolong.png',
+                'img-anim': '../img/content/dellipack-milk-oolong-animate.png',
+                alt: 'Пакетированный чай на чашку',
+                classCard: 'dellipack',
+            },
+            {
+                href: './catalog-dellipack-per-tea-pot.html',
+                string1: ['Пакетированный', 'чай на чайник'],
+                string2: [''],
+                img: '../img/content/dellipack-tea-pot-milk-oolong.png',
+                'img-anim': '../img/content/dellipack-tea-pot-milk-oolong-animation.png',
+                alt: 'Пакетированный чай на чайник',
+                classCard: 'tea-pot',
+            },
+            {
+                href: './catalog-leaf-basic.html',
+                string1: ['Листовой чай','Базовая линейка'],
+                string2: [''],
+                img: '../img/content/leaf-altai-herbal-mix-2.png',
+                'img-anim': '../img/content/leaf-yellow-animation.png',
+                alt: 'Листовой чай Базовая линейка',
+                classCard: 'leaf',
+            },
+            {
+                href: './catalog-top-selection.html',
+                string1: ['Листовой чай', 'TOP SELECTION'],
+                string2: [''],
+                img: '../img/content/top-selection-meadow-sweet-powder.png',
+                'img-anim': '../img/content/top-selection-meadow-sweet-powder-animation.png',
+                alt: 'Листовой чай TOP SELECTION',
+                classCard: 'top-selection',
+            },
+            {
+                href: './in-development.html',
+                string1: ['Аксессуары'],
+                string2: [''],
+                img: '../img/content/accessories-tea-pot.png',
+                'img-anim': '../img/content/accessories-tea-pot-animate.png',
+                alt: 'Аксессуары',
+                classCard: 'accessories',
+            },
+        ];
+        
+- let classPage = 'catalog';
+- let title = [''];
+
 
 -
     let breadcrumbs = [
@@ -19,105 +80,110 @@ html(lang='ru')
 
             include ./modules/bread-crumbs 
 
-            .catalog
-                .catalog__container
-                    .catalog__description.catalog__description-read-more
-                        h1.catalog__title Каталог
-                        .catalog__wr-text 
-                            p Яркая коллекция чая Niktea собрала в себе широкий ассортимент вкусов в любом удобном формате: листовой, пакетированный на чашку и на чайник, чай в пирамидках.
-                            p  Для Horeca идеально подойдет порционный на чайник или в пирамидках, а также листовой чай из коллекции Niktea Basic и Niktea Top Selection. В дополнение к чаю в нашем ассортименте можно подобрать посуду и чайные аксессуары (чайники, чашки, сита, держатели, шоубоксы и другое).
-                            p Для заваривания чая дома рекомендуем Niktea в пакетиках и в пирамидках. За счет того, что чая в них больше, чем в стандартных пакетиках - вы получаете более насыщенный вкус и яркий аромат. Листовой чай пользуется большой популярность у кафе, ресторанов, кофеен и любителей чая высокого качества, тех, кто ценит крупнолистовой чай за его многогранный аромат и неповторимый вкус.
-                            p Линейка Niktea Basic — это классические вкусы от традиционного индийского чая Ассам до зеленого чая со свежим ароматом цитрусов и сладостью липового меда. В Niktea Basic даже базовые чаи подобраны так, чтобы удивлять своим богатым вкусом и насыщенным ароматом.
-                            p Линейка Top Selection для кафе, ресторанов и отелей — это изысканная коллекция отборных чаев из разных стран. Если вы хотите расширить свой вкусовой опыт или удивить ваших гостей чем-то необычным - эта коллекция точно для вас! Гран Крю чаи: Габа, Те Гуань Инь, Да Хун Пао, Дянь Хун; необычные варианты Алтайских сборов, а также так полюбившиеся многим Ку Цао (гречишный) и Анчан (синий) чай. И множество цветов и трав (лаванда, саган-дайля, иван-чай, чабрец). С таким разнообразием вы порадуете своих гостей необычным широким выбором горячих напитков и сделаете ваше заведение точкой притяжения новых клиентов.
+            .catalog__wr-description 
+                .catalog__description.catalog__description-read-more
+                    h1.catalog__title Каталог
+                    .catalog__wr-text  
+                        p Яркая коллекция чая Niktea собрала в себе широкий ассортимент вкусов в любом удобном формате: листовой, пакетированный на чашку и на чайник, чай в пирамидках.
+                        p  Для Horeca идеально подойдет порционный на чайник или в пирамидках, а также листовой чай из коллекции Niktea Basic и Niktea Top Selection. В дополнение к чаю в нашем ассортименте можно подобрать посуду и чайные аксессуары (чайники, чашки, сита, держатели, шоубоксы и другое).
+                        p Для заваривания чая дома рекомендуем Niktea в пакетиках и в пирамидках. За счет того, что чая в них больше, чем в стандартных пакетиках - вы получаете более насыщенный вкус и яркий аромат. Листовой чай пользуется большой популярность у кафе, ресторанов, кофеен и любителей чая высокого качества, тех, кто ценит крупнолистовой чай за его многогранный аромат и неповторимый вкус.
+                        p Линейка Niktea Basic — это классические вкусы от традиционного индийского чая Ассам до зеленого чая со свежим ароматом цитрусов и сладостью липового меда. В Niktea Basic даже базовые чаи подобраны так, чтобы удивлять своим богатым вкусом и насыщенным ароматом.
+                        p Линейка Top Selection для кафе, ресторанов и отелей — это изысканная коллекция отборных чаев из разных стран. Если вы хотите расширить свой вкусовой опыт или удивить ваших гостей чем-то необычным - эта коллекция точно для вас! Гран Крю чаи: Габа, Те Гуань Инь, Да Хун Пао, Дянь Хун; необычные варианты Алтайских сборов, а также так полюбившиеся многим Ку Цао (гречишный) и Анчан (синий) чай. И множество цветов и трав (лаванда, саган-дайля, иван-чай, чабрец). С таким разнообразием вы порадуете своих гостей необычным широким выбором горячих напитков и сделаете ваше заведение точкой притяжения новых клиентов.
 
-                        .catalog__read-more Читать дальше
+                    .catalog__read-more Читать дальше
 
-                    .card__container.grid
-                        .card__body
-                            .catalog__item
-                                a.catalog--link(href='./catalog-pyramid.html')
-                                    .product__card.catalog__item--pyra
-                                        .product__card-label.product__card-label_desctop
-                                            span Порционный чай в пирамидках
-                                        .product__card-label.product__card-label_mobile
-                                            span Порционный чай в 
-                                            span пирамидках
-                                        .product__card--back
-                                        .product__card--image
-                                            img.catalog__card--img(src='../img/content/earl-grey__pyrapack.png' alt='cup-tea')
-                                        .catalog__card--animated
-                                            img.catalog__card--animated--img(src='../img/content/pyramid-earl-grey-animation.png' alt='cup-tea')
-                        .card__body
-                            .catalog__item
-                                a.catalog--link(href='./catalog-dellipack-per-cup.html')
-                                    .product__card.catalog__item--pack
-                                        .product__card-label.product__card-label_desctop
-                                            span Пакетированный чай на чашку
-                                        .product__card-label.product__card-label_mobile
-                                            span Пакетированный
-                                            span чай на чашку
-                                        .product__card--back
-                                        .product__card--image
-                                            img.catalog__card--img.catalog__card--img_2(src='../img/content/emerald.png' alt='cup-tea')
-                                        .catalog__card--animated
-                                            img.catalog__card--animated--img.catalog__card--animated--img_2(src='../img/content/tea-bags-per-cup-emerald-animation.png' alt='cup-tea')
-                        .card__body
-                            .catalog__item
-                                a.catalog--link(href='./catalog-dellipack-per-tea-pot.html')
-                                    .product__card.catalog__item--tea-pot
-                                        .product__card-label.product__card-label_desctop
-                                            span Пакетированный чай на чайник
-                                        .product__card-label.product__card-label_mobile
-                                            span Пакетированный
-                                            span чай на чайник
-                                        .product__card--back
-                                        .product__card--image
-                                            img.catalog__card--img.catalog__card--img_4(src='../img/content/oolong.png' alt='cup-tea')
-                                        .catalog__card--animated
-                                            img.catalog__card--animated--img(src='../img/content/tea-bags-per-teapot-oolong-animation.png' alt='cup-tea')
-                        .card__body
-                            .catalog__item
-                                a.catalog--link(href='./catalog-leaf-basic.html')
-                                    .product__card.catalog__item--leaf
-                                        .product__card-label
-                                            span
-                                                | Листовой чай
-                                                br
-                                                | Базовая линейка
-                                        .product__card--back
-                                        .product__card--image
-                                            img.catalog__card--img(src='../img/content/leaf_altai.png' alt='cup-tea')
-                                        .catalog__card--animated
-                                            img.catalog__card--animated--img(src='../img/content/leaf-tea-base-line-n2-animation.png' alt='cup-tea')
-                        .card__body
-                            .catalog__item
-                                a.catalog--link(href='./catalog-top-selection.html')
-                                    .product__card.catalog__item--leaf
-                                        .product__card-label.product__card-label_desctop
-                                            span
-                                                | Листовой чай 
-                                                br
-                                                | TOP SELECTION
-                                        .product__card-label.product__card-label_mobile
-                                            span Листовой чай
-                                            span TOP SELECTION
-                                        .product__card--back
-                                        .product__card--image
-                                            img.catalog__card--img.catalog__card--img_6(src='../img/content/meadow3.png' alt='cup-tea')
-                                        .catalog__card--animated
-                                            img.catalog__card--animated--img(src='../img/content/leaf-tea-top-selection-meadowsweet-animation.png' alt='cup-tea')
-                        .card__body
-                            .catalog__item
-                                a.catalog--link(href='./in-development.html')
-                                    .product__card.catalog__item--cup
-                                        .product__card-label
-                                            span Аксессуары
-                                        .product__card--back
-                                        .product__card--image
-                                            // <img class="catalog__card--img catalog__card--img--width" src="../img/content/tea-222.png" alt="cup-tea">
-                                            img.catalog__card--img.catalog__card--img--width(src='../img/content/accessorises-chainik.png' alt='cup-tea')
-                                        .catalog__card--animated
-                                            img.catalog__card--animated--img(src='../img/content/accessories-teapot-animation.png' alt='cup-tea')
+            include ./modules/catalog-packs-cards
+
+            //- .catalog
+            //-     .catalog__container
+            //-         
+
+            //-         .card__container.grid
+            //-             .card__body
+            //-                 .catalog__item
+            //-                     a.catalog--link(href='./catalog-pyramid.html')
+            //-                         .product__card.catalog__item--pyra
+            //-                             .product__card-label.product__card-label_desctop
+            //-                                 span Порционный чай в пирамидках
+            //-                             .product__card-label.product__card-label_mobile
+            //-                                 span Порционный чай в 
+            //-                                 span пирамидках
+            //-                             .product__card--back
+            //-                             .product__card--image
+            //-                                 img.catalog__card--img(src='../img/content/earl-grey__pyrapack.png' alt='cup-tea')
+            //-                             .catalog__card--animated
+            //-                                 img.catalog__card--animated--img(src='../img/content/pyramid-earl-grey-animation.png' alt='cup-tea')
+            //-             .card__body
+            //-                 .catalog__item
+            //-                     a.catalog--link(href='./catalog-dellipack-per-cup.html')
+            //-                         .product__card.catalog__item--pack
+            //-                             .product__card-label.product__card-label_desctop
+            //-                                 span Пакетированный чай на чашку
+            //-                             .product__card-label.product__card-label_mobile
+            //-                                 span Пакетированный
+            //-                                 span чай на чашку
+            //-                             .product__card--back
+            //-                             .product__card--image
+            //-                                 img.catalog__card--img.catalog__card--img_2(src='../img/content/emerald.png' alt='cup-tea')
+            //-                             .catalog__card--animated
+            //-                                 img.catalog__card--animated--img.catalog__card--animated--img_2(src='../img/content/tea-bags-per-cup-emerald-animation.png' alt='cup-tea')
+            //-             .card__body
+            //-                 .catalog__item
+            //-                     a.catalog--link(href='./catalog-dellipack-per-tea-pot.html')
+            //-                         .product__card.catalog__item--tea-pot
+            //-                             .product__card-label.product__card-label_desctop
+            //-                                 span Пакетированный чай на чайник
+            //-                             .product__card-label.product__card-label_mobile
+            //-                                 span Пакетированный
+            //-                                 span чай на чайник
+            //-                             .product__card--back
+            //-                             .product__card--image
+            //-                                 img.catalog__card--img.catalog__card--img_4(src='../img/content/oolong.png' alt='cup-tea')
+            //-                             .catalog__card--animated
+            //-                                 img.catalog__card--animated--img(src='../img/content/tea-bags-per-teapot-oolong-animation.png' alt='cup-tea')
+            //-             .card__body
+            //-                 .catalog__item
+            //-                     a.catalog--link(href='./catalog-leaf-basic.html')
+            //-                         .product__card.catalog__item--leaf
+            //-                             .product__card-label
+            //-                                 span
+            //-                                     | Листовой чай
+            //-                                     br
+            //-                                     | Базовая линейка
+            //-                             .product__card--back
+            //-                             .product__card--image
+            //-                                 img.catalog__card--img(src='../img/content/leaf_altai.png' alt='cup-tea')
+            //-                             .catalog__card--animated
+            //-                                 img.catalog__card--animated--img(src='../img/content/leaf-tea-base-line-n2-animation.png' alt='cup-tea')
+            //-             .card__body
+            //-                 .catalog__item
+            //-                     a.catalog--link(href='./catalog-top-selection.html')
+            //-                         .product__card.catalog__item--leaf
+            //-                             .product__card-label.product__card-label_desctop
+            //-                                 span
+            //-                                     | Листовой чай 
+            //-                                     br
+            //-                                     | TOP SELECTION
+            //-                             .product__card-label.product__card-label_mobile
+            //-                                 span Листовой чай
+            //-                                 span TOP SELECTION
+            //-                             .product__card--back
+            //-                             .product__card--image
+            //-                                 img.catalog__card--img.catalog__card--img_6(src='../img/content/meadow3.png' alt='cup-tea')
+            //-                             .catalog__card--animated
+            //-                                 img.catalog__card--animated--img(src='../img/content/leaf-tea-top-selection-meadowsweet-animation.png' alt='cup-tea')
+            //-             .card__body
+            //-                 .catalog__item
+            //-                     a.catalog--link(href='./in-development.html')
+            //-                         .product__card.catalog__item--cup
+            //-                             .product__card-label
+            //-                                 span Аксессуары
+            //-                             .product__card--back
+            //-                             .product__card--image
+            //-                                 // <img class="catalog__card--img catalog__card--img--width" src="../img/content/tea-222.png" alt="cup-tea">
+            //-                                 img.catalog__card--img.catalog__card--img--width(src='../img/content/accessorises-chainik.png' alt='cup-tea')
+            //-                             .catalog__card--animated
+            //-                                 img.catalog__card--animated--img(src='../img/content/accessories-teapot-animation.png' alt='cup-tea')
             
             .catalog__slider-container_desctop 
                 .tea-sl__wrapper.tea-sl__wrapper-catalog

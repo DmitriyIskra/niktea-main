@@ -1,6 +1,6 @@
 .tea-sl__wrapper {
     display: flex;
-    min-height: 26.04vw;
+    height: 26.04vw;
 
     justify-content: space-between;
 }
@@ -39,13 +39,14 @@
 
     justify-content: center;
     align-items: center;
-    /* flex-basis: 416.64px;*/ /* назначать програмно */
     flex-shrink: 0;
 }
 
 .tea-sl__slide-item img {
-    width: 80%;
-    height: auto;
+    width: 60%;
+    height: 100%;
+
+    object-fit: contain;
 
     transition: all 0.3s ease;
 }
@@ -54,20 +55,48 @@
 
 .tea-sl__slide-item-prev img {
     width: 60%;
-    height: auto;
+    height: 100%;
 
-    transform: translate(-30%, -12%);
+    object-fit: contain;
+
+    transform: translate(-30%, -3%);
 }
 
 .tea-sl__slide-item-center img {
     width: 80%;
-    height: auto;
+    height: 100%;
+
+    object-fit: contain;
 }
 
 .tea-sl__slide-item-next img {
     width: 60%;
-    height: auto;
+    height: 100%;
 
-    transform: translate(30%, -12%);
+    object-fit: contain;
+
+    transform: translate(30%, -3%);
+}
+
+
+/* Для неактивного слайдера когда мало элементов */
+.tea-sl__unactive.tea-sl__wrapper {
+    max-height: 32.76vw;
+    justify-content: center;
+}
+
+.tea-sl__unactive .tea-sl__wr-slide-list {
+    justify-content: center;
+	gap: 4vw;
+}
+
+.tea-sl__unactive .tea-sl__slide-item {
+    flex-shrink: 1;
+}
+
+.tea-sl__unactive .tea-sl__slide-item img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
 }
 

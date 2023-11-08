@@ -264,6 +264,14 @@
 
         justify-content: center;
     }
+
+    .prc__method-brewing-list_top-selection {
+        width: 57%;
+        margin: 4.27vw auto 0;
+        gap: 4.33vw;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
 @media (max-width: 768px) {

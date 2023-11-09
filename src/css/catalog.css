@@ -406,8 +406,9 @@ padding: 0;
 
 @media (max-width: 768px) {
     .catalog__description {
-        padding-left: 5.33vw;
-        padding-right: 5.33vw;
+        width: 77.55vw;        
+        padding-left: 0;
+        padding-right: 0;
         margin-bottom: 7.47vw;
     }
 }

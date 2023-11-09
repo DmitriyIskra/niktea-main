@@ -162,6 +162,7 @@
 
 @media (max-width: 768px) {
     .prc__wr-title {
+        width: 91vw;
         margin-top: 1.09vw;
     }
 }
@@ -193,7 +194,7 @@
     }
 
     .prc__wr-product-img_tea-pot {
-        height: 70vw;
+        height: 80vw;
     }
 }
 

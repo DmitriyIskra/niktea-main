@@ -654,6 +654,14 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/recipes.pug',
+      filename: './recipes.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
 
     
     

@@ -1,0 +1,24 @@
+ul.recipes__list
+    each item in recipes
+        li.recipes__item 
+            .recipes__img(class='recipes__img_' + item['recipe-item'])
+            .recipes__wr-descr_back
+                .recipes__wr-descr
+                    .recipes__wr-descr-title 
+                        h2.recipes__descr-title #{item.title}  
+                    .recipes__descr
+                        .recipes__wr-ingredients
+                            .recipes__wr-ingredients-title 
+                                h3.recipes__ingredients-title Вам понадобится:
+                            ul.recipes__ingredients-list 
+                                each i in item.ingredients
+                                    li.recipes__ingredients-item #{i}
+                        .recipes__wr-method
+                            .recipes__wr-method-title 
+                                h3.recipes__method-title Способ приготовления:
+                            .recipes__method 
+                                p #{item.description}
+                    .dev__star.recipes__start-ingr-1
+                    .dev__star.recipes__start-ingr-2
+                    .dev__star.recipes__start-ingr-3
+                

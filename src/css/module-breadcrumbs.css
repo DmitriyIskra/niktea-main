@@ -6,6 +6,10 @@
     justify-content: flex-end;
 }
 
+.breadcrumbs__wrapper-recipes {
+    padding-right: 7.3vw;
+}
+
 .breadcrumbs__list {
     display: flex;
     gap: 0.36vw;

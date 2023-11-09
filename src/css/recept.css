@@ -23,6 +23,11 @@
     }    
 }
 
+.wr-recipes {
+    margin-top: 1.25vw;
+}
+
+
 .recepies {
     display: flex;
     flex-wrap: wrap;
@@ -463,6 +468,12 @@
 @media(max-width: 375px) {
     .recept__description--opened {
         transform: translateY(-98%); /*29%*/
+    }
+}
+
+@media(max-width: 768px) {
+    .wr-recipes {
+        margin-top: 10.67vw;
     }
 }
 

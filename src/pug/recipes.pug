@@ -1,0 +1,67 @@
+- 
+    let recipes = [
+        {
+            title: 'Сладкие грезы',
+            ingredients: [
+                'зеленый чай (1/2 стакана);',
+                'ванильное мороженое (2 ст. л.);',
+                'сливки (2 ч. л.);',
+                'сахарный сироп (3 ст. л.).'
+                ],
+            description: 'Заварите зеленый чай и охладите его. Положите в бокал мороженое, добавьте сливки и сироп. Залейте смесь чаем. Не перемешивайте. Готово!',
+            'recipe-item': 'sweet-dreams',
+        },
+        {
+            title: 'Свежее утро',
+            ingredients: [
+                'зеленый чай (1 стакан);',
+                'яблочный сок (1/2 стакана);',
+                'сок лимона и лимон (по 1/2 от плода);',
+                'лед'
+                ],
+            description: 'Заварите и охладите зеленый чай. Влейте в него яблочный сок и сок лимона. Добавьте лед и несколько долек лимона. Напиток готов!',
+            'recipe-item': 'fresh-morning',
+        },
+        {
+            title: 'Малиновый',
+            ingredients: [
+                'зеленый чай (2 стакана);',
+                'сок грейпфрута (1 стакан);',
+                'малина (1/4 стакана);',
+                'сахарная пудра (1 ст. л.);',
+                'лимон (2 шт.);',
+                'лед',
+                ],
+            description: 'Заварите зеленый чай и остудите его. Разомните малину, добавьте ее в грейпфрутовый сок. Выжмите в эту смесь сок лимона и положите сахарную пудру. Смешайте получившуюся жидкость с зеленым чаем. Разливайте по стаканам и добавляйте лед. Кроме того, в стакан можно бросить ягоды свежей малины. Готово!',
+            'recipe-item': 'raspberry',
+        },
+    ]
+
+- let breadCrumbsClass = 'breadcrumbs__wrapper-recipes';
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Рецепты', url: './recipes.html'},
+    ]
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Рецепты
+    body(data-variant='recipes')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs
+
+            .wr-recipes 
+                include ./modules/mod-recipes
+
+
+
+        include ./modules/footer

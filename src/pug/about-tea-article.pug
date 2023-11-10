@@ -1,0 +1,35 @@
+- 
+    let articles = {
+        title: 'Заголовок статьи',
+        text: [
+            'Niktea — это безупречное качество чая и лучшие вкусы со всего мира, которые позволят вам проникнуться атмосферой путешествий и новых открытий.',
+            'Коллекция Niktea демонстрирует все основные группы вкусов — от классического черного и зеленого чая до ароматизированных, фруктовых и травяных композиций. Для истинных ценителей мы предлагаем высокое качество: отборное сырье, фасовку на высокотехнологичном производственном комплексе России, постоянный контроль готового продукта, а также сертификацию сырья по международным стандартам.',
+            'Чай Niktea дарит позитив и эстетическое наслаждение. Необычная упаковка с модным авторским дизайном создает яркий и запоминающийся стиль, а интересные коктейльные рецептуры дают возможность экспериментировать со вкусами.'
+        ],
+    }
+    
+- classPage = 'article-page-1'
+
+-
+    let breadcrumbs = [ 
+        {name: 'Главная', url: './index.html'},
+        {name: 'Статья', url: './about-tea.html'}
+    ]
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Больше о чае
+    body
+        .wrapper-page-about-tea
+            include ./modules/header
+
+            main.main
+                include ./modules/bread-crumbs
+
+                .tea-article__wrapper 
+                    include ./modules/mod-about-tea-article
+
+            include ./modules/footer

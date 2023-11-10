@@ -1,0 +1,108 @@
+.mod-t-art__wrapper {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.mod-t-art__title {
+    margin-bottom: 0;
+
+    font-family: Arsenal;
+    font-size: 2.86vw;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+    color: #F5C726;
+}
+
+.mod-t-art__img-top {
+    width: 61.46vw;
+    height: 24.38vw;
+    margin-top: 3.13vw;
+
+    border-radius: 2.60vw;
+}
+
+.mod-t-art__wr-title_mob {
+    display: none;
+}
+
+.mod-t-art__wr-text {
+    display: flex;
+    width: 61.46vw;
+    margin-top: 2.55vw;
+    gap: 1.25vw;
+
+    flex-direction: column;
+}
+
+.mod-t-art__wr-text p {
+    margin-bottom: 0;
+
+    font-family: Blogger Sans;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+
+    color: #FFF;
+}
+
+.mod-t-art__img-bottom {
+    width: 61.46vw;
+    height: 32.86vw;
+    margin-top: 4.43vw;
+
+    border-radius: 2.60vw;
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-title_desc {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__img-top {
+        width: 89.33vw;
+        height: 88vw;
+        margin-top: 7vw;
+    
+        border-radius: 8vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-title_mob {
+        display: block;
+        margin-top: 5vw;
+    }
+
+    .mod-t-art__title {
+        font-size: 7.47vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-text {
+        width: 89.33vw;
+        margin-top: 2.40vw;
+        gap: 3.47vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-text p {
+        font-size: 6.40vw;
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__img-bottom {
+        height: 71.73vw;
+        width: 89.33vw;
+        margin-top: 13.33vw;
+    }
+}

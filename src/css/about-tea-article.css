@@ -1,0 +1,23 @@
+.tea-article__wrapper {
+    margin-top: 2vw;
+    margin-bottom: 4vw;
+}
+
+.mod-t-art__img-top_article-page-1 {
+    background: no-repeat url(../img/content/mod-t-art__img-top.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.mod-t-art__img-bottom_article-page-1 {
+    background: no-repeat url(../img/content/mod-t-art__img-bottom.png);
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width: 768px) {
+    .tea-article__wrapper {
+        margin-top: 6.67vw;
+        margin-bottom: 25vw;
+    }
+}

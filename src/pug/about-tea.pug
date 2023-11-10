@@ -1,0 +1,58 @@
+- 
+    let dataArticles = [
+        {
+            title: 'Заголовок статьи',
+            article: ['Niktea — это безупречное качество чая и лучшие вкусы со всего мира, которые позволят вам проникнуться атмосферой путешествий и новых открытий.', 'Коллекция Niktea демонстрирует все основные группы вкусов — от классического черного и зеленого чая до ароматизированных, фруктовых и травяных композиций. Для истинных ценителей мы предлагаем ....'],
+            link: './about-tea-article.html',
+            classCard: 'card-1',
+        },
+        {
+            title: 'Заголовок статьи',
+            article: ['Niktea — это безупречное качество чая и лучшие вкусы со всего мира, которые позволят вам проникнуться атмосферой путешествий и новых открытий.', 'Коллекция Niktea демонстрирует все основные группы вкусов — от классического черного и зеленого чая до ароматизированных, фруктовых и травяных композиций. Для истинных ценителей мы предлагаем ....'],
+            link: './in-development.html',
+            classCard: 'card-2',
+        },
+        {
+            title: 'Заголовок статьи',
+            article: ['Niktea — это безупречное качество чая и лучшие вкусы со всего мира, которые позволят вам проникнуться атмосферой путешествий и новых открытий.', 'Коллекция Niktea демонстрирует все основные группы вкусов — от классического черного и зеленого чая до ароматизированных, фруктовых и травяных композиций. Для истинных ценителей мы предлагаем ....'],
+            link: './in-development.html',
+            classCard: 'card-3',
+        },
+    ]
+
+-
+    let breadcrumbs = [ 
+        {name: 'Главная', url: './index.html'},
+        {name: 'Больше о чае', url: './about-tea.html'}
+    ]
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Больше о чае
+    body
+        .wrapper-page-about-tea
+            include ./modules/header
+
+            main.main
+
+                include ./modules/bread-crumbs
+
+                .about-tea__wr-articles 
+                    each item in dataArticles
+                        .about-tea__article(class='about-tea__article_' + item.classCard)
+                            .about-tea__article-img(class='about-tea__article-img_' + item.classCard)
+                            .about-tea__article-descr
+                                h2.about-tea__article-title #{item.title}
+                                .about-tea__article-wr-text
+                                    each i in item.article 
+                                        p #{i}
+                                .about-tea__article-wr-link
+                                    a.button__link.about-tea__article-link(href=item.link)
+                                        span УЗНАТЬ БОЛЬШЕ
+
+
+
+            include ./modules/footer

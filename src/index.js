@@ -29,6 +29,9 @@ import './css/module-tea-sl-slider.css';
 import './css/module-product-card-description.css';
 import './css/module-catalog-packs-cards.css';
 import './css/module-breadcrumbs.css';
-import './css/product-card.css';
+import './css/module-about-tea-article.css';
 import './css/module-recipes.css';
+import './css/product-card.css';
+import './css/about-tea-article.css';
+
 // import './css/swiper-bundle.min.css';

@@ -3,12 +3,13 @@ export default class RedrawSl {
         this.el = el;
         this.wrSlides = this.el.querySelector('.tea-sl__wr-slide-list');
         this.controllButtons = this.el.querySelectorAll('.tea-sl__wr-button');
+        this.images = this.wrSlides.querySelectorAll('.tea-sl__image');
         // коллекция слайдов
         this.allSlides = this.wrSlides.children;
 
         this.widthSlide = null;
         this.offsetSlides = null;
-        // сколько слайдов показывать
+        // сколько слайдов показывать 
         this.amountShowSlides = 3;
         // общее количество слайдов
         this.totalSlides = this.wrSlides.children.length;
@@ -17,6 +18,10 @@ export default class RedrawSl {
         this.prevSlide = null;
         this.centerSlide = null;
         this.nextSlide = null;
+
+        // для transition
+        this.animateDuration = 0.4; 
+        this.timingFunc = 'linear';
 
         this.counterPrevSlide = 0;
         this.counterCenterSlide = 1;
@@ -27,6 +32,9 @@ export default class RedrawSl {
     }
 
     initSlider() {
+
+        // если количество слайдов меньше чем разрешенное для показа
+        // убираем элементы управления
         if(this.totalSlides <= this.amountShowSlides) {
             [...this.controllButtons].forEach( item => item.style.display = 'none');
             this.el.classList.add('tea-sl__unactive');
@@ -34,25 +42,30 @@ export default class RedrawSl {
             return;
         }
 
+        // Задаем ширину видимой части слайдера
         this.viewport = innerWidth;
         const widthWrSlides = this.wrSlides.offsetWidth;
         const widthSlidePX = widthWrSlides / this.amountShowSlides;
         this.widthSlide = (widthSlidePX / this.viewport) * 100;
         this.offsetSlides = this.widthSlide;
 
+        // задаем ширину слайду
         for(let i = 0; i < this.totalSlides; i += 1) {
             this.allSlides[i].style.width = `${this.widthSlide}vw`;
             this.allSlides[i].dataset.num = i;
         }
         
+        // сохраняем активные слайды центральный и боковые
         this.prevSlide = this.allSlides[0];
         this.centerSlide = this.allSlides[1];
         this.nextSlide = this.allSlides[2];
 
+        // назначаем классы активным слайдам
         this.prevSlide.classList.add('tea-sl__slide-item-prev');
         this.centerSlide.classList.add('tea-sl__slide-item-center');
         this.nextSlide.classList.add('tea-sl__slide-item-next');
 
+        [...this.images].forEach( item => item.style.transition = `all ${this.animateDuration}s ${this.timingFunc}` );
         
     }
 
@@ -80,7 +93,7 @@ export default class RedrawSl {
         console.log(this.nextSlide)
         this.nextSlide.classList.add('tea-sl__slide-item-next');
 
-        this.wrSlides.style.transition = 'all 0.4s ease';
+        this.wrSlides.style.transition = `all ${this.animateDuration}s ${this.timingFunc}`;
         this.wrSlides.style.transform = `translateX(-${this.offsetSlides * this.counterMove}vw)`;
 
         this.wrSlides.addEventListener('transitionend', () => {
@@ -110,7 +123,7 @@ export default class RedrawSl {
         
         this.stop = true;
 
-        setTimeout( () => this.stop = false, 400 );
+        setTimeout( () => this.stop = false, this.animateDuration * 1000 );
         
     }
 
@@ -142,7 +155,7 @@ export default class RedrawSl {
             this.nextSlide = this.nextSlide.previousElementSibling;
             this.nextSlide.classList.add('tea-sl__slide-item-next');
 
-            this.wrSlides.style.transition = 'all 0.4s ease';
+            this.wrSlides.style.transition = `all ${this.animateDuration}s ${this.timingFunc}`;
             this.wrSlides.style.transform = `translateX(-0vw)`;
 
             this.wrSlides.addEventListener('transitionend', () => {
@@ -160,6 +173,6 @@ export default class RedrawSl {
 
         this.stop = true;
 
-        setTimeout( () => this.stop = false, 400 );
+        setTimeout( () => this.stop = false, this.animateDuration * 1000 );
     }
 }

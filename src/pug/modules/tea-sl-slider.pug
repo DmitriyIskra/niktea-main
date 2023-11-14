@@ -8,22 +8,9 @@
     .tea-sl__wr-slides 
         ul.tea-sl__wr-slide-list 
             each item in dataSlider
-                li.tea-sl__slide-item  
+                li.tea-sl__slide-item(class="tea-sl__slide-item_" + classSlMobileSlider)
                     img.tea-sl__image(src=item.path alt=item.alt)
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-ginger-tropic.png')
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-strawberry-pana-cotta.png')
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-green-wind.png')
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-forest-meditation.png')
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-milk-oolong.png')
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-russian-breakfast.png')
-            //- li.tea-sl__slide-item
-            //-     img.tea-sl__image(src='../img/content/pyramid-earl-grey.png')
+
 
     .tea-sl__wr-button.tea-sl__wr-button-next
         .tea-sl__button.tea-sl__button-next

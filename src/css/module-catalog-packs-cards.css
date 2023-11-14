@@ -88,37 +88,37 @@
 }
 
 .same-packs__link_dellipack {
-    background: no-repeat url(../img/card-background-dellipack.png), linear-gradient(180deg, #7775B6, #494694);
+    background: no-repeat url(../img/card-background-dellipack.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
 }
 
 .same-packs__link_pyramid {
-    background: no-repeat url(../img/card-background-pyramid.png), linear-gradient(180deg, #7775B6, #494694);
+    background: no-repeat url(../img/card-background-pyramid.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
 }
 
 .same-packs__link_tea-pot {
-    background: no-repeat url(../img/card-background-tea-pot.png), linear-gradient(180deg, #7775B6, #494694);
+    background: no-repeat url(../img/card-background-tea-pot.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
 }
 
 .same-packs__link_leaf {
-    background: no-repeat url(../img/card-background-leaf.png), linear-gradient(180deg, #7775B6, #494694);
+    background: no-repeat url(../img/card-background-leaf.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
 }
 
 .same-packs__link_top-selection {
-    background: no-repeat url(../img/card-background-leaf.png), linear-gradient(180deg, #7775B6, #494694);
+    background: no-repeat url(../img/card-background-leaf.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
 }
 
 .same-packs__link_accessories {
-    background: no-repeat url(../img/card-background-accessories.png), linear-gradient(180deg, #7775B6, #494694);
+    background: no-repeat url(../img/card-background-accessories.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
 }

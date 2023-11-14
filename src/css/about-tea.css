@@ -1,7 +1,7 @@
 .wrapper-page-about-tea {
   background: no-repeat url(../img/background-more-about-tea.png);
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
 }
 
 .about-tea__wr-articles {

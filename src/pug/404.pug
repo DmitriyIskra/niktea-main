@@ -1,0 +1,31 @@
+
+doctype html
+html(lang='ru')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title О бренде
+    body(data-variant='404')
+        .wrapper-page-404
+
+            include ./modules/header
+
+            main.main.p404__main
+                .p404__wr-info
+                    .p404__error Ой, ошибка
+                    .p404__num 404
+                    .p404__text 
+                        span Такой страницы нет, 
+                        span но Вы на верном пути!
+                        span Перейдите, пожалуйста, на страницы:
+                    .p404__wr_buttons
+                        a.button__link.p404__button-link(href="./index.html")
+                            span ПЕРЕЙТИ НА ГЛАВНУЮ
+                        a.button__link.p404__button-link(href="./catalog.html")
+                            span ПЕРЕЙТИ В КАТАЛОГ
+
+
+
+
+
+            include ./modules/footer

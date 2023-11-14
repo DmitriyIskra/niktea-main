@@ -1,0 +1,123 @@
+.wrapper-page-404 {
+    background: no-repeat url(../img/404-bg-desc.png);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.p404__main {
+    display: flex;
+
+    justify-content: center;
+}
+
+.p404__wr-info {
+    width: 58.76vw;
+    margin-top: 8.13vw;
+    margin-bottom: 29.22vw;
+}
+
+.p404__error {
+    font-family: Arsenal;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+    color: #FFF;
+}
+
+.p404__num {
+    font-family: Arsenal;
+    font-size: 5.21vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+    color: #FFF;
+}
+
+.p404__text {
+    display: flex;
+    margin-top: 1.3vw;
+
+    font-family: Arsenal;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+    color: #FFF;
+
+    flex-direction: column;
+}
+
+.p404__wr_buttons {
+    display: flex;
+    margin-top: 5vw;
+    gap: 3.49vw;
+
+    justify-content: center;
+}
+
+.p404__button-link {
+    width: 16.77vw;
+    height: 3.65vw;
+}
+
+.p404__button-link span {
+    background: #45CFAC !important;
+}
+
+
+
+@media(max-width: 768px) {
+    .wrapper-page-404 {
+        background: no-repeat url(../img/404-bg-mob.png);
+        background-size: cover;
+        background-position: center bottom;
+    }
+}
+
+@media(max-width: 768px) {
+    .p404__wr-info {
+        width: 74.67vw;
+        margin-top: 15.47vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .p404__error {
+        font-size: 6.40vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .p404__num {
+        font-size: 10.67vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .p404__text {
+        font-size: 6.40vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .p404__wr_buttons {
+        margin-top: 7.20vw;
+        gap: 2.67vw;
+
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .p404__button-link {
+        width: 100%;
+        height: 11.73vw;
+    }
+}
+

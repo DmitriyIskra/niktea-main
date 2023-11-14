@@ -678,6 +678,14 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/404.pug',
+      filename: './404.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
 
     
     
@@ -687,18 +695,18 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
 
-    // new ImageminWebpWebpackPlugin({
-    //   config: [{
-    //     test: /.(jpe?g|png)/,
-    //     options: {
-    //       quality: 90,
-    //     },
-    //   }],
-    //   overrideExtension: true,
-    //   detailedLogs: false,
-    //   silent: false,
-    //   strict: true,
-    // }),
+    new ImageminWebpWebpackPlugin({
+      config: [{
+        test: /.(jpe?g|png)/,
+        options: {
+          quality: 90,
+        },
+      }],
+      overrideExtension: true,
+      detailedLogs: false,
+      silent: false,
+      strict: true,
+    }),
 
     new CopyWebpackPlugin({
       patterns: [ 

@@ -1,0 +1,26 @@
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Результат поиска', url: './search-result.html'},
+    ]
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title Рецепты
+    body(data-variant='recipes')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs
+
+            .wr-recipes 
+                include ./modules/mod-recipes
+
+
+
+        include ./modules/footer

@@ -190,43 +190,6 @@
     z-index: 25;
 }
 
-
-
-
-
-.catalog__card--img--width { 
-    /* width: 85%;     */
-    width: 90%; 
-}
-.catalog__item--pyra {
-    background-size: contain;
-    background-image: url(../img/card-background-pyramid.png);
-}
-
-.catalog__item--pack {
-    background-size: contain;
-    background-image: url(../img/card-background-dellipack.png);
-} 
-
-.catalog__item--tea-pot {
-    background-size: contain;
-    background-image: url(../img/icons/tea-pot.svg);
-}
-
-.catalog__item--leaf {
-    background-size: contain;
-    background-image: url(../img/icons/leaf-background.svg);
-}
-
-
-.catalog__item--cup {
-    background-size: contain;
-    background-image: url(../img/icons/cups-bg.svg);
-}
-
-
-
-
 .product__card--back {
     text-align: center;
     /* border-radius: 2.5vw; */

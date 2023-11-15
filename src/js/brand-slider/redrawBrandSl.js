@@ -1,9 +1,9 @@
-export default class RedrawSl {
+export default class RedrawBrandSl {
     constructor(el) {
         this.el = el;
-        this.wrSlides = this.el.querySelector('.tea-sl__wr-slide-list');
-        this.controllButtons = this.el.querySelectorAll('.tea-sl__wr-button');
-        this.images = this.wrSlides.querySelectorAll('.tea-sl__image');
+        this.wrSlides = this.el.querySelector('.brand-sl__wr-slide-list');
+        this.controllButtons = this.el.querySelectorAll('.brand-sl__wr-button');
+        this.images = this.wrSlides.querySelectorAll('.brand-sl__image');
         // коллекция слайдов
         this.allSlides = this.wrSlides.children;
 
@@ -37,7 +37,7 @@ export default class RedrawSl {
         // убираем элементы управления
         if(this.totalSlides <= this.amountShowSlides) {
             [...this.controllButtons].forEach( item => item.style.display = 'none');
-            this.el.classList.add('tea-sl__unactive');
+            this.el.classList.add('brand-sl__unactive');
 
             return;
         }
@@ -46,6 +46,7 @@ export default class RedrawSl {
         this.viewport = innerWidth;
         const widthWrSlides = this.wrSlides.offsetWidth;
         const widthSlidePX = widthWrSlides / this.amountShowSlides;
+        // ширина одного слайда во vw
         this.widthSlide = (widthSlidePX / this.viewport) * 100;
         this.offsetSlides = this.widthSlide;
 
@@ -61,11 +62,9 @@ export default class RedrawSl {
         this.nextSlide = this.allSlides[2];
 
         // назначаем классы активным слайдам
-        this.prevSlide.classList.add('tea-sl__slide-item-prev');
-        this.centerSlide.classList.add('tea-sl__slide-item-center');
-        this.nextSlide.classList.add('tea-sl__slide-item-next');
-
-        [...this.images].forEach( item => item.style.transition = `all ${this.animateDuration}s ${this.timingFunc}` );
+        this.prevSlide.classList.add('brand-sl__slide-item-prev');
+        this.centerSlide.classList.add('brand-sl__slide-item-center');
+        this.nextSlide.classList.add('brand-sl__slide-item-next');
         
     }
 
@@ -78,20 +77,19 @@ export default class RedrawSl {
         
         // находим следующий элемент
         this.prevSlide = this.prevSlide.nextElementSibling;
-        this.prevSlide.classList.add('tea-sl__slide-item-prev');
+        this.prevSlide.classList.add('brand-sl__slide-item-prev');
 
         // удаляем у старого элемента класс, находим новый след. 
         // назначаем класс
-        this.centerSlide.classList.remove('tea-sl__slide-item-center');
+        this.centerSlide.classList.remove('brand-sl__slide-item-center');
         this.centerSlide = this.centerSlide.nextElementSibling;
-        this.centerSlide.classList.add('tea-sl__slide-item-center');
+        this.centerSlide.classList.add('brand-sl__slide-item-center');
 
         // удаляем у старого элемента класс, находим новый след. 
         // назначаем класс
-        this.nextSlide.classList.remove('tea-sl__slide-item-next');
+        this.nextSlide.classList.remove('brand-sl__slide-item-next');
         this.nextSlide = this.nextSlide.nextElementSibling;
-        console.log(this.nextSlide)
-        this.nextSlide.classList.add('tea-sl__slide-item-next');
+        this.nextSlide.classList.add('brand-sl__slide-item-next');
 
         this.wrSlides.style.transition = `all ${this.animateDuration}s ${this.timingFunc}`;
         this.wrSlides.style.transform = `translateX(-${this.offsetSlides * this.counterMove}vw)`;
@@ -102,7 +100,7 @@ export default class RedrawSl {
 
             // убираем класс у элемента который ушел налево
             const el = this.prevSlide.previousElementSibling;
-            el.classList.remove('tea-sl__slide-item-prev');
+            el.classList.remove('brand-sl__slide-item-prev');
 
             // если слайдер пролистнулся значит num будет всегда 1
             if(+num === 1) {
@@ -142,25 +140,25 @@ export default class RedrawSl {
 
         setTimeout( () => {
             // находим предъидущий элемент
-            this.prevSlide.classList.remove('tea-sl__slide-item-prev');
+            this.prevSlide.classList.remove('brand-sl__slide-item-prev');
             this.prevSlide = this.prevSlide.previousElementSibling;
-            this.prevSlide.classList.add('tea-sl__slide-item-prev');
+            this.prevSlide.classList.add('brand-sl__slide-item-prev');
             // удаляем у старого элемента класс, находим новый след. 
             // назначаем класс
-            this.centerSlide.classList.remove('tea-sl__slide-item-center');
+            this.centerSlide.classList.remove('brand-sl__slide-item-center');
             this.centerSlide = this.centerSlide.previousElementSibling;
-            this.centerSlide.classList.add('tea-sl__slide-item-center');
+            this.centerSlide.classList.add('brand-sl__slide-item-center');
             // удаляем у старого элемента класс, находим новый след. 
             // назначаем класс
             this.nextSlide = this.nextSlide.previousElementSibling;
-            this.nextSlide.classList.add('tea-sl__slide-item-next');
+            this.nextSlide.classList.add('brand-sl__slide-item-next');
 
             this.wrSlides.style.transition = `all ${this.animateDuration}s ${this.timingFunc}`;
             this.wrSlides.style.transform = `translateX(-0vw)`;
 
             this.wrSlides.addEventListener('transitionend', () => {
                 const el = this.nextSlide.nextElementSibling;
-                el.classList.remove('tea-sl__slide-item-next');
+                el.classList.remove('brand-sl__slide-item-next');
 
                 // переназначаем элементам порядковый номер
                 for(let i = 0; i < this.totalSlides; i += 1) {

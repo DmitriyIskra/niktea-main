@@ -13,22 +13,22 @@ export default class RedrawAboutBrand {
     initSwiper() {
         new this.Swiper(this.slider, {
             modules:[this.Navigation, this.Pagination],
-            navigation: {
-                nextEl: ".about-brand__button-next-icon",
-                prevEl: ".about-brand__button-prev-icon",
-            },
-            pagination: {
-                el: '.swiper-pagination',  
-                clickable: true
-            },
+            // navigation: {
+            //     nextEl: ".about-brand__button-next-icon",
+            //     prevEl: ".about-brand__button-prev-icon",
+            // },
+            // pagination: {
+            //     el: '.swiper-pagination',  
+            //     clickable: true
+            // },
             initialSlide: 1,
             centeredSlides: true,
             loop: true,
             breakpoints: {
-                1280: {
-                    slidesPerView: 3,
-                    spaceBetween: 50
-                },
+                // 1280: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 0
+                // },
                 375: {
                     slidesPerView: 1.5,
                     spaceBetween: 20,

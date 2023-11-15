@@ -1,0 +1,91 @@
+.brand-sl__wrapper {
+    display: flex;
+    width: 100%;
+    height: 21.88vw;
+
+    justify-content: space-between;
+}
+
+.brand-sl__wr-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-sl__button {
+    width: 4.17vw;
+    height: 4.17vw;
+
+    cursor: pointer;
+}
+
+.brand-sl__wr-slides {
+    width: 86%;
+
+    overflow: hidden;
+}
+
+.brand-sl__wr-slide-list {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+.brand-sl__slide-item {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.brand-sl__slide-item img {
+    /* width: 100%; */
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+
+/* .brand-sl__slide-item-prev img {
+    transform: translate(-11.5%, -3%);
+}
+
+.brand-sl__slide-item-center img {
+    height: 100%;
+}
+
+
+
+.brand-sl__slide-item-next img {
+    transform: translate(11.5%, -3%);
+} */
+
+
+
+/* Для неактивного слайдера когда мало элементов */
+.brand-sl__unactive.brand-sl__wrapper {
+    max-height: 32.76vw;
+    justify-content: center;
+}
+
+.brand-sl__unactive .brand-sl__wr-slide-list {
+    justify-content: center;
+	gap: 4vw;
+}
+
+.brand-sl__unactive .brand-sl__slide-item {
+    flex-shrink: 1;
+}
+
+.brand-sl__unactive .brand-sl__slide-item img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+

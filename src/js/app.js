@@ -16,6 +16,9 @@ import RedrawSl from "./tea-sl-slider/redrawSl";
 import ControllTeaSLM from "./tea-sl-swiper_mobile/controllTeaSLM";
 import RedrawTeaSLM from "./tea-sl-swiper_mobile/redrawTeaSLM";
 
+import ControllBrandSl from "./brand-slider/controlBrabndSl";
+import RedrawBrandSl from "./brand-slider/redrawBrandSl";
+
 import Swiper from "swiper";
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -51,9 +54,9 @@ if( formDesctop && formMobile ) {
 }
 
 
-// РАБОТА СТРАНИЦЫ О БРЕНДЕ
+// РАБОТА СТРАНИЦЫ О БРЕНДЕ + SWIPER
 
-const sliderAboutBrand = document.querySelector('.about-brand__swiper');
+const sliderAboutBrand = document.querySelector('.about-brand__swiper_mobile');
 
 if(sliderAboutBrand) {
     const aboutBrandText = document.querySelector('.about-brand__wr-text');
@@ -62,6 +65,18 @@ if(sliderAboutBrand) {
     const controllAboutBrand = new ControllAboutBrand(redrawAboutBrand);
     controllAboutBrand.init();
 }
+
+
+// СЛАЙДЕР BRAND-SLIDER
+
+const sliderBrand = document.querySelector('.brand-sl__wrapper');
+
+if(sliderBrand) {
+    const redrawBrandSl = new RedrawBrandSl(sliderBrand);
+    const controllBrandSl = new ControllBrandSl(redrawBrandSl);
+    controllBrandSl.init();
+}
+
 
 
 // СЛАЙДЕР ГЛАВНАЯ СТРАНИЦА ( МОБИЛЬНАЯ ВЕРСИЯ )

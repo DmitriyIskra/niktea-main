@@ -33,6 +33,7 @@ import './css/module-about-tea-article.css';
 import './css/module-recipes.css';
 import './css/product-card.css';
 import './css/about-tea-article.css';
+import './css/module-brand-slider.css'
 import './css/404.css';
 
 // import './css/swiper-bundle.min.css';

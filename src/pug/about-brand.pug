@@ -1,3 +1,30 @@
+- 
+    let dataSlider = [
+        {
+            path: '../img/content/brand-slide1.png',
+            alt: 'about-brand',
+        },
+        {
+            path:'../img/content/brand-slide2.png',
+            alt: 'about-brand',
+        },
+        {
+            path: '../img/content/brand-slide3.png',
+            alt: 'about-brand',
+        },                          
+        {
+            path: '../img/content/brand-slide4.png',
+            alt: 'about-brand',
+        },
+        {
+            path: '../img/content/brand-slide5.png',
+            alt: 'about-brand',
+        },
+    
+    ]
+
+- let classSlMobileSlider = 'about-brand';
+
 -
     let breadcrumbs = [ 
         {name: 'Главная', url: './index.html'},
@@ -37,35 +64,45 @@ html(lang='ru')
                                     p Niktea — это безупречное качество чая и лучшие вкусы со всего мира, которые позволят вам проникнуться атмосферой путешествий и новых открытий.
                                     p Коллекция Niktea демонстрирует все основные группы вкусов — от классического черного и зеленого чая до ароматизированных, фруктовых и травяных композиций. Для истинных ценителей мы предлагаем высокое качество: отборное сырье, фасовку на высокотехнологичном производственном комплексе России, постоянный контроль готового продукта, а также сертификацию сырья по международным стандартам.
                                     p Чай Niktea дарит позитив и эстетическое наслаждение. Необычная упаковка с модным авторским дизайном создает яркий и запоминающийся стиль, а интересные коктейльные рецептуры дают возможность экспериментировать со вкусами.
-                .about-brand__wr-slider
-                    
-                    .about-brand__button-icon.about-brand__button-prev-icon
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
-                            <path d="M44.5733 21.4073C44.0822 21.4073 43.599 21.5992 43.2372 21.9611L26.5341 38.6621C26.1797 39.0165 25.9804 39.4962 25.9804 39.9983C25.9804 40.5003 26.1797 40.98 26.5341 41.3344L43.2372 58.0394C43.78 58.5822 44.5917 58.7368 45.2965 58.449C46.0014 58.1572 46.4627 57.4673 46.4627 56.7033L46.4627 23.2972C46.4627 22.5332 46.0034 21.8428 45.2965 21.5515C45.0624 21.4551 44.8169 21.4073 44.5733 21.4073Z" fill="white"/>
-                            <path d="M40.0003 1.06821e-06C17.9437 -2.78827e-06 0.000499132 17.9413 0.000495275 39.9983C0.000491419 62.0553 17.9437 80 40.0002 80C62.0567 80 80 62.0548 80 39.9983C80 17.9418 62.0573 4.92478e-06 40.0003 1.06821e-06ZM40.0002 76.2208C20.0289 76.2208 3.77972 59.97 3.77972 39.9983C3.77973 20.0265 20.029 3.77972 40.0003 3.77972C59.9715 3.77972 76.2208 20.027 76.2208 39.9983C76.2208 59.9696 59.972 76.2208 40.0002 76.2208Z" fill="white"/>
-                        </svg>
+                
 
-                    .swiper.about-brand__swiper
+                .about-brand__wr-slider.about-brand__wr-slider_desctop
+                    //- .about-brand__slider-container_desctop 
+                    include ./modules/brand-slider
+                        
+            
+                
+                
+                
+                .about-brand__wr-slider.about-brand__wr-slider_mobile
+                    
+                    //- .about-brand__button-icon.about-brand__button-prev-icon
+                    //-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+                    //-         <path d="M44.5733 21.4073C44.0822 21.4073 43.599 21.5992 43.2372 21.9611L26.5341 38.6621C26.1797 39.0165 25.9804 39.4962 25.9804 39.9983C25.9804 40.5003 26.1797 40.98 26.5341 41.3344L43.2372 58.0394C43.78 58.5822 44.5917 58.7368 45.2965 58.449C46.0014 58.1572 46.4627 57.4673 46.4627 56.7033L46.4627 23.2972C46.4627 22.5332 46.0034 21.8428 45.2965 21.5515C45.0624 21.4551 44.8169 21.4073 44.5733 21.4073Z" fill="white"/>
+                    //-         <path d="M40.0003 1.06821e-06C17.9437 -2.78827e-06 0.000499132 17.9413 0.000495275 39.9983C0.000491419 62.0553 17.9437 80 40.0002 80C62.0567 80 80 62.0548 80 39.9983C80 17.9418 62.0573 4.92478e-06 40.0003 1.06821e-06ZM40.0002 76.2208C20.0289 76.2208 3.77972 59.97 3.77972 39.9983C3.77973 20.0265 20.029 3.77972 40.0003 3.77972C59.9715 3.77972 76.2208 20.027 76.2208 39.9983C76.2208 59.9696 59.972 76.2208 40.0002 76.2208Z" fill="white"/>
+                    //-     </svg>
+
+                    .swiper.about-brand__swiper_mobile
 
                         .swiper-wrapper.about-brand__swiper-wrapper
 
                             .swiper-slide.about-brand__slide.about-brand__slide-1
-                                //- img.brand__slide-image(src='../img/content/brand-slide1.png' alt="")
+                                img.brand__slide-image(src='../img/content/brand-slide1.png' alt="")
                             .swiper-slide.about-brand__slide.about-brand__slide-2
-                                //- img.brand__slide-image(src='../img/content/brand-slide2.png' alt="")
+                                img.brand__slide-image(src='../img/content/brand-slide2.png' alt="")
                             .swiper-slide.about-brand__slide.about-brand__slide-3
-                                //- img.brand__slide-image(src='../img/content/brand-slide3.png' alt="")
+                                img.brand__slide-image(src='../img/content/brand-slide3.png' alt="")
                             .swiper-slide.about-brand__slide.about-brand__slide-4
-                                //- img.brand__slide-image(src='../img/content/brand-slide4.png' alt="")
+                                img.brand__slide-image(src='../img/content/brand-slide4.png' alt="")
                             .swiper-slide.about-brand__slide.about-brand__slide-5
-                                //- img.brand__slide-image(src='../img/content/brand-slide5.png' alt="")
-                    .swiper-pagination
+                                img.brand__slide-image(src='../img/content/brand-slide5.png' alt="")
+                    //- .swiper-pagination
 
-                    .about-brand__button-icon.about-brand__button-next-icon
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
-                                <path d="M35.4266 58.5922C35.9177 58.5922 36.4009 58.4004 36.7627 58.0385L53.4658 41.3374C53.8202 40.983 54.0195 40.5033 54.0195 40.0013C54.0195 39.4993 53.8202 39.0196 53.4658 38.6652L36.7627 21.9601C36.2199 21.4173 35.4082 21.2627 34.7034 21.5506C33.9985 21.8423 33.5372 22.5323 33.5372 23.2963V56.7024C33.5372 57.4664 33.9965 58.1568 34.7034 58.4481C34.9375 58.5445 35.183 58.5922 35.4266 58.5922Z" fill="white"/>
-                                <path d="M40.0002 80C62.0568 80 80 62.0587 80 40.0017C80 17.9447 62.0568 0 40.0002 0C17.9437 0 0.000495911 17.9452 0.000495911 40.0017C0.000495911 62.0582 17.9432 80 40.0002 80ZM40.0002 3.77923C59.9715 3.77923 76.2208 20.0299 76.2208 40.0017C76.2208 59.9735 59.9715 76.2203 40.0002 76.2203C20.029 76.2203 3.77972 59.973 3.77972 40.0017C3.77972 20.0304 20.0285 3.77923 40.0002 3.77923Z" fill="white"/>
-                            </svg>
+                    //- .about-brand__button-icon.about-brand__button-next-icon
+                    //-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+                    //-             <path d="M35.4266 58.5922C35.9177 58.5922 36.4009 58.4004 36.7627 58.0385L53.4658 41.3374C53.8202 40.983 54.0195 40.5033 54.0195 40.0013C54.0195 39.4993 53.8202 39.0196 53.4658 38.6652L36.7627 21.9601C36.2199 21.4173 35.4082 21.2627 34.7034 21.5506C33.9985 21.8423 33.5372 22.5323 33.5372 23.2963V56.7024C33.5372 57.4664 33.9965 58.1568 34.7034 58.4481C34.9375 58.5445 35.183 58.5922 35.4266 58.5922Z" fill="white"/>
+                    //-             <path d="M40.0002 80C62.0568 80 80 62.0587 80 40.0017C80 17.9447 62.0568 0 40.0002 0C17.9437 0 0.000495911 17.9452 0.000495911 40.0017C0.000495911 62.0582 17.9432 80 40.0002 80ZM40.0002 3.77923C59.9715 3.77923 76.2208 20.0299 76.2208 40.0017C76.2208 59.9735 59.9715 76.2203 40.0002 76.2203C20.029 76.2203 3.77972 59.973 3.77972 40.0017C3.77972 20.0304 20.0285 3.77923 40.0002 3.77923Z" fill="white"/>
+                    //-         </svg>
                             
 
                         

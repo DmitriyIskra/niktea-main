@@ -9,7 +9,7 @@
     list-style-type: none;
 }
 
-.recipes__list {
+.recipes__list { 
     display: flex;
     width: 100%;
     padding-left: 0;

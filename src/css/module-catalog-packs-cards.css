@@ -29,7 +29,7 @@
 .same-packs__wr-title {
     display: flex;
     width: 100%;
-    margin-top: 3.13vw;
+    margin-bottom: 5.05vw;
 
     justify-content: center;
 }
@@ -46,7 +46,6 @@
     display: flex;
     max-width: 67.55vw;
     width: 100%;
-    margin-top: 5.05vw;
     padding-left: 0;
 
     flex-wrap: wrap;
@@ -91,7 +90,7 @@
     background: no-repeat url(../img/card-background-dellipack.webp), linear-gradient(180deg, #7775B6, #494694);
     background-size: cover;
     background-position: center;
-}
+} 
 
 .same-packs__link_pyramid {
     background: no-repeat url(../img/card-background-pyramid.webp), linear-gradient(180deg, #7775B6, #494694);
@@ -288,7 +287,7 @@
 @media (max-width: 768px) {
     .same-packs__wr-title {
         width: 54.67vw;
-        margin-top: 3.13vw;
+        margin-bottom: 11.47vw;
     }
 }
 
@@ -303,7 +302,6 @@
     .same-packs__list {
         width: 74.67vw;
         max-width: 74.67vw;
-        margin-top: 11.47vw;
         gap: 8.27vw;
     }
 }

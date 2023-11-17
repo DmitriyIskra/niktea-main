@@ -62,6 +62,20 @@
     cursor: pointer;
 }
 
+
+.catalog__wr-cards {
+    margin-top: 5.05vw;
+}
+
+.catalog__tea-pack {
+    margin-top: 3.13vw;
+}
+
+
+
+
+
+
 /* .catalog__description--text {
     color: #FFF;
     font-family: Blogger Sans;
@@ -101,7 +115,7 @@
 
 .catalog--link {
     color: white;
-}
+} 
 
 .header--catalog::after {
     content: '';    
@@ -429,6 +443,12 @@ padding: 0;
         
         aspect-ratio: 0.8;
     } 
+}
+
+@media (max-width: 768px) { 
+    .catalog__wr-cards {
+        margin-top: 11.47vw;
+    }
 }
 
 @media (max-width: 768px) {

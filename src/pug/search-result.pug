@@ -1,3 +1,34 @@
+- 
+    let dataCards = [ 
+            {
+                href: './product-card-dellipack-tea-pot-mountain-thyme.html',
+                string1: ['Горный чабрец'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-tea-pot-mountain-thyme.webp',
+                'img-anim': '../img/content/dellipack-tea-pot-mountain-thyme-animation.webp',
+                alt: 'Горный чабрец',
+                classCard: 'tea-pot',
+            },
+        ];
+
+- 
+    let recipes = [
+        {
+            title: 'Сладкие грезы',
+            ingredients: [
+                'зеленый чай (1/2 стакана);',
+                'ванильное мороженое (2 ст. л.);',
+                'сливки (2 ч. л.);',
+                'сахарный сироп (3 ст. л.).'
+                ],
+            description: 'Заварите зеленый чай и охладите его. Положите в бокал мороженое, добавьте сливки и сироп. Залейте смесь чаем. Не перемешивайте. Готово!',
+            'recipe-item': 'sweet-dreams',
+        },
+    ]
+
+
+- let classPage = 'dellipack';
+
 -
     let breadcrumbs = [
         {name: 'Главная', url: './index.html'},
@@ -11,16 +42,30 @@ html(lang='ru')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
         title Рецепты
     body(data-variant='recipes')
+        .result-search__wrapper
 
-        include ./modules/header.pug
+            include ./modules/header.pug
 
-        main.main
+            main.main.result-search__main
 
-            include ./modules/bread-crumbs
+                include ./modules/bread-crumbs
 
-            .wr-recipes 
-                include ./modules/mod-recipes
+                .result-search__wr-title 
+                    h2 Результат поиска
+                .result-search__wr-request 
+                    p по запросу <span class=".result-search__request">черный чай</span>
+
+                //- include ./modules/catalog-packs-cards
+
+                .result-search__wr-response
+                    //- .result-search__undefined_active
+                    .result-search__undefined
+                        p По вашему запросу ничего не найдено
+
+                    //- .result-search__recipes_active
+                    .result-search__recipes.result-search__recipes_active
+                        include ./modules/mod-recipes
 
 
 
-        include ./modules/footer
+            include ./modules/footer

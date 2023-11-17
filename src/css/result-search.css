@@ -1,0 +1,68 @@
+.result-search__wrapper {
+    display: flex;
+    min-height: 100vh;
+
+    flex-direction: column;
+}
+
+.result-search__main {
+    flex-grow: 1;
+}
+
+.result-search__wr-title {
+    margin-top: 1.5vw;
+}
+
+.result-search__wr-title h2 {
+    margin-bottom: 0;
+
+    font-family: Arsenal;
+    font-size: 3.13vw;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+    color: #fefefe;
+}
+
+.result-search__wr-request p {
+    margin-bottom: 0;
+
+    font-family: Arsenal;
+    font-size: 1.46vw;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+    color: #fefefe;
+}
+
+.result-search__wr-response {
+    margin-top: 5vw;
+}
+
+.result-search__undefined {
+    margin-top: 2.5vw;
+}
+
+.result-search__undefined {
+    display: none;
+
+    font-family: Arsenal;
+    font-size: 3.13vw;
+    text-align: center;
+
+    color: #F5C726;
+}
+
+.result-search__undefined_active {
+    display: block;
+}
+
+.result-search__recipes {
+    display: none;
+}
+
+.result-search__recipes_active {
+    display: block;
+}

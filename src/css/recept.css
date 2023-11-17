@@ -8,7 +8,7 @@
     padding-right: 35px;    
 } 
 
-.card-container {
+.card-container { 
     position: relative;
     padding: 2px 2px;
 }
@@ -23,7 +23,7 @@
     }    
 }
 
-.wr-recipes {
+.wr-recipes { 
     margin-top: 1.25vw;
 }
 

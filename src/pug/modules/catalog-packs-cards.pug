@@ -1,8 +1,8 @@
 .same-packs__wrapper 
-    if classPage !== 'catalog'
+    if needTitleCard
         .same-packs__wr-title 
-            h2.same-packs__title
-                each item in title
+            h2.same-packs__title 
+                each item in titleCards
                     span #{item} 
     ul.same-packs__list 
         each el,i in dataCards

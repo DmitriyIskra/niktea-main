@@ -137,9 +137,10 @@
     align-items: center;
     transform: scale(50%, 50%);
 
-    z-index: 1;
-
     transition: transform 1s ease-out;
+
+    z-index: 1;
+    pointer-events: none;
 }
 
 .same-packs__wr-animate-img_dellipack {

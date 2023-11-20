@@ -19,6 +19,9 @@ import RedrawTeaSLM from "./tea-sl-swiper_mobile/redrawTeaSLM";
 import ControllBrandSl from "./brand-slider/controlBrabndSl";
 import RedrawBrandSl from "./brand-slider/redrawBrandSl";
 
+import ControllSelect from "./select/controllSelect";
+import RedrawSelect from "./select/redrawSelect";
+
 import Swiper from "swiper";
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -123,4 +126,15 @@ if(swiperTeaSLM) {
 }
 
 
+// SELECT результаты поиска
 
+const select = document.querySelector('.result-search__select');
+
+if(select) {
+    const cards = document.querySelector('.result-search__tea-cards');
+    const recipes = document.querySelector('.result-search__recipes');
+
+    const redrawSelect = new RedrawSelect(select, cards, recipes);
+    const controllSelect = new ControllSelect(redrawSelect);
+    controllSelect.init();
+}

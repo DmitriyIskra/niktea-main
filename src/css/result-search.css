@@ -41,12 +41,16 @@
     margin-top: 5vw;
 }
 
-.result-search__undefined {
-    margin-top: 2.5vw;
+.result-search__wr-content {
+    display: none;
+}
+
+.result-search__wr-content_active {
+    display: block;
 }
 
 .result-search__undefined {
-    display: none;
+    margin-top: 2.5vw;
 
     font-family: Arsenal;
     font-size: 3.13vw;
@@ -55,14 +59,228 @@
     color: #F5C726;
 }
 
-.result-search__undefined_active {
+.result-search__wr-select {
+    width: 65vw;
+    height: 1.67vw;
+    margin: 0 auto 2.60vw;
+}
+
+.result-search__select {
+    position: absolute;
+
+    display: flex;
+    width: 6.82vw;
+}
+
+.result-search__select-list_back {
+    display: flex;
+    height: 1.67vw;
+    padding: 2px;
+
+    border-top-left-radius: 0.21vw;
+    border-bottom-left-radius: 0.21vw;
+    background: linear-gradient(180deg, #00BD8D, #00392D);
+
+    flex-grow: 1;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.result-search__select-list {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    border-top-left-radius: 0.21vw;
+    border-bottom-left-radius: 0.21vw;
+    background-color: #ffffff;
+
+    flex-direction: column;
+}
+
+.result-search__select-item {
+    display: flex;
+    flex-basis: 100%;
+    flex-shrink: 0;
+
+    font-family: Blogger Sans;
+    font-size: 0.73vw;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.result-search__select-item_active {
+    color: #2B516B;
+
+    order: -1;
+}
+
+.result-search__select-icon_back {
+    width: 1.04vw;
+    height: 1.67vw;
+    padding: 2px 2px 2px 0;
+
+    border-top-right-radius: 0.21vw;
+    border-bottom-right-radius: 0.21vw;
+    background: linear-gradient(180deg, #00BD8D, #00392D);
+
+    cursor: pointer;
+}
+
+.result-search__select-icon {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    background: #ffffff; 
+
+    align-items: center;
+    justify-content: center;
+}
+
+.result-search__select-icon-svg {
+    display: none;
+    width: 87%;
+}
+
+.result-search__select-svg_active {
     display: block;
+}
+
+.result-search__tea-cards {
+    display: none;
 }
 
 .result-search__recipes {
     display: none;
 }
 
-.result-search__recipes_active {
+.result-search__content_active {
     display: block;
+}
+
+
+
+@media (max-width: 768px) {
+    .result-search__main {
+        margin-bottom: 65.33vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__wr-title {
+        margin-top: 7.20vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__wr-title h2 {
+        font-size: 7.47vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__wr-request p {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__wr-response {
+        width: 85%;
+        margin: 4vw auto 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__undefined {
+        margin-top: 21.60vw;
+
+        font-size: 7.47vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__wr-select {
+        height: 8.53vw;
+        margin: 0 auto 11.47vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__select {
+        width: 34.93vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__select-list_back {
+        height: 8.53vw;
+
+        border-top-left-radius: 1.07vw;
+        border-bottom-left-radius: 1.07vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__select-item {
+        font-size: 3.73vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .result-search__select-icon_back {
+        width: 5.33vw;
+        height: 8.53vw;
+
+        border-top-right-radius: 1.07vw;
+        border-bottom-right-radius: 1.07vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 768px) {
+    
 }

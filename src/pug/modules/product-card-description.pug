@@ -1,9 +1,8 @@
 .prc__wrapper 
     .prc__wr-title 
-        h1.prc__title 
-            p
-                each item in dataProductCard.title
-                    span #{item}
+        h1.prc__title     
+            each item in dataProductCard.title
+                span #{item}
 
     .prc__about-product
         .prc__wr-product-img(class="prc__wr-product-img_" + dataProductCard['class-page'])

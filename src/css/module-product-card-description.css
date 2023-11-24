@@ -11,28 +11,26 @@
 }
 
 .prc__title {
+    display: flex;
     margin-bottom: 0;
 
     font-family: Arsenal;
-    font-size: 2.86vw;
+    font-size: 2.7vw;
     font-weight: 400;
     text-align: center;
 
     color: #fefefe;
-}
-
-.prc__title p {
-    display: flex;
 
     flex-direction: column;
 }
 
 .prc__about-product {
     display: flex;
+    gap: 4vw;
     width: 84.38vw;
     margin-top: 5.21vw;
 
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .prc__wr-product-img {
@@ -55,7 +53,8 @@
 
 .prc__wr-product-description_back {
     display: flex;
-    width: 40vw;
+    width: 32vw;
+    height: fit-content;
     padding: 1px;
 
     background: linear-gradient(180deg, #00BD8D, #00392D);
@@ -78,9 +77,9 @@
     border-radius: 2.60vw;
 }
 
-.prc__wr-product-description p {
+.prc__wr-product-description p { 
     font-family: Blogger Sans;
-    font-size: 1.46vw;
+    font-size: 1.06vw;
     font-weight: 400;
 
     color: #ffffff;
@@ -100,13 +99,13 @@
 }
 
 .prc__wr-amount-weight-icon {
-    height: 5.21vw;
-    width: 5.21vw;
+    height: 4.43vw;
+    width: 4.43vw;
 }
 
 .prc__wr-amount-weight-text {
     font-family: Blogger Sans;
-    font-size: 1.67vw;
+    font-size: 1.42vw;
     font-weight: 400;
     text-align: center;
 
@@ -119,7 +118,7 @@
 
 .prc__title-brewing-tea {
     font-family: Arsenal;
-    font-size: 1.67vw;
+    font-size: 1.42vw;
 
     color: #ffffff;
 }
@@ -132,13 +131,13 @@
 }
 
 .prc__method-brewing-icon {
-    height: 5.21vw;
-    width: 5.21vw;
+    height: 4.43vw;
+    width: 4.43vw;
 }
 
 .prc__method-brewing-text {
     font-family: Blogger Sans;
-    font-size: 1.67vw;
+    font-size: 1.42vw;
     font-weight: 400;
     text-align: center;
 

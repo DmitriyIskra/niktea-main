@@ -34,8 +34,7 @@
 }
 
 .breadcrumbs__active {
-    font-size: 0.89vw;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 @media (max-width: 768px) {

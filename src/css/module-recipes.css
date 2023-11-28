@@ -96,13 +96,13 @@
     margin-top: 1.5vw;
 
     font-family: Blogger Sans;
-    font-size: 1.25vw;
+    font-size: 1.06vw;
 
     color: #ffffff;
 }
 
 .recipes__ingredients-title {
-    font-size: 1.25vw;
+    font-size: 1.06vw;
 }
 
 .recipes__ingredients-list {
@@ -135,7 +135,7 @@
 }
 
 .recipes__method-title {
-    font-size: 1.25vw;
+    font-size: 1.06vw;
 }
 
 .recipes__method {

@@ -4,13 +4,16 @@
             each item in dataProductCard.title
                 span #{item}
 
-    .prc__about-product
+    .prc__about-product 
         .prc__wr-product-img(class="prc__wr-product-img_" + dataProductCard['class-page'])
+            if dataProductCard.classCard
+                img.prc__product-img-animate(class='prc__product-img-animate_' + dataProductCard['class-page'] src=dataProductCard['img-animate'])
             img.prc__product-img(src=dataProductCard.img alt=dataProductCard.title[1])
-        .prc__wr-product-description_back
+        .prc__wr-product-description_back(class="prc__wr-product-description_back_" + dataProductCard['class-page'])
             .prc__wr-product-description
-                p #{dataProductCard.description} 
-                p #{dataProductCard.composition}
+                .prc__wr-product-description-text(class="prc__wr-product-description-text_" + dataProductCard.classCard)
+                    p #{dataProductCard.description}
+                    p #{dataProductCard.composition}
 
                 ul.prc__amount-weight-list
                     if dataProductCard['amount-icon-type'] == 'pyramid'
@@ -50,7 +53,7 @@
                         .prc__wr-amount-weight-text.prc__weight-text #{dataProductCard['weight-text']}
 
                 .prc__wr-title-brewing-tea
-                    h3.prc__title-brewing-tea СПОСОБ ЗАВАРИВАНИЯ
+                    h3.prc__title-brewing-tea Способ заваривания:
                 ul.prc__method-brewing-list(class="prc__method-brewing-list_" + dataProductCard['class-page'])
                     li.prc__method-brewing-item
                         .prc__method-brewing-icon.prc__method-icon-size
@@ -119,8 +122,8 @@
                                     path(d='M43.6615 9.56055H56.3385C56.7025 9.56055 57 9.97518 57 10.4825V13.6386C57 14.1459 56.7025 14.5605 56.3385 14.5605H43.6615C43.2975 14.5605 43 14.1459 43 13.6386V10.4825C43 9.97518 43.2975 9.56055 43.6615 9.56055Z' stroke='white' stroke-width='3' stroke-miterlimit='22.9256')
                         .prc__method-brewing-text.prc__method-text-time #{dataProductCard['method-time']}
 
-                .dev__star.prc__star-top 
-                .dev__star.prc__star-bottom
+                .dev__star.prc__star-top.star-prod-card
+                .dev__star.prc__star-bottom.star-prod-card
 
     
 

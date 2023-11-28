@@ -69,7 +69,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg|gif|webp)$/i, // 
+        test: /\.(png|jpg|gif|webp)$/i, 
         type: 'asset/resource',
       },
       {
@@ -81,7 +81,7 @@ module.exports = {
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: 'asset/resource', 
         generator: {
           filename: 'fonts/[name][ext]',  // указываем путь сборки
         }

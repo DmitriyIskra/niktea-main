@@ -263,7 +263,7 @@ body[data-variant="about-tea"] {
 }
 
 .about__text h2 {
-  font-size: 3.65vw;
+  font-size: 2.86vw;
 }
 
 .priz {
@@ -337,7 +337,7 @@ h2 {
 
 .head-wrap h2 span {
   font-family: Arsenal;
-  font-size: 70px;
+  font-size: 2.86vw;
   font-style: normal;
   font-weight: 200;
   line-height: 91.9%;
@@ -369,8 +369,9 @@ h2 {
 
 .promo__card {
   position: relative;
+  
   display: flex;
-  justify-content: center;
+
   align-items: center;
   flex-shrink: 0;
 }
@@ -395,7 +396,7 @@ h2 {
   display: flex;
   position: relative;
   border-radius: 2.5vw;
-  width: 90vw;
+  width: 95%;
   height: 24vw;
 }
 
@@ -596,8 +597,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 19%; /*20%*/
+  padding-right: 21%; /*20%*/
   display: flex;
 
   list-style: none;
@@ -609,12 +610,12 @@ h2 {
 .header__list_no-index {
   position: static;
 
-  gap: 2.34vw;
-  margin-left: 1.6vw;
+  gap: 3.4vw; /*2.34vw*/
+  margin-left: 0; /*1.6vw*/
   margin-right: 0;
   margin-bottom: 0;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 2vw; /*3vw*/
 
   justify-content: center;
 }
@@ -727,6 +728,7 @@ height: 45px; */
 }
 
 .search-item {
+  display: none;
   padding-left: 15px;
   padding-right: 15px;
 }

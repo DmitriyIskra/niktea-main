@@ -40,19 +40,25 @@
     width: 36.46vw;
     height: 37.45vw;
 }
-/* new */
+
+.prc__wr-product-img_pyramid {
+    height: 27.60vw;
+}
+
 .prc__wr-product-img_dellipack {
     height: 29.06vw;
 }
 
-.prc__wr-product-img_pyramid {
-    --img_pyramid-height: 27.60vw;
-    height: 27.60vw;
+.prc__wr-product-img_tea-pot {
+    height: 21.61vw;
 }
 
-.prc__wr-product-img_tea-pot {
-    height: 38.45vw;
-    width: 41.46vw;
+.prc__wr-product-img_leaf {
+    height: 29.90vw;
+}
+
+.prc__wr-product-img_top-selection {
+    height: 29.01vw;
 }
 
 .prc__product-img-animate {
@@ -64,11 +70,23 @@
     z-index: -1;
 }
 
+.prc__product-img-animate_pyramid {
+    width: 100%;
+}
+
 .prc__product-img-animate_dellipack {
     width: 95%;
 }
 
-.prc__product-img-animate_pyramid {
+.prc__product-img-animate_leaf {
+    width: 94%;
+}
+
+#prc__product-img-animate_leaf-green {
+    transform: translate(-54%, -50%);
+}
+
+.prc__product-img-animate_top-selection {
     width: 100%;
 }
 
@@ -96,14 +114,29 @@
          336px 327px 131px 0px rgba(0, 25, 19, 0.00);
 }
 
+.prc__wr-product-description_back_pyramid {
+    height: 29.06vw;
+    width: 29.06vw;
+}
+
 .prc__wr-product-description_back_dellipack {
     height: 29.06vw;
     width: 29.06vw;
 }
 
-.prc__wr-product-description_back_pyramid {
+.prc__wr-product-description_back_tea-pot {
+    height: 27.06vw;
+    width: 27.06vw;
+}
+
+.prc__wr-product-description_back_leaf {
+    height: 29.90vw;
+    width: 29.90vw;
+}
+
+.prc__wr-product-description_back_top-selection {
     height: 29.06vw;
-    width: 29.06vw;
+    width: 29.01vw;
 }
 
 .prc__wr-product-description {
@@ -119,7 +152,7 @@
     flex-direction: column;
     justify-content: center;
 }
-/* new */
+
 .prc__wr-product-description-text { 
     display: flex;
     gap: 0.5vw;
@@ -139,6 +172,66 @@
 
 .prc__wr-product-description-text_dellipack-assorti p {
     font-size: 0.95vw;
+}
+
+.prc__wr-product-description-text_pyramid-tropic p {
+    font-size: 1vw;
+}
+
+.prc__wr-product-description-text_pyramid-berries p {
+    font-size: 1.02vw;
+}
+
+.prc__wr-product-description-text_top-cedar p {
+    font-size: 0.85vw;
+}
+
+.prc__wr-product-description-text_dell-pot-thyme p {
+    font-size: 0.93vw;
+}
+
+.prc__wr-product-description-text_dell-pot-jasmine p {
+    font-size: 1.01vw;
+}
+
+.prc__wr-product-description-text_leaf-sbiten p {
+    font-size: 1vw;
+}
+
+.prc__wr-product-description-text_leaf-fireweed p {
+    font-size: 1.04vw;
+}
+
+.prc__wr-product-description-text_leaf-herbal-mix-3 p {
+    font-size: 1.01vw;
+}
+
+.prc__wr-product-description-text_leaf-sagan-dale p {
+    font-size: 0.85vw;
+}
+
+.prc__wr-product-description-text_leaf-altaic-herbs p {
+    font-size: 1vw;
+}
+
+.prc__wr-product-description-text_leaf-cascara p {
+    font-size: 1.04vw;
+}
+
+.prc__wr-product-description-text_leaf-gaba-oolong p {
+    font-size: 0.9vw;
+}
+
+.prc__wr-product-description-text_leaf-rosehip p {
+    font-size: 1vw;
+}
+
+.prc__wr-product-description-text_leaf-hibiscus p {
+    font-size: 1vw;
+}
+
+.prc__wr-product-description-text_leaf-rooibush p {
+    font-size: 1vw;
 }
 
 .prc__amount-weight-list {
@@ -247,8 +340,8 @@
 
 @media (max-width: 768px) {
     .prc__about-product {
-        margin-top: 4.27vw;
-        gap: 6.40vw;
+        margin-top: 14.27vw;
+        gap: 16.40vw;
 
         flex-direction: column;
         align-items: center;
@@ -261,18 +354,61 @@
         height: 94vw;
     }
 
+    .prc__wr-product-img_pyramid {
+        height: 72vw;
+    }
+
     .prc__wr-product-img_dellipack {
-        height: 103vw;
+        height: 93vw;
     }
 
     .prc__wr-product-img_tea-pot {
-        height: 80vw;
+        height: 62vw;
+    }
+
+    .prc__wr-product-img_top-selection {
+        height: 92vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__product-img-animate_pyramid {
+        width: 110%;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__product-img-animate_dellipack {
+        width: 115%;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__product-img-animate_tea-pot {
+        width: 115%;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__product-img-animate_leaf {
+        width: 112%;
+    }
+
+    #prc__product-img-animate_leaf-light-green {
+        width: 116%;
+    }
+}
+
+@media (max-width: 768px) {
+    .prc__product-img-animate_top-selection {
+        width: 115%;
     }
 }
 
 @media (max-width: 768px) {
     .prc__wr-product-description_back {
         width: 89.33vw;
+        height: auto;
 
         border-radius: 8vw;
     }
@@ -363,16 +499,9 @@
 }
 
 @media (max-width: 768px) {
-    .prc__start-top {
-        right: 17.87vw;
-        bottom: 56.27vw;
-    }
-}
-
-@media (max-width: 768px) { 
-    .prc__start-bottom {
-        right: 12vw;
-        bottom: 49.33vw;
+    .star-prod-card {
+        width: 3.5vw;
+        height: 3.41vw
     }
 }
 

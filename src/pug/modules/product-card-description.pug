@@ -3,11 +3,20 @@
         h1.prc__title     
             each item in dataProductCard.title
                 span #{item}
-
+ 
     .prc__about-product 
         .prc__wr-product-img(class="prc__wr-product-img_" + dataProductCard['class-page'])
-            if dataProductCard.classCard
-                img.prc__product-img-animate(class='prc__product-img-animate_' + dataProductCard['class-page'] src=dataProductCard['img-animate'])
+            if dataProductCard.idAnimate
+                img.prc__product-img-animate(
+                    class='prc__product-img-animate_' + dataProductCard['class-page']
+                    id='prc__product-img-animate_' + dataProductCard.idAnimate
+                    src=dataProductCard['img-animate']
+                    )
+            else 
+                img.prc__product-img-animate(
+                    class='prc__product-img-animate_' + dataProductCard['class-page']
+                    src=dataProductCard['img-animate']
+                    )
             img.prc__product-img(src=dataProductCard.img alt=dataProductCard.title[1])
         .prc__wr-product-description_back(class="prc__wr-product-description_back_" + dataProductCard['class-page'])
             .prc__wr-product-description

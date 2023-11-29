@@ -21,10 +21,13 @@ export default class RedrawReadMore {
         const totalGap = gap * (this.amountInitPar - 1);
 
         this.wrText.style.height = `${totalHeight + totalGap}px`;
+
+        this.wrText.addEventListener('transitionend', () => {
+            this.readMore.textContent = 'Читать далее';
+        }, {once: true})
     }
 
     controllState() {
-        console.log('work')
         if(this.currentState) {
             this.initStartState();
 
@@ -44,5 +47,9 @@ export default class RedrawReadMore {
         const totalGap = gap * (this.allParagraphs.length - 1);
 
         this.wrText.style.height = `${totalHeight + totalGap}px`;
+
+        this.wrText.addEventListener('transitionend', () => {
+            this.readMore.textContent = 'Свернуть';
+        }, {once: true})
     }
 }

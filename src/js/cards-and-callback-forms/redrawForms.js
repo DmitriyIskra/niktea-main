@@ -5,7 +5,7 @@ export default class RedrawForms {
         this.formMobile = this.mobile.querySelector('.contacts__card-address-form');
         this.formPhoneMobile = this.formMobile.phone;
         this.formMailMobile = this.formMobile.email;
-        this.formCityMobile = this.formMobile.city;
+        this.formCityMobile = this.formMobile.city; 
         this.formCheckPolicyMobile = this.formMobile.policy;
         // блок содержащий контакты для бизнесса
         this.cardContactsBus = this.mobile.querySelector('.contacts__wr-card-address-item_left');
@@ -88,15 +88,17 @@ export default class RedrawForms {
 
     // Меняем активную карточку
     changeCard(type) {
-        const el = this.mobile.querySelector(`[data-type="${type}"]`)
+        if(type) {
+            const el = this.mobile.querySelector(`[data-type="${type}"]`)
 
-        this.currentMobileCard.classList.remove('contacts__wr-card-address-item_active');
-        if(this.currentMobileCard.dataset.type === 'form') {
-            this.resetMobileForm();
+            this.currentMobileCard.classList.remove('contacts__wr-card-address-item_active');
+            if(this.currentMobileCard.dataset.type === 'form') {
+                this.resetMobileForm();
+            }
+    
+            this.currentMobileCard = el;
+            this.currentMobileCard.classList.add('contacts__wr-card-address-item_active');
         }
-
-        this.currentMobileCard = el;
-        this.currentMobileCard.classList.add('contacts__wr-card-address-item_active');
     }
 
     // получаем данные формы и работаем с ними

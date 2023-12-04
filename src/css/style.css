@@ -597,8 +597,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
-  padding-left: 19%; /*20%*/
-  padding-right: 21%; /*20%*/
+  padding-left: 20%; /*20%*/
+  padding-right: 19%; /*20%*/
   display: flex;
 
   list-style: none;
@@ -610,12 +610,12 @@ h2 {
 .header__list_no-index {
   position: static;
 
-  gap: 3.4vw; /*2.34vw*/
-  margin-left: 0; /*1.6vw*/
+  gap: 2.34vw; /*2.34vw*/
+  margin-left: 4vw; /*4vw*/
   margin-right: 0;
   margin-bottom: 0;
   padding-left: 0;
-  padding-right: 2vw; /*3vw*/
+  padding-right: 3vw; /*3vw*/
 
   justify-content: center;
 }
@@ -728,7 +728,7 @@ height: 45px; */
 }
 
 .search-item {
-  display: none;
+  display: block;
   padding-left: 15px;
   padding-right: 15px;
 }

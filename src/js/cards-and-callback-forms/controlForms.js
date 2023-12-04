@@ -4,7 +4,7 @@ export default class ControlForms {
         this.Imask = Imask;
 
         this.onClick = this.onClick.bind(this);
-        this.onFocus = this.onFocus.bind(this);
+        this.onFocus = this.onFocus.bind(this); 
         this.onBlur = this.onBlur.bind(this);
     }
 

@@ -1,0 +1,29 @@
+{
+    "name": "Niktea-world",
+    "short_name": "Niktea",
+    "icons": [
+        {
+            "src": "./img/svg/Frame-120.svg",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/svg/Frame-180.svg",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/svg/Frame-192.svg.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/svg/Frame-256.svg",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#018262",
+    "background_color": "#01BD8D",
+    "display": "standalone"
+}

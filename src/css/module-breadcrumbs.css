@@ -1,9 +1,8 @@
 .breadcrumbs__wrapper {
     display: flex;
     margin-top: 1.25vw;
-    padding-right: 10.86vw;
 
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .breadcrumbs__wrapper-recipes {
@@ -12,7 +11,9 @@
 
 .breadcrumbs__list {
     display: flex;
+    width: 70%;
     gap: 0.36vw;
+    padding-left: 0;
 
     align-items: center;
 }

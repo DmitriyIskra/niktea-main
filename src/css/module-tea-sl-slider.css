@@ -61,6 +61,8 @@
 
 .tea-sl__slide-item-center img {
     height: 100%;
+
+    transform: translate(0, 0);
 }
 
 .tea-sl__slide-item_dellipack-tea-pot.tea-sl__slide-item-center img {

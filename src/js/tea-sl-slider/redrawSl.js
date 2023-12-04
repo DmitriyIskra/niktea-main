@@ -20,8 +20,8 @@ export default class RedrawSl {
         this.nextSlide = null;
 
         // для transition
-        this.animateDuration = 0.4; 
-        this.timingFunc = 'linear';
+        this.animateDuration = 0.4; // 0.4
+        this.timingFunc = 'ease-out';
 
         this.counterPrevSlide = 0;
         this.counterCenterSlide = 1;

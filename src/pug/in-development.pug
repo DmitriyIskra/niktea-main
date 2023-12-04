@@ -3,6 +3,7 @@ html(lang='ru')
     head
         meta(charset='UTF-8')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        include ./modules/favicon
         title В разработке
     body.body__in-dev
         .wrapper-page.wrapper-page-in-dev 
@@ -10,9 +11,11 @@ html(lang='ru')
 
             main.dev__main 
                 .dev__wr-info_out 
-                    .dev__wr-info_in
+                    .dev__wr-info_in 
                         .dev__info-text 
-                            p На сайте происходит обновление коллекции. Скоро Вы сможете ознакомиться с разделом.
+                            p 
+                                span На сайте происходит обновление. 
+                                span Скоро Вы сможете ознакомиться с разделом.
 
                         .dev__wr-info-button
                             a.button__link.dev__wr-info-button-link(href="./index.html") 

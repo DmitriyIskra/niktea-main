@@ -27,19 +27,19 @@
 }
 
 .about-tea__article-img_milk-oolong {
-  background: no-repeat url(../img/content/catalog-article-img_card-milk-oolong.png);
+  background: no-repeat url(../img/content/catalog-article-img_card-milk-oolong.webp);
   background-size: cover;
   background-position: center;
 }
 
 .about-tea__article-img_non-tea {
-  background: no-repeat url(../img/content/catalog-article-img_card-non-tea.png);
+  background: no-repeat url(../img/content/catalog-article-img_card-non-tea.webp);
   background-size: cover;
   background-position: center;
 }
 
 .about-tea__article-img_staying-green {
-  background: no-repeat url(../img/content/catalog-article-img_card-staying-green.png);
+  background: no-repeat url(../img/content/catalog-article-img_card-staying-green.webp);
   background-size: cover;
   background-position: center;
 }

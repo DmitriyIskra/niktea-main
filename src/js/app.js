@@ -22,6 +22,9 @@ import RedrawBrandSl from "./brand-slider/redrawBrandSl";
 import ControllSelect from "./select/controllSelect";
 import RedrawSelect from "./select/redrawSelect";
 
+import ControllAboutTeaArticle from "./about-tea-article/controllAboutTeaArticle";
+import RedrawAboutTeaArticle from "./about-tea-article/redrawAboutTeaArticle";
+
 import Swiper from "swiper";
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -138,3 +141,14 @@ if(select) {
     const controllSelect = new ControllSelect(redrawSelect);
     controllSelect.init();
 }
+
+
+// ABOUT TEA ARTICLE
+
+const mediaArticle = document.querySelector('.mod-t-art__media-bottom');
+if(mediaArticle) {
+    const redrawAboutTeaArticle = new RedrawAboutTeaArticle(mediaArticle);
+    const controllAboutTeaArticle = new ControllAboutTeaArticle(redrawAboutTeaArticle);
+    controllAboutTeaArticle.init();
+}
+

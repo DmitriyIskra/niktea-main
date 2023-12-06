@@ -5,11 +5,11 @@
     align-items: center;
 }
 
-.mod-t-art__title {
+.mod-t-art__title { 
     margin-bottom: 0;
 
     font-family: Arsenal;
-    font-size: 2.86vw;
+    font-size: 2.34vw;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -17,12 +17,22 @@
     color: #F5C726;
 }
 
-.mod-t-art__img-top {
+.mod-t-art__wr-img-top {
     width: 61.46vw;
     height: 24.38vw;
     margin-top: 3.13vw;
 
     border-radius: 2.60vw;
+
+    overflow: hidden;
+}
+
+.mod-t-art__img-top {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
 }
 
 .mod-t-art__wr-title_mob {
@@ -42,19 +52,116 @@
     margin-bottom: 0;
 
     font-family: Blogger Sans;
-    font-size: 1.25vw;
+    font-size: 1.06vw;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
 
     color: #FFF;
 }
 
-.mod-t-art__img-bottom {
+.mod-t-art__media-bottom {
+    width: 62%;
+}
+
+.mod-t-art__img-bottom-list {
+    padding-left: 0;
+    margin-top: 4.43vw;
+}
+
+/* картинок больше одной устанвливается в js */
+.mod-t-art__img-bottom-list_more {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mod-t-art__img-bottom-list_unactive {
+    display: none;
+}
+
+.mod-t-art__wr-img-bottom-item {
+    border-radius: 2.60vw;
+
+    overflow: hidden;
+}
+
+.mod-t-art__wr-img-bottom-item:nth-child(n + 3) {
+    margin-top: 2.4vw;
+}
+
+.mod-t-art__wr-img-bottom-item_one {
     width: 61.46vw;
-    height: 32.86vw;
+    height: 24.38vw;
+}
+
+.mod-t-art__wr-img-bottom-item_more {
+    width: 29.43vw;
+    min-height: 21.93vw;
+}
+
+.mod-t-art__img-bottom {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.mod-t-art__wr-img-bottom-item_more img {
+    height: 21.93vw;
+}
+
+.mod-t-art__img-bottom-description {
+    margin-top: 1.04vw;
+
+    font-family: Blogger Sans;
+    font-size: 1.04vw;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.mod-t-art__wr-video {
+    display: flex;
+    width: 61.46vw;
     margin-top: 4.43vw;
 
-    border-radius: 2.60vw;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* видео больше одного устанавливается в js */
+.mod-t-art__wr-video_more {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mod-t-art__wr-video iframe {
+    border-radius: 2vw;
+}
+
+.mod-t-art__wr-video iframe:nth-child(n+3) {
+    margin-top: 2.4vw;
+}
+
+/* когда видео больше одного */
+.mod-t-art__video_more {
+    width: 29.43vw;
+    height: 21.93vw;
+}
+
+/* для нечетного количества видео */
+.mod-t-art__wr-video_odd iframe:last-child {
+    margin: 2.4vw auto 0;
+}
+
+.mod-t-art__wr-video_unactive {
+    display: none;
 }
 
 @media(max-width: 768px) {
@@ -64,7 +171,7 @@
 }
 
 @media(max-width: 768px) {
-    .mod-t-art__img-top {
+    .mod-t-art__wr-img-top {
         width: 89.33vw;
         height: 88vw;
         margin-top: 7vw;
@@ -76,7 +183,7 @@
 @media(max-width: 768px) {
     .mod-t-art__wr-title_mob {
         display: block;
-        margin-top: 5vw;
+        margin-top: 6.5vw;
     }
 
     .mod-t-art__title {
@@ -94,15 +201,85 @@
 
 @media(max-width: 768px) {
     .mod-t-art__wr-text p {
-        font-size: 6.40vw;
-        text-align: center;
+        font-size: 4.80vw;
     }
 }
 
 @media(max-width: 768px) {
-    .mod-t-art__img-bottom {
-        height: 71.73vw;
+    .mod-t-art__media-bottom {
         width: 89.33vw;
-        margin-top: 13.33vw;
     }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__img-bottom-list {
+        margin-top: 10vw;
+
+        flex-direction: column;
+    }
+
+    .mod-t-art__img-bottom-list_more {
+        gap: 6.67vw;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-img-bottom-item {
+        height: 71.73vw;
+        width: 100%;
+
+        border-radius: 8vw;
+    }
+
+    .mod-t-art__wr-img-bottom-item:nth-child(n + 3) {
+        margin-top: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-video {
+        width: 100%;
+        margin-top: 10vw;
+
+        flex-direction: column;
+    }
+
+    .mod-t-art__wr-video_more {
+        gap: 6.67vw;
+
+        justify-content: normal;
+        flex-wrap: nowrap;
+    }
+}
+
+@media(max-width: 768px) {
+    .mod-t-art__wr-video iframe {
+        width: 100%;
+        height: 71.73vw;
+        margin: 0;
+
+        border-radius: 8vw;
+    }
+
+    .mod-t-art__wr-video iframe:nth-child(n+3) {
+        margin: 0;
+    }
+
+    .mod-t-art__wr-video_odd iframe:last-child {
+        margin: 0;
+    }
+}
+
+
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
 }

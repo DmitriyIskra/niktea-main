@@ -26,20 +26,20 @@
   border-radius: 2.60vw;
 }
 
-.about-tea__article-img_card-1 {
-  background: no-repeat url(../img/content/catalog-article-img_card-1.png);
+.about-tea__article-img_milk-oolong {
+  background: no-repeat url(../img/content/catalog-article-img_card-milk-oolong.png);
   background-size: cover;
   background-position: center;
 }
 
-.about-tea__article-img_card-2 {
-  background: no-repeat url(../img/content/catalog-article-img_card-2.png);
+.about-tea__article-img_non-tea {
+  background: no-repeat url(../img/content/catalog-article-img_card-non-tea.png);
   background-size: cover;
   background-position: center;
 }
 
-.about-tea__article-img_card-3 {
-  background: no-repeat url(../img/content/catalog-article-img_card-3.png);
+.about-tea__article-img_staying-green {
+  background: no-repeat url(../img/content/catalog-article-img_card-staying-green.png);
   background-size: cover;
   background-position: center;
 }
@@ -55,7 +55,7 @@
   margin-bottom: 0;
 
   font-family: Arsenal;
-  font-size: 2.86vw;
+  font-size: 2.34vw;
   font-style: normal;
   font-weight: 400;
 
@@ -68,7 +68,7 @@
 
 .about-tea__article-wr-text p {
   font-family: Blogger Sans;
-  font-size: 1.25vw;
+  font-size: 1.06vw;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
@@ -92,7 +92,7 @@
   background: #45CFAC !important;
 }
 
-
+ 
 
 @media(max-width: 768px) {
   .about-tea__wr-articles {

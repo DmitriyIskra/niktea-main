@@ -135,8 +135,24 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
-      template: './src/pug/about-tea-article.pug',
-      filename: './about-tea-article.html',   // куда компилировать
+      template: './src/pug/about-tea-article-milk-oolong.pug',
+      filename: './about-tea-article-milk-oolong.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/about-tea-article-non-tea-tea.pug',
+      filename: './about-tea-article-non-tea-tea.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/about-tea-article-staying-green.pug',
+      filename: './about-tea-article-staying-green.html',   // куда компилировать
       minify: {
         html: false // отключаем минификацию html, еще есть версия minify: false
       },

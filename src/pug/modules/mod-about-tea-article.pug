@@ -1,11 +1,25 @@
+
+
+
 .mod-t-art__wrapper 
     .mod-t-art__wr-title_desc
         h2.mod-t-art__title #{articles.title}
-    .mod-t-art__img-top(class="mod-t-art__img-top_" + classPage)
+    .mod-t-art__wr-img-top(class="mod-t-art__wr-img-top_" + classPage)
+        img.mod-t-art__img-top(src=articles.imgTop alt=articles.alt)
     .mod-t-art__wr-title_mob
         h2.mod-t-art__title #{articles.title}
     .mod-t-art__wr-text
-        each i in articles.text
+        each i in articles.text 
             p #{i}
-    .mod-t-art__img-bottom(class="mod-t-art__img-bottom_" + classPage)
+    .mod-t-art__media-bottom
+        ul.mod-t-art__img-bottom-list
+            if articles.imgBottom
+                each i in articles.imgBottom
+                    li.mod-t-art__wr-img-bottom-item     
+                        img.mod-t-art__img-bottom(src=i.path alt=articles.alt)
+                        if i.description
+                            .mod-t-art__img-bottom-description
+                                | #{i.description}
+        .mod-t-art__wr-video
+            
     

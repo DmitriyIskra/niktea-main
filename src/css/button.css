@@ -8,7 +8,7 @@
     font-weight: 400;
 
     color: #ffffff;
-    background: linear-gradient(180deg, #00BD8D, #00392D);
+    background: linear-gradient(180deg, #00BD8D 50%, #00392D);
     border-radius: 2.60vw;
 
     transition: filter 0.3s linear;

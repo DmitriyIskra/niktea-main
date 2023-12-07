@@ -24,6 +24,7 @@
   min-height: 20.83vw;
 
   border-radius: 2.60vw;
+  box-shadow: 0px 0px 17px rgb(0 25 10 / 80%);
 }
 
 .about-tea__article-img_milk-oolong {
@@ -67,7 +68,7 @@
 }
 
 .about-tea__article-wr-text p {
-  font-family: Blogger Sans;
+  font-family: Arsenal;
   font-size: 1.06vw;
   font-style: normal;
   font-weight: 400;

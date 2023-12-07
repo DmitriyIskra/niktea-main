@@ -29,28 +29,23 @@
     min-height: 24.84vw;
 
     border-radius: 2.60vw;
-    box-shadow: 0px 0px 0px 0px rgba(0, 25, 19, 0.10),
-     13px 13px 41px 0px rgba(0, 25, 19, 0.10),
-      54px 52px 75px 0px rgba(0, 25, 19, 0.09),
-       121px 118px 101px 0px rgba(0, 25, 19, 0.05),
-        215px 209px 120px 0px rgba(0, 25, 19, 0.01),
-         336px 327px 131px 0px rgba(0, 25, 19, 0.00);
+    box-shadow: 0px 0px 17px rgb(0 25 10 / 80%);
 }
 
 .recipes__img_sweet-dreams {
-    background: no-repeat url(../img/content/recipes-sweet-dreams.png);
+    background: no-repeat url(../img/content/recipes-sweet-dreams.webp);
     background-position: center;
     background-size: cover;
 }
 
 .recipes__img_fresh-morning {
-    background: no-repeat url(../img/content/recipes-fresh-morning.png);
+    background: no-repeat url(../img/content/recipes-fresh-morning.webp);
     background-position: center;
     background-size: cover;
 }
 
 .recipes__img_raspberry {
-    background: no-repeat url(../img/content/recipes-raspberry.png);
+    background: no-repeat url(../img/content/recipes-raspberry.webp);
     background-position: center;
     background-size: cover;
 }
@@ -63,12 +58,6 @@
 
     background: linear-gradient(180deg, #00BD8D, #00392D);
     border-radius: 2.60vw;
-    box-shadow: 0px 0px 0px 0px rgba(0, 25, 19, 0.10),
-     13px 13px 41px 0px rgba(0, 25, 19, 0.10),
-      54px 52px 75px 0px rgba(0, 25, 19, 0.09),
-       121px 118px 101px 0px rgba(0, 25, 19, 0.05),
-        215px 209px 120px 0px rgba(0, 25, 19, 0.01),
-         336px 327px 131px 0px rgba(0, 25, 19, 0.00);
 }
 
 .recipes__wr-descr {
@@ -86,7 +75,7 @@
 
 .recipes__descr-title {
     font-family: Arsenal;
-    font-size: 2.86vw;
+    font-size: 2.34vw;
     text-align: center;
 
     color: #FFC300;
@@ -95,7 +84,7 @@
 .recipes__descr {
     margin-top: 1.5vw;
 
-    font-family: Blogger Sans;
+    font-family: Arsenal;
     font-size: 1.06vw;
 
     color: #ffffff;

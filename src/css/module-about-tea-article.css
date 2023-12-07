@@ -23,6 +23,7 @@
     margin-top: 3.13vw;
 
     border-radius: 2.60vw;
+    box-shadow: 0px 0px 17px rgb(0 25 10 / 80%);
 
     overflow: hidden;
 }
@@ -51,7 +52,7 @@
 .mod-t-art__wr-text p {
     margin-bottom: 0;
 
-    font-family: Blogger Sans;
+    font-family: Arsenal;
     font-size: 1.06vw;
     font-style: normal;
     font-weight: 400;
@@ -82,7 +83,7 @@
 }
 
 .mod-t-art__wr-img-bottom-item {
-    overflow: hidden;
+    border-radius: 2.60vw;
 }
 
 .mod-t-art__wr-img-bottom-item:nth-child(n + 3) {
@@ -104,6 +105,7 @@
     height: 100%;
 
     border-radius: 2.60vw;
+    box-shadow: 0px 0px 17px rgb(0 25 10 / 80%);
 
     object-fit: cover;
     object-position: center;
@@ -143,6 +145,7 @@
 
 .mod-t-art__wr-video iframe {
     border-radius: 2vw;
+    box-shadow: 0px 0px 17px rgb(0 25 10 / 80%);
 }
 
 .mod-t-art__wr-video iframe:nth-child(n+3) {
@@ -227,6 +230,8 @@
     .mod-t-art__wr-img-bottom-item {
         min-height: 71.73vw;
         width: 100%;
+
+        border-radius: 8vw;
     }
 
     .mod-t-art__wr-img-bottom-item_more img {

@@ -218,8 +218,8 @@ body[data-variant="about-tea"] {
 .about {
   margin-bottom: 155px;
 }
-
-@media (max-width: 540px) {
+/* media */
+@media (max-width: 768px) {
   .about {
     flex-direction: column;
   }
@@ -346,7 +346,7 @@ h2 {
   color: #f5c726;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   h2 {
     font-size: 34px;
   }
@@ -441,7 +441,7 @@ h2 {
   text-transform: uppercase;
 } */
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   .promo__card span {
     font-size: 24px;
   }
@@ -1212,7 +1212,7 @@ height: 45px; */
   overflow: hidden;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   /* .header-wrapper {
     height: auto;
   } */
@@ -1246,6 +1246,8 @@ height: 45px; */
   }
 
   .about__descr p {
+    width: 95%;
+
     text-align: center;
   }
 
@@ -1577,27 +1579,24 @@ height: 45px; */
   }
 }
 
-
-
-@media (max-width: 768px) {
-  
-}
-
-@media (max-width: 768px) {
-  
-}
-
-@media (max-width: 768px) {
-  
-}
-
-
-
-
-
 @media (max-width: 768px) {
   .container-main {
     margin-top: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo {
+    width: 93%;
+    margin: 0 auto;
+
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .promo__card {
+    justify-content: center;
   }
 }
 
@@ -1643,19 +1642,28 @@ height: 45px; */
 }
 
 @media (max-width: 768px) {
+  .promo__card--text {
+    width: 75%;
+    height: 87%;
+  }
+
   .promo__card--text_desctop {
     display: none;
   }
 
   .promo__card--text_mobile {
-    display: block;
+    display: flex;
     margin-top: 12vw;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
   }
 }
 
 @media (max-width: 768px) {
   .promo__card-wr-banner {
     margin-top: 5vw;
+    align-self: center;
   }
 }
 
@@ -1724,11 +1732,17 @@ height: 45px; */
 
   .promo__card--img_mobile {
     display: block;
+    height: 100%;
+    width: 105%;
+
+    object-fit: contain;
+    object-position: center;
   }
 }
 
 @media (max-width: 768px) {
   .gift__descr {
+    width: 93%;
     margin-bottom: 0;
 
     font-size: 3.73vw;
@@ -1742,6 +1756,7 @@ height: 45px; */
     position: static;
 
     display: flex;
+    width: 100%;
     margin-top: 6.67vw;
 
     justify-content: center;

@@ -14,8 +14,8 @@
 }
 
 
-
-@media (max-width: 540px) {
+/* media */
+@media (max-width: 768px) {
     .cards {
         flex-direction: column;
         margin-left: auto;
@@ -51,23 +51,6 @@
     overflow: hidden;      
     background: linear-gradient(180deg, #7775B6 0%, #494694 69.79%);   
      
-}
-
-@media (max-width: 540px) {
-  .recept__card {
-    width: 100%;
-    height: 356px;    
-    border-radius: 50px;
-  }
-
-  .recept__card--back {
-    border-radius: 50px;
-  }
-
-  .recept__card--back::after {
-  border-radius: 50px !important;
-  }
-
 }
 
 .recept__card--wr-img {    
@@ -162,7 +145,7 @@
 }
 
  .ingridients {
-    font-size: 14px;
+    font-size: 0.73vw;
     text-decoration: dotted;        
     margin-left: 0;
  }
@@ -317,7 +300,7 @@
     text-align: center;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .recepies__method {
         font-size: 18px;
     }
@@ -392,7 +375,7 @@
     }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 768px) {
     
 
     .recept__description--text {
@@ -436,8 +419,8 @@
     }
 
 }
-
-@media (max-width: 400px) {
+/* media */
+@media (max-width: 768px) {
     .recept__card--img-1_mobile {
         background-size: 93%;
     }
@@ -450,10 +433,39 @@
         background-size: 93%;
     }
 }
+/* media */
+@media(max-width: 768px) {
+    .recept__description {
+        top: 81%;
 
-@media(max-width: 400px) {
+        border-radius: 8vw;
+    }
+}
+
+@media(max-width: 500px) {
     .recept__description {
         top: 78%;
+    }
+}
+
+@media(max-width: 1600px) {
+    .recept__description--opened {
+        top: -79px;
+    }
+}
+/*
+@media(max-width: 1600px) {
+    .recept__description--opened {
+        top: -110px;
+    }
+} */
+
+@media(max-width: 768px) {
+    .recept__description--opened {
+        top: 77%;
+        /* padding-bottom: 18.2vw; */
+
+        transform: translateY(-102%); /*29%*/
     }
 }
 
@@ -477,3 +489,19 @@
     }
 }
 
+@media (max-width: 768px) {
+    .recept__card {
+      width: 100%;
+      height: 94.93vw;    
+      border-radius: 13.33vw;
+    }
+  
+    .recept__card--back {
+      border-radius: 13.33vw;
+    }
+  
+    .recept__card--back::after {
+    border-radius: 13.33vw !important;
+    }
+  
+  }

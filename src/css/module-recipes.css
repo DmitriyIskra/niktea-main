@@ -156,13 +156,13 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__list {
         gap: 13.33vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__item {
         gap: 6.67vw;
 
@@ -170,7 +170,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__img {
         width: 89.33vw;
         min-height: 88vw;
@@ -179,7 +179,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__wr-descr_back {
         width: 89.33vw;
 
@@ -187,7 +187,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__wr-descr {
         padding-top: 9.07vw;
         padding-right: 7.20vw;
@@ -198,13 +198,13 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__descr-title {
         font-size: 7.47vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__descr {
         margin-top: 7.47vw;
 
@@ -212,20 +212,20 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__ingredients-title {
         font-size: 4.80vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__ingredients-list {
         margin-top: 7.73vw;
         padding-left: 3.47vw
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__ingredients-item {
         gap: 3.47vw;
     }
@@ -236,39 +236,39 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__wr-method {
         margin-top: 5.60vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__method-title {
         font-size: 4.80vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__method {
         margin-top: 5.60vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__start-ingr-1 {
         top: 9.07vw;
         left: 7.47vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__start-ingr-2 {
         top: 61.33vw;
         right: 14.40vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .recipes__start-ingr-3 {
         top: 68vw;
         right: 8.53vw;

@@ -15,7 +15,7 @@
     background-position: center;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .tea-article__wrapper {
         margin-top: 6.67vw;
         margin-bottom: 25vw;

@@ -325,20 +325,20 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-title {
         width: 91vw;
         margin-top: 1.09vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__title {
         font-size: 7.47vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__about-product {
         margin-top: 14.27vw;
         gap: 16.40vw;
@@ -348,7 +348,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-product-img {
         width: 100%;
         height: 94vw;
@@ -371,25 +371,25 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__product-img-animate_pyramid {
         width: 110%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__product-img-animate_dellipack {
         width: 115%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__product-img-animate_tea-pot {
         width: 115%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__product-img-animate_leaf {
         width: 112%;
     }
@@ -399,13 +399,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__product-img-animate_top-selection {
         width: 115%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-product-description_back {
         width: 89.33vw;
         height: auto;
@@ -414,7 +414,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-product-description {
         padding: 9.07vw 7.20vw 7.73vw;
 
@@ -422,14 +422,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-product-description p {
         font-size: 4.80vw;
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__amount-weight-list {
         margin-top: 5.3vw;
         gap: 9.33vw;
@@ -438,14 +438,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-amount-weight-icon {
         height: 16vw;
         width: 16vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-amount-weight-text {
         margin-top: 0.8vw;
 
@@ -453,20 +453,20 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-title-brewing-tea {
         margin-top: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__title-brewing-tea {
         font-size: 5.33vw;
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__method-brewing-list {
         margin-top: 4.27vw;
         gap: 9.33vw;
@@ -483,14 +483,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__method-brewing-icon {
         height: 16vw;
         width: 16vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__method-brewing-text {
         margin-top: 0.8vw;
 
@@ -498,14 +498,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .star-prod-card {
         width: 3.5vw;
         height: 3.41vw
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__star-top {
         right: 17.69vw;
         bottom: 59.47vw;

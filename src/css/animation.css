@@ -219,7 +219,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .animated__hero {
     position: relative;
 
@@ -236,7 +236,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .animated__hero-title_mobile {
     display: block;
 
@@ -244,7 +244,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .flowers-white {
     top: 13vw;
 
@@ -252,7 +252,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .animation__container {
     height: 85vw;
     width: 100%;
@@ -260,7 +260,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .animation__container--img {
     height: auto;
     width: 100%;

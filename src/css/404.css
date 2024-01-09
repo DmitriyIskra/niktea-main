@@ -70,7 +70,7 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .wrapper-page-404 {
         background: no-repeat url(../img/404-bg-mob.png);
         background-size: cover;
@@ -78,32 +78,32 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .p404__wr-info {
         width: 74.67vw;
         margin-top: 15.47vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .p404__error {
         font-size: 6.40vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .p404__num {
         font-size: 10.67vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .p404__text {
         font-size: 6.40vw;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .p404__wr_buttons {
         margin-top: 7.20vw;
         gap: 2.67vw;
@@ -114,7 +114,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .p404__button-link {
         width: 100%;
         height: 11.73vw;

@@ -125,7 +125,7 @@ border: none;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   #toggle + label:after {
     content: "";
   
@@ -150,14 +150,14 @@ border: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   #toggle:checked ~ .box {
     width: 63vw;
     margin-right: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .box {
     right: 12.80vw;
 
@@ -166,13 +166,13 @@ border: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .input__group {
     height: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .input__field {
     padding-right: 14.3vw;
   }

@@ -655,19 +655,19 @@ ymaps.ymaps-2-1-79-copyright__wrap {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__main {
     margin-top: 10.93vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .breadcrumbs__container {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts {
     padding-left: 5.33vw;
     padding-right: 5.33vw;
@@ -675,26 +675,26 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-cards-address {
     width: 100%;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .card--container_desctop {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__cards-address-list_mobile {
     width: 100%;
     padding-left: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-item {
     position: relative;
 
@@ -731,7 +731,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts-flover--left_desctop {
     display: none;
   }
@@ -750,13 +750,13 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-header {
     display: flex;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-title {
     display: flex;
     width: 50%;
@@ -789,7 +789,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-text {
     display: flex;
     padding-left: 7.73vw;
@@ -801,7 +801,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-text p {
     display: flex;
     margin-bottom: 0;
@@ -817,7 +817,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__card-address-tel-link {
     font-family: Blogger Sans;
     font-size: 4.80vw;
@@ -828,7 +828,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-buttons {
     display: flex;
     gap: 5.07vw;
@@ -837,7 +837,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-link-address-redirect {
     display: flex;
     height: 11.73vw;
@@ -856,7 +856,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__link {
     display: flex;
 
@@ -881,7 +881,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts-flover--right_mobile {
     bottom: -6%;
     right: -6.2%;
@@ -891,7 +891,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__button-callback {
     display: flex;
     height: 11.73vw;
@@ -906,7 +906,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-icon-button-callback {
     display: flex;
 
@@ -921,7 +921,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts-flover--left-form_mobile {
     top: -3.9%;
     left: -5.1%;
@@ -936,7 +936,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-form {
     display: flex;
     margin-top: 6.33vw;
@@ -946,7 +946,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-form-close {
     display: flex;
     width: 74.67vw;
@@ -955,21 +955,21 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-close-icon {
     height: 6.13vw;
     width: 6.13vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__card-address-form {
     width: 74.67vw;
     margin-top: 1.33vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-address-input-list {
     display: flex;
     padding-left: 0;
@@ -979,7 +979,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-address-input-item {
     display: flex;
 
@@ -987,7 +987,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-form-label {
     font-family: WMF Rotis;
     font-size: 4.27vw;
@@ -998,7 +998,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-form-input {
     width: 100%;
     height: 10.67vw;
@@ -1026,20 +1026,20 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-address-form-policy {
     display: flex;
     margin-top: 2.67vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-form-checkbox {
       display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-form-checkbox-label {
     display: flex;
     gap: 2.13vw;
@@ -1084,13 +1084,13 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-address-form-text {
     margin-top: 2.67vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-form-text {
     max-width: 100%;
     min-width: 100%;
@@ -1112,13 +1112,13 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-address-button-submit {
     margin-top: 2.67vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-button-submit {
     display: flex;
     height: 11.73vw;
@@ -1134,7 +1134,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__address-button-submit_deco {
     display: flex;
 
@@ -1155,13 +1155,13 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-card-address-item-sended {
     padding-bottom: 18vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts-flover--left-sended_mobile {
     top: -6.5%;
     left: -5.1%;
@@ -1176,41 +1176,41 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-form-sended-content {
     border-radius: 0;
     background: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-form-sended-close {
     width: 83%;
     margin-top: 4vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__form-sended-close-icon {
     width: 6.13vw;
     height: 6.13vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-form-sended-icon {
     margin-top: 10vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__form-sended-icon {
     width: 26.93vw;
     height: 26.40vw;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-form-sended-text {
     margin-top: 9.07vw;
 
@@ -1218,7 +1218,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__wr-form-sended-start {
     width: 4.27vw;
     height: 4.53vw;
@@ -1239,14 +1239,14 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__card {
     position: relative;
     width: 35rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__card-map {
     height: 104.80vw;
     width: 100%;
@@ -1256,7 +1256,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__map-image {
     border-radius: 8vw;
     background-size: auto 100%;
@@ -1264,7 +1264,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .card--container-map {
     width: 100%;
 
@@ -1275,7 +1275,7 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__form {
     position: absolute;
     top: 0;
@@ -1283,20 +1283,20 @@ ymaps.ymaps-2-1-79-copyright__wrap {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .phone__wrap span {
     margin-bottom: 38px;
     font-weight: 400;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .cards__container {
     flex-direction: column;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .contacts__card--text {
     display: flex;
     flex-direction: column;

@@ -279,27 +279,27 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wrapper {
         margin-top: 3vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wr-title {
         width: 54.67vw;
         margin-bottom: 11.47vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__title {
         font-size: 7.47vw;
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__list {
         width: 74.67vw;
         max-width: 74.67vw;
@@ -307,7 +307,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__item {
         width: 100%;
     }
@@ -317,7 +317,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wr-link {
         width: 100%;
         min-height: 104.80vw;
@@ -326,19 +326,19 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__link {
         border-radius: 7.4vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wr-animate-img {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wr-pack-img_pyramid { 
         width: 49.60vw;
     }
@@ -363,7 +363,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wr-description {
         width: 68vw;
         height: 31.47vw;
@@ -374,7 +374,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .same-packs__wr-description p:first-child {
         margin-top: -4.5vw;
 

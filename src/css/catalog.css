@@ -381,7 +381,7 @@ padding: 0;
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__description {
         width: 77.55vw;        
         padding-left: 0;
@@ -390,27 +390,27 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__title {
         font-size: 7.47vw;
         margin-bottom: 4vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__wr-text {
         gap: 4vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__wr-text p {
         font-size: 3.73vw;
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__read-more {
         font-size: 3.73vw;
         font-weight: 500;
@@ -418,20 +418,20 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .card__container {
         width: 74.67%;
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .card__body {
         margin-left: 0;
         margin-right: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__item {
         width: 100%; 
         height: 104.80vw;
@@ -445,13 +445,13 @@ padding: 0;
     } 
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 961px) { 
     .catalog__wr-cards {
         margin-top: 11.47vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__card--img {
         height: auto;
         width: 49.60vw !important;
@@ -479,20 +479,20 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .product__card, .product__card--back, .product__card--back::after  {
         border-radius: 50px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .grid {
         display: flex;
         flex-direction: column;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .product__card-label_desctop {
         display: none;
     }
@@ -515,7 +515,7 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__slider--container_mobile {
         display: block;
         margin-top: 21.33vw;
@@ -523,7 +523,7 @@ padding: 0;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .catalog__slider-container_desctop {
         display: none;
     }

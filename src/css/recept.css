@@ -15,7 +15,7 @@
 
 
 /* media */
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .cards {
         flex-direction: column;
         margin-left: auto;
@@ -300,12 +300,11 @@
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .recepies__method {
-        font-size: 18px;
+@media(max-width: 1600px) {
+    .recept__description--opened {
+        top: -79px;
     }
 }
-
 
 @media (max-width: 1400px) {
     .recepies__method {
@@ -322,20 +321,26 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
+    .recepies__method {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 961px) {
     .recept__card--wr-img {
         display: flex;
         min-height: 100%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .recept__card--img {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .recept__card--img_mobile {
         display: block;
         height: 100vw;
@@ -363,19 +368,23 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) and (orientation: landscape ) {
     .recept__description {
-        top: 77%;
+        top: 86.5%;
+
+        border-radius: 8vw;
     }
 }
 
-@media (max-width: 768px) {
-    .recept__description--opened {
-        transform: translateY(-89vw);
+@media (max-width: 961px) and (orientation: portrait ) {
+    .recept__description {
+        top: 83.5%;
+
+        border-radius: 8vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     
 
     .recept__description--text {
@@ -420,7 +429,7 @@
 
 }
 /* media */
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .recept__card--img-1_mobile {
         background-size: 93%;
     }
@@ -433,12 +442,60 @@
         background-size: 93%;
     }
 }
-/* media */
-@media(max-width: 768px) {
+
+@media(max-width: 961px) {
+    .wr-recipes {
+        margin-top: 10.67vw;
+    }
+}
+
+@media (max-width: 961px) {
+    .recept__card {
+      width: 100%;
+      height: 94.93vw;    
+      border-radius: 13.33vw;
+    }
+  
+    .recept__card--back {
+      border-radius: 13.33vw;
+    }
+  
+    .recept__card--back::after {
+    border-radius: 13.33vw !important;
+    }
+  
+}
+
+@media(max-width: 961px) {
+    .recept__description--opened {
+        top: -27%;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
     .recept__description {
         top: 81%;
+    }
+}
 
-        border-radius: 8vw;
+@media (max-width: 768px) and (orientation: landscape) {
+    .recept__description {
+        top: 84.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .recept__description--opened {
+        transform: translateY(-89vw);
+    }
+}
+
+@media(max-width: 768px) {
+    .recept__description--opened {
+        top: 77%;
+        /* padding-bottom: 18.2vw; */
+
+        transform: translateY(-102%); /*29%*/
     }
 }
 
@@ -448,24 +505,9 @@
     }
 }
 
-@media(max-width: 1600px) {
-    .recept__description--opened {
-        top: -79px;
-    }
-}
-/*
-@media(max-width: 1600px) {
-    .recept__description--opened {
-        top: -110px;
-    }
-} */
-
-@media(max-width: 768px) {
-    .recept__description--opened {
-        top: 77%;
-        /* padding-bottom: 18.2vw; */
-
-        transform: translateY(-102%); /*29%*/
+@media(max-width: 400px) and (orientation: landscape) {
+    .recept__description {
+        top: 83.5%;
     }
 }
 
@@ -483,25 +525,6 @@
     }
 }
 
-@media(max-width: 768px) {
-    .wr-recipes {
-        margin-top: 10.67vw;
-    }
-}
 
-@media (max-width: 768px) {
-    .recept__card {
-      width: 100%;
-      height: 94.93vw;    
-      border-radius: 13.33vw;
-    }
-  
-    .recept__card--back {
-      border-radius: 13.33vw;
-    }
-  
-    .recept__card--back::after {
-    border-radius: 13.33vw !important;
-    }
-  
-  }
+
+

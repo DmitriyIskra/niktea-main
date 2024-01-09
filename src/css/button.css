@@ -31,7 +31,7 @@
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .button__link {
         font-size: 4.27vw;
 
@@ -39,7 +39,7 @@
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 961px) {
     .button__link span {
         
 

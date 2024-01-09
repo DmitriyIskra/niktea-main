@@ -26,26 +26,26 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-title-slider {
         margin-top: 16.40vw;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__title-slider {
         font-size: 7.47vw;
         text-align: center;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-slider {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .prc__wr-slider_mobile {
         display: block;
         margin-top: 14.93vw;

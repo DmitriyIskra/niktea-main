@@ -99,7 +99,7 @@ div.about-brand__slide {
 }
 
 /* src/img/icons/rightarrow-main-slide.svg */
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .about-brand__wr-slider {
         width: 100%;
         margin-top: 16.53vw;
@@ -120,20 +120,20 @@ div.about-brand__slide {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .about-brand__swiper_mobile {
         min-width: 0;
         width: 100%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     div.about-brand__slide {
         height: 62vw;
     }
 }
 
-/* @media (max-width: 768px) {
+/* @media (max-width: 961px) {
     .swiper-pagination {
         position: static;
 
@@ -150,7 +150,7 @@ div.about-brand__slide {
     }
 } */
 
-@media (max-width: 768px) {
+@media (max-width: 961px) {
     .about-brand__button-icon {
         display: none;
     }

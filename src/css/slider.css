@@ -8,7 +8,7 @@
     padding-right: 150px;
   }
 /* media */
-@media (max-width: 768px) {
+@media (max-width: 961px) {
   .catalog__slider--container {     
     display: flex;
     align-items: center;

@@ -542,7 +542,7 @@ h2 {
 }
 
 .header-wrapper--main {
-  position: relative;
+  position: absolute;
   z-index: 100;
   /* margin-bottom: -250px; */
   margin-bottom: -8.6458vw;
@@ -886,6 +886,7 @@ height: 45px; */
 .carousel-control-next {
   top: 50% !important;
 
+  display: none;
   height: fit-content !important;
 
   transform: translateY(-50%) !important;

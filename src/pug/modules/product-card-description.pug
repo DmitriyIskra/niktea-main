@@ -1,6 +1,6 @@
-.prc__wrapper 
-    .prc__wr-title 
-        h1.prc__title     
+.prc__wrapper(class='prc__wrapper_' + dataProductCard.classCard)
+    .prc__wr-title
+        h1.prc__title
             each item in dataProductCard.title
                 span #{item}
  

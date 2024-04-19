@@ -7,7 +7,7 @@ mixin cards(dataCards, needTitleCard, titleCards)
                         span #{item} 
         ul.same-packs__list 
             each el,i in dataCards
-                li.same-packs__item
+                li.same-packs__item(class=el.classItem ? 'same-packs__item_' + el.classItem : '')
                     .same-packs__wr-link
                         .same-packs__wr-animate-img(class="same-packs__wr-animate-img_" + el.classCard)
                                 img.same-packs__animate-img(src=el['img-anim'])

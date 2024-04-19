@@ -267,10 +267,14 @@
         bottom: -31.3%;
     }
 }
-
+ 
 @media (min-width: 769px) {
     .same-packs__wr-link:hover .same-packs__wr-animate-img {
         transform: scale(125%, 125%);
+    }
+    /* сделано индивидуально анимация по просьбе руководителя */
+    .same-packs__item_dellipack-horeka-earl-grey .same-packs__wr-link:hover .same-packs__wr-animate-img {
+        transform: scale(110%, 110%);
     }
 }
 

@@ -21,6 +21,7 @@ export default class ControllSl {
 
         if(e.target.closest('.tea-sl__button-next')) {
             this.draw.moveNext()
+            localStorage.myVariable = 'hello world'
         }
     }
 }

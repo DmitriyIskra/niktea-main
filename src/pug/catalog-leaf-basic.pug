@@ -1,3 +1,5 @@
+include mixines/catalog-packs-cards
+
 - 
     let dataCards = [
             {
@@ -297,7 +299,7 @@ html(lang='ru')
             include ./modules/bread-crumbs
 
             .catalog__tea-pack    
-                include ./modules/catalog-packs-cards
+                +cards(dataCards, needTitleCard, titleCards)
                 
 
         include ./modules/footer

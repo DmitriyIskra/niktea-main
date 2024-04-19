@@ -1,3 +1,5 @@
+include mixines/catalog-packs-cards
+
 - 
     let dataCards = [
             {
@@ -95,7 +97,7 @@ html(lang='ru')
                     .catalog__read-more Читать дальше
 
             .catalog__wr-cards
-                include ./modules/catalog-packs-cards
+                +cards(dataCards, needTitleCard)
 
             
             .catalog__slider-container_desctop 

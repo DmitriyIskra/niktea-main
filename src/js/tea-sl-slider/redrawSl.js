@@ -90,7 +90,6 @@ export default class RedrawSl {
         // назначаем класс
         this.nextSlide.classList.remove('tea-sl__slide-item-next');
         this.nextSlide = this.nextSlide.nextElementSibling;
-        console.log(this.nextSlide)
         this.nextSlide.classList.add('tea-sl__slide-item-next');
 
         this.wrSlides.style.transition = `all ${this.animateDuration}s ${this.timingFunc}`;

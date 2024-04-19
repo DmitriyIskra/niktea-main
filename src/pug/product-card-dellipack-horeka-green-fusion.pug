@@ -1,0 +1,85 @@
+- 
+    let dataProductCard = { 
+        title: ['Green Fusion', 'Грин Фьюжн'],
+        classCard: 'dellipack-hor-green-fusion',
+        img: '../img/content/dellipack-horeka-green-fusion.webp',
+        'img-animate': '../img/content/dellipack-horeka-green-fusion-animate.webp',
+        description: 'Яркий, ароматный купаж зеленого чая из Китая и Японии. Раскрывается в приятной терпкости на фоне минеральных ноток.',
+        composition: 'Состав: чай зеленый',
+        //- 'amount-icon-type': 'pyramid',
+        'amount-icon-type': 'dellipack',
+        'amount-text': '25 шт',
+        'weight-text': '43,75 г',
+        'method-size': '200 мл',
+        'method-temp': '90-100 С',
+        'method-time': '3-5 мин',
+        'class-page': 'dellipack',
+    }
+
+- let classSlMobileSlider = 'dellipack';
+
+- 
+    let dataSlider = [
+        {
+            path:'../img/content/dellipack-horeka-milk-oolong.webp',
+            alt: 'Молочный Улун зеленый чай',
+            link: './product-card-dellipack-horeka-milk-oolong.html',
+            title: 'Молочный Улун зеленый чай',
+        },
+        {
+            path:'../img/content/dellipack-horeka-earl-greay.webp',
+            alt: 'Эрл Грей черный чай',
+            link: './product-card-dellipack-horeka-earl-grey.html',
+            title: 'Эрл Грей черный чай',
+        },                         
+        {
+            path: '../img/content/dellipack-horeka-jasmine-oriental.webp',
+            alt: 'Жасмин Ориентал зеленый чай',
+            link: './product-card-dellipack-horeka-jasmine-oriental.html',
+            title: 'Жасмин Ориентал зеленый чай',
+        }, 
+        {
+            path: '../img/content/dellipack-horeka-strawberry-dessert.webp',
+            alt: 'Клубничный Десерт травяной чай',
+            link: './product-card-dellipack-horeka-strawberry-dessert.html',
+            title: 'Клубничный Десерт травяной чай',
+        },    
+    ]
+
+-
+    let breadcrumbs = [
+        {name: 'Главная', url: './index.html'},
+        {name: 'Каталог', url: './catalog.html'},
+        {name: 'Пакетированный чай на чашку', url: './catalog-dellipack-per-cup.html'},
+        {name: 'Green Fusion | Грин Фьюжн', url: './product-card-dellipack-horeka-green-fusion.html'},
+    ]
+
+
+doctype html
+html(lang='ru') 
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        include ./modules/favicon
+        title Грин Фьюжн
+    body(data-variant='product-card')
+
+        include ./modules/header.pug
+
+        main.main
+
+            include ./modules/bread-crumbs 
+
+            include ./modules/product-card-description
+
+            .prc__wr-title-slider
+                h2.prc__title-slider Попробуйте другие вкусы
+
+            .prc__wr-slider
+                include ./modules/tea-sl-slider
+
+            .prc__wr-slider_mobile
+                include ./modules/tea-sl-swiper-mobile
+
+
+        include ./modules/footer

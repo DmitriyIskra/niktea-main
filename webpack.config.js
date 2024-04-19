@@ -5,7 +5,7 @@ const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = { 
-  devServer: {
+  devServer: { 
     port: 8800,
   },
   devtool: 'source-map',
@@ -422,6 +422,51 @@ module.exports = {
       },
       scriptLoading: 'blocking',
     }),
+
+
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-earl-grey.pug',
+      filename: './product-card-dellipack-horeka-earl-grey.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-green-fusion.pug',
+      filename: './product-card-dellipack-horeka-green-fusion.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-jasmine-oriental.pug',
+      filename: './product-card-dellipack-horeka-jasmine-oriental.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-milk-oolong.pug',
+      filename: './product-card-dellipack-horeka-milk-oolong.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-strawberry-dessert.pug',
+      filename: './product-card-dellipack-horeka-strawberry-dessert.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking', 
+    }),
+
+
+    
     new HtmlWebPackPlugin({
       template: './src/pug/product-card-leaf-jin-hao.pug',
       filename: './product-card-leaf-jin-hao.html',   // куда компилировать

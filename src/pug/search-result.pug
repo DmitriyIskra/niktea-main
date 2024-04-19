@@ -1,3 +1,5 @@
+include mixines/catalog-packs-cards
+
 - 
     let dataCards = [ 
             {
@@ -128,7 +130,7 @@ html(lang='ru')
 
                         //- .result-search__tea-cards_active
                         .result-search__tea-cards.result-search__content_active
-                            include ./modules/catalog-packs-cards
+                            +cards(dataCards, needTitleCard)
 
                         //- .result-search__recipes_active
                         .result-search__recipes

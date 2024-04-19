@@ -1,3 +1,5 @@
+include mixines/catalog-packs-cards
+
 - 
     let dataCards = [
             {
@@ -15,7 +17,7 @@
                 string2: ['зеленый чай'],
                 img: '../img/content/dellipack-jasmine-emerald.webp',
                 'img-anim': '../img/content/dellipack-jasmine-emerald-animate.webp',
-                alt: 'Жасмин изумруд',
+                alt: 'Жасмин изумруд', 
                 classCard: 'dellipack',
             },
             {
@@ -100,6 +102,55 @@
                 classCard: 'dellipack',
             },
         ];
+
+- 
+    let dataCardsHoreca = [
+            {
+                href: './product-card-dellipack-horeka-milk-oolong.html', 
+                string1: ['Молочный Улун'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-horeka-milk-oolong.webp',
+                'img-anim': '../img/content/dellipack-milk-oolong-animate.webp',
+                alt: 'Молочный Улун зеленый чай',
+                classCard: 'dellipack',
+            },
+            {
+                href: './product-card-dellipack-horeka-earl-grey.html',
+                string1: ['Эрл Грей'],
+                string2: ['черный чай'],
+                img: '../img/content/dellipack-horeka-earl-greay.webp',
+                'img-anim': '../img/content/dellipack-horeka-earl-grey-animate.webp',
+                alt: 'Эрл Грей черный чай', 
+                classCard: 'dellipack',
+            },
+            {
+                href: './product-card-dellipack-horeka-green-fusion.html',
+                string1: ['Грин Фьюжн'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-horeka-green-fusion.webp',
+                'img-anim': '../img/content/dellipack-horeka-green-fusion-animate.webp',
+                alt: 'Грин Фьюжн зеленый чай',
+                classCard: 'dellipack',
+            },
+            {
+                href: './product-card-dellipack-horeka-jasmine-oriental.html',
+                string1: ['Жасмин Ориентал'],
+                string2: ['зеленый чай'],
+                img: '../img/content/dellipack-horeka-jasmine-oriental.webp',
+                'img-anim': '../img/content/dellipack-horeka-green-fusion-animate.webp',
+                alt: 'Жасмин Ориентал зеленый чай',
+                classCard: 'dellipack',
+            },
+            {
+                href: './product-card-dellipack-horeka-strawberry-dessert.html',
+                string1: ['Клубничный Десерт'],
+                string2: ['травяной чай'],
+                img: '../img/content/dellipack-horeka-strawberry-dessert.webp',
+                'img-anim': '../img/content/dellipack-horeka-strawberry-dessert-animate.webp',
+                alt: 'Клубничный Десерт травяной чай',
+                classCard: 'dellipack',
+            },
+        ];
         
 - let classPage = 'dellipack';
 - let needTitleCard = true;
@@ -112,7 +163,7 @@
         {name: 'Пакетированный чай на чашку', url: './catalog-dellipack-per-cup.html'}
     ];
 
-doctype html 
+doctype html  
 html(lang='ru')
     head
         meta(charset='UTF-8')
@@ -125,8 +176,11 @@ html(lang='ru')
         main.main
             include ./modules/bread-crumbs
 
-            .catalog__tea-pack    
-                include ./modules/catalog-packs-cards
+            .catalog__tea-pack
+                +cards(dataCards, needTitleCard, titleCards)
+
+            .catalog__tea-pack                
+                +cards(dataCardsHoreca, true, ['Для индустрии гостеприимства'])
                 
 
         include ./modules/footer

@@ -1,3 +1,14 @@
+include ../mixines/nav-out-site
+
+-
+    let out_site = [
+        {title: 'Главная', link: '#0'},
+        {title: 'Наши тренинги', link: '#0'},
+        {title: 'Правила акции', link: '#0'},
+        {title: 'Подарки', link: '#0'},
+        {title: 'Личный кабинет', link: '#0'},
+    ]
+
 header.header-index
     .header-wrapper.header-wrapper--main
         .header__icon-menu_mobile
@@ -8,7 +19,7 @@ header.header-index
 
 
 
-        ul.header__list
+        ul.header__list  
             li.header__item
                 a.header__link(href='./about-brand.html') О БРЕНДЕ
             li.header__item
@@ -16,18 +27,22 @@ header.header-index
             li.header__logo(data-variant='main-page')
                 a(href='index.html')
                     .header__logo--img
-            li.header__item
+            li.header__item 
                 a.header__link(href='./catalog.html') КАТАЛОГ
             li.header__item
                 a.header__link(href='./contacts.html') КОНТАКТЫ
-            li.search-item
-                .search__container
-                    input#toggle(type='checkbox' name='' value='')
-                    label(for='toggle')
-                    .box
-                        .input__group
-                            input.input__field(type='text' name='search' placeholder='Что вы ищете ?')
-                            button.search__submit(type='button') ПОИСК
+            li.header__item_dop-nav
+                +nav-out-site(out_site)
+
+
+            //- li.search-item
+            //-     .search__container
+            //-         input#toggle(type='checkbox' name='' value='')
+            //-         label(for='toggle')
+            //-         .box
+            //-             .input__group
+            //-                 input.input__field(type='text' name='search' placeholder='Что вы ищете ?')
+            //-                 button.search__submit(type='button') ПОИСК
         
         .header__wr-mobile-menu
             .header__mobile-menu-close 

@@ -1,0 +1,20 @@
+mixin nav-out-site(points)
+    .nav-out-outsite
+        .nav-out-wrapper
+            .nav-out__wr-nav
+                .nav-out__corner
+                ul.nav-out__list
+                    each item in points
+                        li.nav-out__item
+                            a(href=item.link title=item.title + " Niktea Family")  #{item.title}
+                            .nav-out__line-anim
+                        //- li.nav-out__item
+                        //-     a(href="#0" title="Главная Niktea Family")  Главная
+                        //- li.nav-out__item
+                        //-     a(href="#0" title="Наши тренинги Niktea Family")  Наши тренинги
+                        //- li.nav-out__item
+                        //-     a(href="#0" title="Правила акции Niktea Family")  Правила акции
+                        //- li.nav-out__item
+                        //-     a(href="#0" title="Подарки Niktea Family")  Подарки
+                        //- li.nav-out__item
+                        //-     a(href="#0" title="Личный кабинет Niktea Family")  Личный кабинет

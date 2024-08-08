@@ -39,18 +39,18 @@ if(document.querySelector('.recept__card')){
     })
 }
 
-let searchButton = document.getElementById('toggle');
-let headerLogo = document.querySelector('.header__logo')
-let searchItems = document.querySelectorAll('.header__item')
+// let searchButton = document.getElementById('toggle');
+// let headerLogo = document.querySelector('.header__logo')
+// let searchItems = document.querySelectorAll('.header__item')
 
-searchButton.addEventListener('click', function(){
-    headerLogo.classList.toggle('logo__disabled');
+// searchButton.addEventListener('click', function(){
+//     headerLogo.classList.toggle('logo__disabled');
 
-    searchItems.forEach((element) =>{
-        element.classList.toggle('logo__disabled');
-    })
+//     searchItems.forEach((element) =>{
+//         element.classList.toggle('logo__disabled');
+//     })
 
-})
+// })
   
 // if(document.querySelector('.mySwiper') || document.querySelector('.brandSlider')){
 

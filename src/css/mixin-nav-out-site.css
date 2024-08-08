@@ -1,0 +1,82 @@
+.nav-out-outsite * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    list-style-type: none;
+}
+
+.nav-out-outsite {
+    position: relative;
+}
+  
+.nav-out-wrapper {
+position: absolute;
+top: 0;
+left: 5%;
+}
+  
+.nav-out__corner {
+height: 19px;
+width: 17px;
+
+border-top: 9.5px solid transparent;
+border-right: 8.5px solid transparent;
+border-bottom: 9.5px solid #118F88;
+border-left: 8.5px solid #118F88;
+}
+
+.nav-out__list {
+width: max-content;
+padding-top: 12px;
+padding-right: 7px;
+padding-bottom: 25px;
+padding-left: 7px;
+
+background: #118F88;
+border-radius: 0px 30px 30px 30px;
+}
+
+.nav-out__item {
+    border-bottom: 0.3px solid rgba(161, 243, 222, 0.3);
+}
+
+.nav-out__line-anim {
+    height: 1px;
+    width: 0%;
+    margin: 0 auto;
+
+    background-color: rgba(210, 253, 251, 0.4);
+
+    transition: width 0.12s linear;
+
+    translate: 0 1px;
+}
+
+.nav-out__item:hover .nav-out__line-anim {
+    width: 100%;
+}
+
+.nav-out__item a {
+    display: inline-block;
+    width: 100%;
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 1px;
+    padding-left: 14px;
+
+    font-family: 'Arsenal';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+
+    color: #FFF;
+}
+
+.nav-out__item a:hover {
+    filter: drop-shadow(0 0 5px #fff);
+    text-shadow: 0 0 5px black;
+}

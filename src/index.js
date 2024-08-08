@@ -35,6 +35,7 @@ import './css/product-card.css';
 import './css/about-tea-article.css';
 import './css/module-brand-slider.css';
 import './css/result-search.css';
+import './css/mixin-nav-out-site.css';
 import './css/404.css';
 
 // import './css/swiper-bundle.min.css';

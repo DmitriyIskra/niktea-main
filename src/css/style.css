@@ -288,17 +288,17 @@ body[data-variant="about-tea"] {
   top: 49%;
 }
 
-.phones {
-  width: 25%;
+.promo__card-img-left {
+  width: 30.5%;
   position: absolute;
-  right: 81%;
-  top: 64%;
+  right: 83%;
+  top: 75%;
 }
 
-.notebook {
-  width: 33%;
+.promo__card-img-right {
+  width: 31%;
   position: absolute;
-  left: 68%;
+  left: 75%;
   bottom: 60%;
 }
 
@@ -452,8 +452,11 @@ h2 {
   font-size: clamp(2.5vw, 2.5vw, 1.2vw);
   font-style: normal;
   font-weight: 400;
-  /* line-height: normal; */
   line-height: 91.9%;
+}
+
+.promo__card h2 span:last-child {
+  font-size: 1.88vw;
 }
 
 .promo__card h3 {
@@ -468,13 +471,13 @@ h2 {
 }
 
 .promo__card--img {
-  height: 12vw;
-  width: 28vw;
+  height: 18.5vw;
+  width: 38vw;
 }
 
 .promo__card--img_mobile {
   display: none;
-}
+}  
 
 
 @media (max-width: 970px) {
@@ -495,8 +498,10 @@ h2 {
 }
 
 .gift__descr {
+  display: flex;
   box-sizing: border-box;
   margin-bottom: 11vh;
+  gap: 1.56vw;
 
   font-family: Blogger Sans;
   font-weight: 200;
@@ -505,6 +510,8 @@ h2 {
   text-align: left;
 
   color: #fff;
+
+  flex-direction: column;
 }
 
 .promo__button--wrap {
@@ -873,6 +880,7 @@ height: 45px; */
 
   color: #ffffff;
 }
+
 
 
 
@@ -1690,10 +1698,10 @@ height: 45px; */
 }
 
 @media (max-width: 961px) {
-  .notebook {
-    width: 30%;
+  .promo__card-img-right {
+    width: 33%;
     position: absolute;
-    left: 70%;
+    left: 79%;
     bottom: 68%;
   }
 }
@@ -1708,11 +1716,11 @@ height: 45px; */
 }
 
 @media (max-width: 961px) {
-  .phones {
-    width: 24%;
+  .promo__card-img-left {
+    width: 27%;
     position: absolute;
-    right: 80%;
-    top: 61%;
+    right: 86%;
+    top: 82%;
   }
 }
 
@@ -1728,11 +1736,13 @@ height: 45px; */
 
 @media (max-width: 961px) {
   .promo__card--img {
-    display: none;
+    display: block;
+    height: 47vw;
+    width: 61vw;
   }
 
   .promo__card--img_mobile {
-    display: block;
+    display: none;
     height: 100%;
     width: 105%;
 

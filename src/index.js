@@ -37,5 +37,6 @@ import './css/module-brand-slider.css';
 import './css/result-search.css';
 import './css/mixin-nav-out-site.css';
 import './css/404.css';
+import './css/fonts.css';
 
 // import './css/swiper-bundle.min.css';

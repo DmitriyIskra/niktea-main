@@ -3,44 +3,90 @@
     padding: 0;
     box-sizing: border-box;
 
+    font-family: initial;
+    font-size: initial;
+    font-weight: initial;
+
     text-decoration: none;
 
     list-style-type: none;
+    color: initial;
 }
 
 .nav-out-outsite {
     position: relative;
 }
   
-.nav-out-wrapper {
-position: absolute;
-top: 0;
-left: 5%;
+.nav-out-wrapper { /*hover*/
+    position: absolute;
+    top: 0;
+    left: 5.2vw;
+
+    width: max-content;
+
+    translate: 0 -1.25vw;
+}
+
+.nav-out__title {
+    display: block;
+}
+
+.nav-out__title span:first-child {
+    font-family: 'Arial';
+    font-size: 1.46vw;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #fff;
+}
+
+.nav-out__title span:last-child {
+    font-family: 'SnellRoundhand';
+    font-size: 1.77vw;
+    font-weight: 700;
+
+    color: #fff;
 }
   
-.nav-out__triangle {
-height: 19px;
-width: 17px;
+.nav-out__wr-nav {
+    height: 0;
+    padding-left: 0.36vw;
 
-border-top: 9.5px solid transparent;
-border-right: 8.5px solid transparent;
-border-bottom: 9.5px solid #118F88;
-border-left: 8.5px solid #118F88;
+    transition: opacity 0.3s linear;
+
+    opacity: 0;
+    overflow: hidden;
+}
+
+.nav-out-wrapper:hover .nav-out__wr-nav {
+    height: 100%;
+
+    opacity: 1;
+}
+
+.nav-out__triangle {
+    height: 0.99vw;
+    width: 0.89vw;
+
+    border-top: 9.5px solid transparent;
+    border-right: 8.5px solid transparent;
+    border-bottom: 9.5px solid #118F88;
+    border-left: 8.5px solid #118F88;
 }
 
 .nav-out__list {
-width: max-content;
-padding-top: 12px;
-padding-right: 7px;
-padding-bottom: 25px;
-padding-left: 7px;
+    width: max-content;
+    padding-top: 0.63vw;
+    padding-right: 0.36vw;
+    padding-bottom: 1.30vw;
+    padding-left: 0.36vw;
 
-background: #118F88;
-border-radius: 0px 30px 30px 30px;
+    background: #118F88;
+    border-radius: 0px 1.56vw 1.56vw 1.56vw;
 }
 
 .nav-out__item {
-    border-bottom: 0.3px solid rgba(161, 243, 222, 0.3);
+    border-bottom: 1px solid rgba(161, 243, 222, 0.3);
 }
 
 .nav-out__line-anim {
@@ -62,13 +108,13 @@ border-radius: 0px 30px 30px 30px;
 .nav-out__item a {
     display: inline-block;
     width: 100%;
-    padding-top: 8px;
-    padding-right: 18px;
-    padding-bottom: 1px;
-    padding-left: 14px;
+    padding-top: 0.42vw;
+    padding-right: 0.94vw;
+    padding-bottom: 0.05vw;
+    padding-left: 0.73vw;
 
     font-family: 'Arsenal';
-    font-size: 12px;
+    font-size: 0.63vw;
     font-style: normal;
     font-weight: 400;
     text-align: center;
@@ -77,6 +123,6 @@ border-radius: 0px 30px 30px 30px;
 }
 
 .nav-out__item a:hover {
-    filter: drop-shadow(0 0 5px #fff);
-    text-shadow: 0 0 5px black;
+    filter: drop-shadow(0 0 0.26vw #fff);
+    text-shadow: 0 0 0.26vw black;
 }

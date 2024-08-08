@@ -68,10 +68,10 @@
     height: 0.99vw;
     width: 0.89vw;
 
-    border-top: 9.5px solid transparent;
-    border-right: 8.5px solid transparent;
-    border-bottom: 9.5px solid #118F88;
-    border-left: 8.5px solid #118F88;
+    border-top: 0.5vw solid transparent; /*9.5px*/
+    border-right: 0.44vw solid transparent; /*8.5px*/
+    border-bottom: 0.5vw solid #118F88; /*9.5px*/
+    border-left: 0.44vw solid #118F88; /*9.5px*/
 }
 
 .nav-out__list {

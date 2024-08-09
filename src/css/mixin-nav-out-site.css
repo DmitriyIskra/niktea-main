@@ -29,6 +29,12 @@
 
 .nav-out__title {
     display: block;
+    
+    transition: all 0.2s linear;
+}
+
+.nav-out__title:hover {
+    filter: drop-shadow(0 0 2px #fff);
 }
 
 .nav-out__title span:first-child {

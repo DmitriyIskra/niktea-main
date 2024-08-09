@@ -13,11 +13,11 @@
     color: initial;
 }
 
-.nav-out-outsite {
+.nav-out {
     position: relative;
 }
   
-.nav-out-wrapper { /*hover*/
+.nav-out__wrapper { /*hover*/
     position: absolute;
     top: 0;
     left: 5.2vw;
@@ -52,13 +52,15 @@
     height: 0;
     padding-left: 0.36vw;
 
+    filter: drop-shadow(7px 4px 6px rgba(0, 0, 0, 0.25));
+
     transition: opacity 0.3s linear;
 
     opacity: 0;
     overflow: hidden;
 }
 
-.nav-out-wrapper:hover .nav-out__wr-nav {
+.nav-out__wrapper:hover .nav-out__wr-nav {
     height: 100%;
 
     opacity: 1;

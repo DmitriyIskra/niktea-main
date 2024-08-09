@@ -1,3 +1,14 @@
+include ../mixines/nav-out-site
+
+-
+    let out_site = [
+        {title: 'Главная', link: '#0'},
+        {title: 'Наши тренинги', link: '#0'},
+        {title: 'Правила акции', link: '#0'},
+        {title: 'Подарки', link: '#0'},
+        {title: 'Личный кабинет', link: '#0'},
+    ]
+
 header.header-all
     .header-wrapper.header-wrapper--main_no-index
         .header__icon-menu_mobile
@@ -16,16 +27,19 @@ header.header-all
                     .header__logo--img
             li.header__item
                 a.header__link(href='./catalog.html') КАТАЛОГ
-            li.header__item
+            li.header__item 
                 a.header__link(href='contacts.html') КОНТАКТЫ
-            li.search-item
-                .search__container
-                    input#toggle(type='checkbox' name='' value='')
-                    label(for='toggle')
-                    .box
-                        .input__group
-                            input.input__field(type='text' name='search' placeholder='Что вы ищете ?')
-                            button.search__submit(type='button') ПОИСК
+            li.header__item_dop-nav
+                +nav-out-site(out_site)
+            
+            //- li.search-item
+            //-     .search__container
+            //-         input#toggle(type='checkbox' name='' value='')
+            //-         label(for='toggle')
+            //-         .box
+            //-             .input__group
+            //-                 input.input__field(type='text' name='search' placeholder='Что вы ищете ?')
+            //-                 button.search__submit(type='button') ПОИСК
 
         .header__wr-mobile-menu
             .header__mobile-menu-close 
@@ -42,4 +56,6 @@ header.header-all
                     a(href="./catalog.html" title="Каталог").header__mobile-menu-link КАТАЛОГ
                 li.header__mobile-menu-item 
                     a(href="./contacts.html" title="Контакты").header__mobile-menu-link КОНТАКТЫ
+                li.header__mobile-menu-item 
+                    a(href="#0" title="Контакты").header__mobile-menu-link Домашняя страница Niktea
             

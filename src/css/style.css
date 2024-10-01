@@ -161,13 +161,13 @@ body[data-variant="about-tea"] {
   padding-right: 6%;
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .container-main,
   .container {
     padding-left: 15px;
     padding-right: 15px;
   }
-}
+} */
 
 .container-main {
   margin-bottom: 200px;
@@ -563,6 +563,12 @@ h2 {
   opacity: 1;
 }
 
+.header-wrapper--main .header__logo--img {
+  background: no-repeat url(../img/icons/footer-logo.svg);
+  background-size: contain;
+  background-position: center;
+}
+
 .logo__disabled {
   opacity: 0;
 }
@@ -681,7 +687,7 @@ h2 {
 }
 
 .header-wrapper--main .header__link {
-  color: #236b66;
+  color: #fff;
 }
 
 .search-icon {
@@ -890,7 +896,7 @@ height: 45px; */
   filter: drop-shadow(0 0 5px #ffffff);
 }
 
-.footer__item span {
+.footer__item span { 
   font-family: Blogger Sans;
 
   color: #ffffff;
@@ -1200,7 +1206,7 @@ height: 45px; */
   .header__icon-menu_mobile {
     display: block;
     width: 8vw;
-    height: 7.2vw;
+    height: 7.5vw;
   }
 
   .header__item {

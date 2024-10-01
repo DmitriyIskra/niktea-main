@@ -20,7 +20,7 @@
 .nav-out__wrapper { /*hover*/
     position: absolute;
     top: 0;
-    left: 5.2vw;
+    left: 3.2vw;
 
     width: max-content;
 
@@ -117,9 +117,9 @@
     display: inline-block;
     width: 100%;
     padding-top: 0.42vw;
-    padding-right: 0.94vw;
+    padding-right: 1.3vw;
     padding-bottom: 0.05vw;
-    padding-left: 0.73vw;
+    padding-left: 1.3vw;
 
     font-family: 'Arsenal';
     font-size: 0.63vw;

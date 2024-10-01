@@ -25,6 +25,8 @@
     width: max-content;
 
     translate: 0 -1.25vw;
+
+    z-index: 50;
 }
 
 .nav-out__title {

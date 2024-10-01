@@ -485,6 +485,10 @@ h2 {
   flex-direction: column;
 }
 
+.gift__descr_color {
+  color: #f5c726;
+}
+
 .promo__button--wrap {
   position: static;
 
@@ -559,7 +563,7 @@ h2 {
   background: no-repeat url(../img/icons/logo.svg);
   background-size: contain;
   background-position: center;
-
+ 
   opacity: 1;
 }
 

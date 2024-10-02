@@ -715,10 +715,18 @@ height: 45px; */
   cursor: pointer;
 }
 
+.header__wr-family-link-mobile {
+  display: none;
+}
+
 .search-item {
   display: block;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.search-item {
+  display: none;
 }
 
 .search-wrap:hover .search-icon {
@@ -1496,7 +1504,15 @@ height: 45px; */
     height: 13.33vw;
     width: 13.33vw;
 
-    background: no-repeat url(../img/icons/logo-mobile.svg);
+    background: no-repeat url(../img/icons/logo-mobile-white.png); /*logo-mobile.svg -- зеленый лого*/
+    background-size: contain;
+    background-position: center;
+
+    transform: translateY(0.5vw);
+  }
+
+  .header-wrapper--main .header__logo--img {
+    background: no-repeat url(../img/icons/logo-mobile-white.png); /*logo-mobile.svg -- зеленый лого*/
     background-size: contain;
     background-position: center;
   }
@@ -1504,7 +1520,7 @@ height: 45px; */
 
 @media(max-width: 961px) {
   .search-item {
-    display: flex;
+    display: none;
     width: 7.5vw;
     height: 38px;
     padding-left: 0;
@@ -1514,6 +1530,37 @@ height: 45px; */
     flex-grow: inherit;
     flex-basis: auto;
   }
+}
+
+@media(max-width: 961px) {
+  .header__wr-family-link-mobile {
+    position: relative;
+
+    display: block;
+    height: 8.53vw;
+    width: 8.53vw;
+
+    background: no-repeat url('../img/icons/icon-link-to-family-white.png');
+    background-position: center;
+    background-size: contain;
+    
+    > .header__family-link-mobile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  /* .header-wrapper--main {
+    > .header__wr-family-link-mobile {
+      background: no-repeat url('../img/icons/icon-link-to-family-white.png');
+      background-position: center;
+      background-size: contain;
+    }
+  } */
+
 }
 
 @media(max-width: 961px) {

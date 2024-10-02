@@ -12,7 +12,7 @@
     .footer__top {
       padding: 60px 0;
     }
-  }
+  } 
   .footer__bottom {
     padding-top: 40px;
     padding-bottom: 63px;
@@ -53,6 +53,16 @@
   .footer__column {
     -ms-grid-column-span: 2;
     grid-column: 2 span;
+  }
+
+  .footer__wr-logo {
+    translate: 16% 0;
+  }
+
+  @media (max-width: 961px) {
+    .footer__wr-logo {
+      translate: none;
+    }
   }
 
   .footer__column:last-child {

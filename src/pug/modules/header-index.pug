@@ -19,7 +19,7 @@ header.header-index
 
 
 
-        ul.header__list  
+        ul.header__list
             li.header__item
                 a.header__link(href='./about-brand.html') О БРЕНДЕ
             li.header__item
@@ -27,13 +27,15 @@ header.header-index
             li.header__logo(data-variant='main-page')
                 a(href='index.html')
                     .header__logo--img 
-            li.header__item 
+            li.header__item
                 a.header__link(href='./catalog.html') КАТАЛОГ
             li.header__item
                 a.header__link(href='./contacts.html') КОНТАКТЫ
             li.header__item_dop-nav
                 +nav-out-site(out_site)
 
+            li.header__wr-family-link-mobile
+                a.header__wr-family-link-mobile(href="https://family.nikteaworld.com/" title="niktea family" target="_blank" rel="nofollow") 
 
             //- li.search-item
             //-     .search__container
@@ -60,8 +62,10 @@ header.header-index
                 li.header__mobile-menu-item 
                     a(href="./contacts.html" title="Контакты").header__mobile-menu-link КОНТАКТЫ
                 li.header__mobile-menu-item 
-                    a(href="https://family.nikteaworld.com/" title="niktea family" target="_blank").header__mobile-menu-link NIKTEA FAMILY
+                    a(href="https://family.nikteaworld.com/" title="niktea family" target="_blank" rel="nofollow").header__mobile-menu-link NIKTEA FAMILY
             
+
+
 
     .carousel-wrap.header-slider-desctop
         #carouselExampleCaptions.carousel.slide

@@ -304,7 +304,6 @@ h2 {
   font-size: 2.86vw;
   font-style: normal;
   font-weight: 200;
-  line-height: 91.9%;
   text-transform: none;
 
   color: #f5c726;
@@ -346,15 +345,26 @@ h2 {
   justify-content: center;
   position: relative;
   border-radius: 2.5vw;
-  width: 90vw;
-  height: 24vw;
-  background: var(
-    --unnamed,
-    linear-gradient(180deg, #7775b6 0%, #494694 69.79%)
-  );
+  width: 100%;
+  height: 24.38vw;
+  border: 0.21vw solid transparent;
+  background: no-repeat linear-gradient(180deg, #7775b6 0%, #494694 69.79%) padding-box,
+              no-repeat linear-gradient(180deg, #00bd8d 32.29%, #00392d 100%) border-box;
   box-shadow: 0px 0px 30px 0px #f9eb40;
   transition: box-shadow 0.3s ease;
 }
+
+/* .promo__card--innner::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  bottom: -4px;
+  right: -4px;
+  background: linear-gradient(180deg, #00bd8d 32.29%, #00392d 100%);
+  border-radius: 2.5vw;
+  z-index: -2;
+} */
 
 .promo__card--innner--left {
   display: flex;
@@ -365,7 +375,7 @@ h2 {
 }
 
 .promo__card--innner--left .promo__card--text {
-  margin-top: 20%;
+  margin-top: 17%;
 }
 
 .promo__card--text_mobile {
@@ -375,20 +385,12 @@ h2 {
 @media (max-width: 970px) {
   .promo__card--innner {
     height: 40vw;
+
+    border: 1.07vw solid transparent;
   }
 }
 
-.promo__card--innner::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  bottom: -4px;
-  right: -4px;
-  background: linear-gradient(180deg, #00bd8d 32.29%, #00392d 100%);
-  border-radius: 2.5vw;
-  z-index: -2;
-}
+
 
 .promo__card--innner:hover {
   box-shadow: 0px 0px 30px 10px #f9eb40;
@@ -419,11 +421,14 @@ h2 {
 }
 
 .promo__card h2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+
   font-family: Arsenal;
   font-size: clamp(2.5vw, 2.5vw, 1.2vw);
   font-style: normal;
   font-weight: 400;
-  line-height: 91.9%;
 }
 
 .promo__card h2 span:last-child {
@@ -472,7 +477,7 @@ h2 {
   display: flex;
   box-sizing: border-box;
   margin-bottom: 11vh;
-  gap: 1.56vw;
+  gap: 1vw;
 
   font-family: Blogger Sans;
   font-weight: 200;

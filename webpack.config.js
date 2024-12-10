@@ -740,6 +740,14 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
+      template: './src/pug/product-card-top-selection-shu-puer-bing-cha.pug',
+      filename: './product-card-top-selection-shu-puer-bing-cha.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
       template: './src/pug/product-card-top-selection-japan-matcha-traditional.pug',
       filename: './product-card-top-selection-japan-matcha-traditional.html',   // куда компилировать
       minify: {

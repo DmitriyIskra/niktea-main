@@ -61,6 +61,10 @@
     margin-top: 2.60vw;
 }
 
+.same-packs__item_top-selection-shu-puer-bing-cha .same-packs__wr-pack-img > img {
+    width: 130%;
+}
+
 .same-packs__wr-link {
     position: relative;
 

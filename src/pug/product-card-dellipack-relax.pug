@@ -1,15 +1,15 @@
 - 
-    let dataProductCard = { 
-        title: ['Jasmine Oriental', 'Жасмин Ориентал'],
-        classCard: 'dellipack-hor-jasmine-oriental',
-        img: '../img/content/dellipack-horeka-jasmine-oriental.webp',
-        'img-animate': '../img/content/dellipack-horeka-green-fusion-animate.webp',
-        description: 'Воздушный зеленый чай с белоснежными бутонами жасмина, раскрывается в утонченном, глубоком букете.',
-        composition: 'Состав: чай зеленый, цветы жасмина',
+    let dataProductCard = {
+        title: ['Релакс'],
+        classCard: 'dellipack-relax',
+        img: '../img/content/dellipack-relax.webp',
+        'img-animate': '../img/content/dellipack-energy-relax-animate.webp',
+        description: 'Чай "Relax" — это удивительное сочетание трав и цветов, созданное специально для тех, кто стремится найти умиротворение и покой в своем чаепитии.',
+        composition: 'Состав: душица, листья мяты, лемонграсс, лаванда, чабрец.',
         //- 'amount-icon-type': 'pyramid',
-        'amount-icon-type': 'dellipack',
-        'amount-text': '25 шт',
-        'weight-text': '43,75 г',
+        'amount-icon-type': 'dellipack', 
+        'amount-text': '21 шт',
+        'weight-text': '27.3 г', 
         'method-size': '200 мл',
         'method-temp': '90-100 С',
         'method-time': '3-5 мин',
@@ -18,14 +18,14 @@
 
 - let classSlMobileSlider = 'dellipack';
 
-include variables/data-slider-dellipack-horeka
+include variables/data-slider-dellipack
 
 -
     let breadcrumbs = [
         {name: 'Главная', url: './index.html'},
         {name: 'Каталог', url: './catalog.html'},
         {name: 'Пакетированный чай на чашку', url: './catalog-dellipack-per-cup.html'},
-        {name: 'Jasmine Oriental | Жасмин Ориентал', url: './product-card-dellipack-horeka-jasmine-oriental.html'},
+        {name: 'Релакс', url: './product-card-dellipack-relax.html'},
     ]
 
 
@@ -36,7 +36,7 @@ html(lang='ru')
         meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
         include ./modules/favicon
         include ./modules/analytics.pug
-        title Жасмин Ориентал
+        title Релакс
     body(data-variant='product-card')
 
         include ./modules/header.pug

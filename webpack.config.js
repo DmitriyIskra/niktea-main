@@ -279,6 +279,22 @@ module.exports = {
       scriptLoading: 'blocking',
     }),
     new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-energy.pug',
+      filename: './product-card-dellipack-energy.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-relax.pug',
+      filename: './product-card-dellipack-relax.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
       template: './src/pug/product-card-dellipack-earl-grey.pug',
       filename: './product-card-dellipack-earl-grey.html',   // куда компилировать
       minify: {
@@ -424,6 +440,22 @@ module.exports = {
     }),
 
 
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-krasnaya-polyana.pug',
+      filename: './product-card-dellipack-horeka-krasnaya-polyana.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/pug/product-card-dellipack-horeka-english-breakfest.pug',
+      filename: './product-card-dellipack-horeka-english-breakfest.html',   // куда компилировать
+      minify: {
+        html: false // отключаем минификацию html, еще есть версия minify: false
+      },
+      scriptLoading: 'blocking',
+    }),
     new HtmlWebPackPlugin({
       template: './src/pug/product-card-dellipack-horeka-earl-grey.pug',
       filename: './product-card-dellipack-horeka-earl-grey.html',   // куда компилировать
